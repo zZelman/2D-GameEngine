@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Physics/CPhysicsEngine.cpp \
-../src/Physics/DPhysics.cpp 
+../src/Physics/CCollidable.cpp \
+../src/Physics/CMovable.cpp \
+../src/Physics/PhysicsEngine.cpp 
 
 OBJS += \
-./src/Physics/CPhysicsEngine.o \
-./src/Physics/DPhysics.o 
+./src/Physics/CCollidable.o \
+./src/Physics/CMovable.o \
+./src/Physics/PhysicsEngine.o 
 
 CPP_DEPS += \
-./src/Physics/CPhysicsEngine.d \
-./src/Physics/DPhysics.d 
+./src/Physics/CCollidable.d \
+./src/Physics/CMovable.d \
+./src/Physics/PhysicsEngine.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -72,7 +72,14 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/Sound.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBuffer.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBufferRecorder.hpp \
- /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp
+ /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp \
+ ../src/Graphic/CTexture.h ../src/Graphic/../include_sfml.h \
+ ../src/Graphic/CSprite.h ../src/Graphic/CTexture.h \
+ ../src/GameElement_movable.h ../src/Physics/CMovable.h \
+ ../src/Physics/CCollidable.h ../src/Physics/TRect.h \
+ ../src/Physics/../Graphic/CSprite.h ../src/Physics/../include_sfml.h \
+ ../src/GameElement_static.h ../src/Physics/CCollidable.h \
+ ../src/Physics/PhysicsEngine.h ../src/Physics/CMovable.h
 
 ../src/include_sfml.h:
 
@@ -223,3 +230,31 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
 /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBufferRecorder.hpp:
 
 /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp:
+
+../src/Graphic/CTexture.h:
+
+../src/Graphic/../include_sfml.h:
+
+../src/Graphic/CSprite.h:
+
+../src/Graphic/CTexture.h:
+
+../src/GameElement_movable.h:
+
+../src/Physics/CMovable.h:
+
+../src/Physics/CCollidable.h:
+
+../src/Physics/TRect.h:
+
+../src/Physics/../Graphic/CSprite.h:
+
+../src/Physics/../include_sfml.h:
+
+../src/GameElement_static.h:
+
+../src/Physics/CCollidable.h:
+
+../src/Physics/PhysicsEngine.h:
+
+../src/Physics/CMovable.h:

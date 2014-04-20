@@ -2,6 +2,11 @@
 \label{main_8cpp}\index{/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/main.\-cpp@{/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/main.\-cpp}}
 }
 {\ttfamily \#include \char`\"{}include\-\_\-sfml.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Graphic/\-C\-Texture.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Graphic/\-C\-Sprite.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Game\-Element\-\_\-movable.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Game\-Element\-\_\-static.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Physics/\-Physics\-Engine.\-h\char`\"{}}\\*
 Include dependency graph for main.\-cpp\-:
 \nopagebreak
 \begin{figure}[H]
@@ -13,17 +18,68 @@ Include dependency graph for main.\-cpp\-:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{main_8cpp_ace28522ffd21c30896c8be840afff8a8}{window\-\_\-events} (sf\-::\-Render\-Window \&window, bool \&done)
+void \hyperlink{main_8cpp_a0a462ec35bf9c8a31ea7b4c653ab3f4c}{window\-\_\-events} (bool \&done)
 \begin{DoxyCompactList}\small\item\em Simplistic window event handling. \end{DoxyCompactList}\item 
 void \hyperlink{main_8cpp_a6bbf2b1b4a5441f0205c3258bd661077}{update\-\_\-elements} ()
 \begin{DoxyCompactList}\small\item\em Simplistic updating. \end{DoxyCompactList}\item 
-void \hyperlink{main_8cpp_af89bb4345366d8ee4cb52fe30cf07737}{render\-\_\-elements} (sf\-::\-Render\-Window \&window)
+void \hyperlink{main_8cpp_a20e3a3051df36234b0ce05ffac0741ee}{render\-\_\-elements} ()
 \begin{DoxyCompactList}\small\item\em Simplistic rendering. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a190163a6c0c635f4695f2fdd61d2cb8c}{init\-\_\-elements} ()
+\begin{DoxyCompactList}\small\item\em Init unit testing objects. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a4e306517e52618c9e9ba61f2beae2f94}{delete\-\_\-elements} ()
+\begin{DoxyCompactList}\small\item\em Delete unit testing objects. \end{DoxyCompactList}\item 
 int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Start of program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+sf\-::\-Render\-Window $\ast$ \hyperlink{main_8cpp_a09bf53be0697112e73cc7ceaca479ef6}{g\-\_\-window}
+\item 
+\hyperlink{classCTexture}{C\-Texture} $\ast$ \hyperlink{main_8cpp_a7e2879f22f371962a365e7c8d9f0699f}{g\-\_\-texture}
+\item 
+\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{main_8cpp_a68ec2c6cb385b95c73463cbeeb11759d}{g\-\_\-sprite\-\_\-movable}
+\item 
+\hyperlink{classGameElement__movable}{Game\-Element\-\_\-movable} $\ast$ \hyperlink{main_8cpp_ab43805fb979ee1bdb9fa4ef8500736f5}{g\-\_\-element\-\_\-movable}
+\item 
+\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{main_8cpp_acb23cd68aed5278e47711f5b62734397}{g\-\_\-sprite\-\_\-static}
+\item 
+\hyperlink{classGameElement__static}{Game\-Element\-\_\-static} $\ast$ \hyperlink{main_8cpp_aff6119240a4bf77d3a20abd24127b596}{g\-\_\-element\-\_\-static}
+\item 
+\hyperlink{classengine_1_1PhysicsEngine}{engine\-::\-Physics\-Engine} $\ast$ \hyperlink{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}{g\-\_\-physics\-Engine}
+\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\hypertarget{main_8cpp_a4e306517e52618c9e9ba61f2beae2f94}{\index{main.\-cpp@{main.\-cpp}!delete\-\_\-elements@{delete\-\_\-elements}}
+\index{delete\-\_\-elements@{delete\-\_\-elements}!main.cpp@{main.\-cpp}}
+\subsubsection[{delete\-\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a4e306517e52618c9e9ba61f2beae2f94}
+
+
+Delete unit testing objects. 
+
+
+
+Definition at line 135 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a190163a6c0c635f4695f2fdd61d2cb8c}{\index{main.\-cpp@{main.\-cpp}!init\-\_\-elements@{init\-\_\-elements}}
+\index{init\-\_\-elements@{init\-\_\-elements}!main.cpp@{main.\-cpp}}
+\subsubsection[{init\-\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a190163a6c0c635f4695f2fdd61d2cb8c}
+
+
+Init unit testing objects. 
+
+
+
+Definition at line 110 of file main.\-cpp.
+
 \hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.\-cpp}}
 \subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
@@ -38,22 +94,22 @@ Start of program.
 
 
 
-Definition at line 76 of file main.\-cpp.
+Definition at line 154 of file main.\-cpp.
 
-\hypertarget{main_8cpp_af89bb4345366d8ee4cb52fe30cf07737}{\index{main.\-cpp@{main.\-cpp}!render\-\_\-elements@{render\-\_\-elements}}
+\hypertarget{main_8cpp_a20e3a3051df36234b0ce05ffac0741ee}{\index{main.\-cpp@{main.\-cpp}!render\-\_\-elements@{render\-\_\-elements}}
 \index{render\-\_\-elements@{render\-\_\-elements}!main.cpp@{main.\-cpp}}
 \subsubsection[{render\-\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}void render\-\_\-elements (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window}
+{}
 \end{DoxyParamCaption}
-)}}\label{main_8cpp_af89bb4345366d8ee4cb52fe30cf07737}
+)}}\label{main_8cpp_a20e3a3051df36234b0ce05ffac0741ee}
 
 
 Simplistic rendering. 
 
 
 
-Definition at line 64 of file main.\-cpp.
+Definition at line 97 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a6bbf2b1b4a5441f0205c3258bd661077}{\index{main.\-cpp@{main.\-cpp}!update\-\_\-elements@{update\-\_\-elements}}
 \index{update\-\_\-elements@{update\-\_\-elements}!main.cpp@{main.\-cpp}}
@@ -68,21 +124,72 @@ Simplistic updating.
 
 
 
-Definition at line 55 of file main.\-cpp.
+Definition at line 88 of file main.\-cpp.
 
-\hypertarget{main_8cpp_ace28522ffd21c30896c8be840afff8a8}{\index{main.\-cpp@{main.\-cpp}!window\-\_\-events@{window\-\_\-events}}
+\hypertarget{main_8cpp_a0a462ec35bf9c8a31ea7b4c653ab3f4c}{\index{main.\-cpp@{main.\-cpp}!window\-\_\-events@{window\-\_\-events}}
 \index{window\-\_\-events@{window\-\_\-events}!main.cpp@{main.\-cpp}}
 \subsubsection[{window\-\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}void window\-\_\-events (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
 \item[{bool \&}]{done}
 \end{DoxyParamCaption}
-)}}\label{main_8cpp_ace28522ffd21c30896c8be840afff8a8}
+)}}\label{main_8cpp_a0a462ec35bf9c8a31ea7b4c653ab3f4c}
 
 
 Simplistic window event handling. 
 
 
 
-Definition at line 6 of file main.\-cpp.
+Definition at line 22 of file main.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_ab43805fb979ee1bdb9fa4ef8500736f5}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-element\-\_\-movable@{g\-\_\-element\-\_\-movable}}
+\index{g\-\_\-element\-\_\-movable@{g\-\_\-element\-\_\-movable}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-element\-\_\-movable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-movable}$\ast$ g\-\_\-element\-\_\-movable}}\label{main_8cpp_ab43805fb979ee1bdb9fa4ef8500736f5}
+
+
+Definition at line 12 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aff6119240a4bf77d3a20abd24127b596}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-element\-\_\-static@{g\-\_\-element\-\_\-static}}
+\index{g\-\_\-element\-\_\-static@{g\-\_\-element\-\_\-static}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-element\-\_\-static}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-static}$\ast$ g\-\_\-element\-\_\-static}}\label{main_8cpp_aff6119240a4bf77d3a20abd24127b596}
+
+
+Definition at line 15 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-physics\-Engine@{g\-\_\-physics\-Engine}}
+\index{g\-\_\-physics\-Engine@{g\-\_\-physics\-Engine}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-physics\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engine\-::\-Physics\-Engine}$\ast$ g\-\_\-physics\-Engine}}\label{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}
+
+
+Definition at line 17 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a68ec2c6cb385b95c73463cbeeb11759d}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-movable@{g\-\_\-sprite\-\_\-movable}}
+\index{g\-\_\-sprite\-\_\-movable@{g\-\_\-sprite\-\_\-movable}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-sprite\-\_\-movable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-movable}}\label{main_8cpp_a68ec2c6cb385b95c73463cbeeb11759d}
+
+
+Definition at line 11 of file main.\-cpp.
+
+\hypertarget{main_8cpp_acb23cd68aed5278e47711f5b62734397}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-static@{g\-\_\-sprite\-\_\-static}}
+\index{g\-\_\-sprite\-\_\-static@{g\-\_\-sprite\-\_\-static}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-sprite\-\_\-static}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-static}}\label{main_8cpp_acb23cd68aed5278e47711f5b62734397}
+
+
+Definition at line 14 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a7e2879f22f371962a365e7c8d9f0699f}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-texture@{g\-\_\-texture}}
+\index{g\-\_\-texture@{g\-\_\-texture}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Texture}$\ast$ g\-\_\-texture}}\label{main_8cpp_a7e2879f22f371962a365e7c8d9f0699f}
+
+
+Definition at line 9 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a09bf53be0697112e73cc7ceaca479ef6}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-window@{g\-\_\-window}}
+\index{g\-\_\-window@{g\-\_\-window}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window$\ast$ g\-\_\-window}}\label{main_8cpp_a09bf53be0697112e73cc7ceaca479ef6}
+
+
+Definition at line 8 of file main.\-cpp.
 

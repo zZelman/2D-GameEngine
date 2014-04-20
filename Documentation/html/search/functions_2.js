@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_5felements',['update_elements',['../main_8cpp.html#a6bbf2b1b4a5441f0205c3258bd661077',1,'main.cpp']]]
+  ['delete_5felements',['delete_elements',['../main_8cpp.html#a4e306517e52618c9e9ba61f2beae2f94',1,'main.cpp']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['igetcollisiondata',['IGetCollisionData',['../classIGetCollisionData.html',1,'']]],
-  ['igetrenderdata',['IGetRenderData',['../classIGetRenderData.html',1,'']]],
-  ['iupdateable',['IUpdateable',['../classIUpdateable.html',1,'']]]
+  ['trect',['TRect',['../classengine_1_1TRect.html',1,'engine']]],
+  ['trect_3c_20int_20_3e',['TRect&lt; int &gt;',['../classengine_1_1TRect.html',1,'engine']]]
 ];

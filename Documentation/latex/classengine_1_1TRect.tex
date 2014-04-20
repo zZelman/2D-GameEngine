@@ -1,0 +1,375 @@
+\hypertarget{classengine_1_1TRect}{\section{engine\-:\-:T\-Rect$<$ T $>$ Class Template Reference}
+\label{classengine_1_1TRect}\index{engine\-::\-T\-Rect$<$ T $>$@{engine\-::\-T\-Rect$<$ T $>$}}
+}
+
+
+A template class for a Rectangle that the physics engine uses.  
+
+
+
+
+{\ttfamily \#include $<$T\-Rect.\-h$>$}
+
+
+
+Collaboration diagram for engine\-:\-:T\-Rect$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classengine_1_1TRect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1TRect_a6ac360fa89c33540e1aacf0217bcbff7}{T\-Rect} ()
+\begin{DoxyCompactList}\small\item\em Sets member variables at (0, 0, 100, 100) \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1TRect_af74e4c9b5d570438a25c8b92d9b946d4}{T\-Rect} (T left, T top, T width, T height)
+\begin{DoxyCompactList}\small\item\em Creates a rect with given values. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1TRect_a3d400a91242673bf38496a724543f98a}{T\-Rect} (\hyperlink{classCSprite}{C\-Sprite} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Copies the dominations from the given \hyperlink{classCSprite}{C\-Sprite} into this Rect D\-O\-E\-S N\-O\-T keep the sprite around. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1TRect_a4a4706672995ba4fabd6be900b58ce1f}{T\-Rect} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ T $>$ \&other)
+\item 
+\hyperlink{classengine_1_1TRect}{T\-Rect} \& \hyperlink{classengine_1_1TRect_a4ccd990e5432e94ca3b8280cf9c73e0e}{operator=} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ T $>$ \&other)
+\item 
+T \hyperlink{classengine_1_1TRect_aa813022ee910757ce429aae829023d53}{get\-Left} () const 
+\item 
+T \hyperlink{classengine_1_1TRect_ae622bc0564f8d15556f32844be907adf}{get\-Top} () const 
+\item 
+T \hyperlink{classengine_1_1TRect_afe9eb87a07784381d0172cebac589ed0}{get\-Width} () const 
+\item 
+T \hyperlink{classengine_1_1TRect_ac377947f57b80de2c3c94d21e66e97cf}{get\-Height} () const 
+\item 
+void \hyperlink{classengine_1_1TRect_a73a225ba48ce45915087fe7a94c2ab1f}{get\-All} (T \&left, T \&top, T \&width, T \&height) const 
+\item 
+void \hyperlink{classengine_1_1TRect_a9b563983bf2839c51db741cdd0b90058}{get\-Rect} (\hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$rect) const 
+\item 
+void \hyperlink{classengine_1_1TRect_a6ec7dc08118c6012d17327ca8934d2e0}{get\-Position} (T \&left, T \&top) const 
+\item 
+void \hyperlink{classengine_1_1TRect_a34c390356af6890b4d4a5ef3d19694cf}{get\-Center} (T \&x, T \&y) const 
+\item 
+void \hyperlink{classengine_1_1TRect_aa0f1c4e8042c553fb3a9ad0805a58bb3}{set\-Left} (T left)
+\item 
+void \hyperlink{classengine_1_1TRect_aca4664e0e6d9736ffbc48663f9e8cd3f}{set\-Top} (T top)
+\item 
+void \hyperlink{classengine_1_1TRect_aad5a2530169d7953634fea4515381c37}{set\-Width} (T width)
+\item 
+void \hyperlink{classengine_1_1TRect_ae29fe9d2401f49e84f6c070ef60e9d7b}{set\-Height} (T height)
+\item 
+void \hyperlink{classengine_1_1TRect_ae10bacc96b54c45b2722e51b045ae3fe}{set\-All} (T left, T top, T width, T height)
+\item 
+void \hyperlink{classengine_1_1TRect_a41cce51fffc829c4d3e5dc40f605cb9e}{set\-All} (\hyperlink{classCSprite}{C\-Sprite} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Copies the dominations from the given \hyperlink{classCSprite}{C\-Sprite} into this Rect D\-O\-E\-S N\-O\-T keep the sprite around. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1TRect_ad7bdff230a7152e3d8ed3934046bed7c}{set\-Position} (T left, T top)
+\item 
+void \hyperlink{classengine_1_1TRect_a0699fb896f494a85e24abe32066ae5d9}{move\-Left} (T d\-\_\-left)
+\item 
+void \hyperlink{classengine_1_1TRect_a7e65ccfa166f4d7690d87e6985182379}{move\-Top} (T d\-\_\-top)
+\item 
+void \hyperlink{classengine_1_1TRect_a2650390138117e0ad1eecc8124735bd9}{move\-Position} (T d\-\_\-left, T d\-\_\-top)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class engine\-::\-T\-Rect$<$ T $>$}
+
+A template class for a Rectangle that the physics engine uses. 
+
+Can be used to represent an Axis Aligned Bounding Box (A\-A\-B\-B). 
+
+Definition at line 19 of file T\-Rect.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1TRect_a6ac360fa89c33540e1aacf0217bcbff7}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!T\-Rect@{T\-Rect}}
+\index{T\-Rect@{T\-Rect}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{T\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf engine\-::\-T\-Rect}$<$ T $>$\-::{\bf T\-Rect} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a6ac360fa89c33540e1aacf0217bcbff7}
+
+
+Sets member variables at (0, 0, 100, 100) 
+
+
+
+Definition at line 77 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_af74e4c9b5d570438a25c8b92d9b946d4}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!T\-Rect@{T\-Rect}}
+\index{T\-Rect@{T\-Rect}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{T\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf engine\-::\-T\-Rect}$<$ T $>$\-::{\bf T\-Rect} (
+\begin{DoxyParamCaption}
+\item[{T}]{left, }
+\item[{T}]{top, }
+\item[{T}]{width, }
+\item[{T}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_af74e4c9b5d570438a25c8b92d9b946d4}
+
+
+Creates a rect with given values. 
+
+
+
+Definition at line 83 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a3d400a91242673bf38496a724543f98a}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!T\-Rect@{T\-Rect}}
+\index{T\-Rect@{T\-Rect}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{T\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf engine\-::\-T\-Rect}$<$ T $>$\-::{\bf T\-Rect} (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{sprite}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a3d400a91242673bf38496a724543f98a}
+
+
+Copies the dominations from the given \hyperlink{classCSprite}{C\-Sprite} into this Rect D\-O\-E\-S N\-O\-T keep the sprite around. 
+
+
+
+Definition at line 89 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a4a4706672995ba4fabd6be900b58ce1f}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!T\-Rect@{T\-Rect}}
+\index{T\-Rect@{T\-Rect}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{T\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf engine\-::\-T\-Rect}$<$ T $>$\-::{\bf T\-Rect} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a4a4706672995ba4fabd6be900b58ce1f}
+
+
+Definition at line 98 of file T\-Rect.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1TRect_a73a225ba48ce45915087fe7a94c2ab1f}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-All (
+\begin{DoxyParamCaption}
+\item[{T \&}]{left, }
+\item[{T \&}]{top, }
+\item[{T \&}]{width, }
+\item[{T \&}]{height}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a73a225ba48ce45915087fe7a94c2ab1f}
+
+
+Definition at line 143 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a34c390356af6890b4d4a5ef3d19694cf}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Center (
+\begin{DoxyParamCaption}
+\item[{T \&}]{x, }
+\item[{T \&}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a34c390356af6890b4d4a5ef3d19694cf}
+
+
+Definition at line 165 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_ac377947f57b80de2c3c94d21e66e97cf}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_ac377947f57b80de2c3c94d21e66e97cf}
+
+
+Definition at line 137 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_aa813022ee910757ce429aae829023d53}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_aa813022ee910757ce429aae829023d53}
+
+
+Definition at line 119 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a6ec7dc08118c6012d17327ca8934d2e0}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Position (
+\begin{DoxyParamCaption}
+\item[{T \&}]{left, }
+\item[{T \&}]{top}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a6ec7dc08118c6012d17327ca8934d2e0}
+
+
+Definition at line 158 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a9b563983bf2839c51db741cdd0b90058}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Rect@{get\-Rect}}
+\index{get\-Rect@{get\-Rect}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-Rect}$<$ int $>$ $\ast$}]{rect}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a9b563983bf2839c51db741cdd0b90058}
+
+
+Definition at line 152 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_ae622bc0564f8d15556f32844be907adf}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Top@{get\-Top}}
+\index{get\-Top@{get\-Top}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_ae622bc0564f8d15556f32844be907adf}
+
+
+Definition at line 125 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_afe9eb87a07784381d0172cebac589ed0}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf engine\-::\-T\-Rect}$<$ T $>$\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_afe9eb87a07784381d0172cebac589ed0}
+
+
+Definition at line 131 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a0699fb896f494a85e24abe32066ae5d9}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!move\-Left@{move\-Left}}
+\index{move\-Left@{move\-Left}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::move\-Left (
+\begin{DoxyParamCaption}
+\item[{T}]{d\-\_\-left}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a0699fb896f494a85e24abe32066ae5d9}
+
+
+Definition at line 221 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a2650390138117e0ad1eecc8124735bd9}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!move\-Position@{move\-Position}}
+\index{move\-Position@{move\-Position}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{move\-Position}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::move\-Position (
+\begin{DoxyParamCaption}
+\item[{T}]{d\-\_\-left, }
+\item[{T}]{d\-\_\-top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a2650390138117e0ad1eecc8124735bd9}
+
+
+Definition at line 233 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a7e65ccfa166f4d7690d87e6985182379}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!move\-Top@{move\-Top}}
+\index{move\-Top@{move\-Top}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{move\-Top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::move\-Top (
+\begin{DoxyParamCaption}
+\item[{T}]{d\-\_\-top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a7e65ccfa166f4d7690d87e6985182379}
+
+
+Definition at line 227 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a4ccd990e5432e94ca3b8280cf9c73e0e}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!operator=@{operator=}}
+\index{operator=@{operator=}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf T\-Rect}$<$ T $>$ \& {\bf engine\-::\-T\-Rect}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a4ccd990e5432e94ca3b8280cf9c73e0e}
+
+
+Definition at line 106 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_ae10bacc96b54c45b2722e51b045ae3fe}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-All@{set\-All}}
+\index{set\-All@{set\-All}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-All (
+\begin{DoxyParamCaption}
+\item[{T}]{left, }
+\item[{T}]{top, }
+\item[{T}]{width, }
+\item[{T}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_ae10bacc96b54c45b2722e51b045ae3fe}
+
+
+Definition at line 196 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_a41cce51fffc829c4d3e5dc40f605cb9e}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-All@{set\-All}}
+\index{set\-All@{set\-All}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{sprite}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_a41cce51fffc829c4d3e5dc40f605cb9e}
+
+
+Copies the dominations from the given \hyperlink{classCSprite}{C\-Sprite} into this Rect D\-O\-E\-S N\-O\-T keep the sprite around. 
+
+
+
+Definition at line 205 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_ae29fe9d2401f49e84f6c070ef60e9d7b}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-Height@{set\-Height}}
+\index{set\-Height@{set\-Height}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-Height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-Height (
+\begin{DoxyParamCaption}
+\item[{T}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_ae29fe9d2401f49e84f6c070ef60e9d7b}
+
+
+Definition at line 190 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_aa0f1c4e8042c553fb3a9ad0805a58bb3}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-Left@{set\-Left}}
+\index{set\-Left@{set\-Left}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-Left (
+\begin{DoxyParamCaption}
+\item[{T}]{left}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_aa0f1c4e8042c553fb3a9ad0805a58bb3}
+
+
+Definition at line 172 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_ad7bdff230a7152e3d8ed3934046bed7c}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{T}]{left, }
+\item[{T}]{top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_ad7bdff230a7152e3d8ed3934046bed7c}
+
+
+Definition at line 214 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_aca4664e0e6d9736ffbc48663f9e8cd3f}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-Top@{set\-Top}}
+\index{set\-Top@{set\-Top}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-Top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-Top (
+\begin{DoxyParamCaption}
+\item[{T}]{top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_aca4664e0e6d9736ffbc48663f9e8cd3f}
+
+
+Definition at line 178 of file T\-Rect.\-h.
+
+\hypertarget{classengine_1_1TRect_aad5a2530169d7953634fea4515381c37}{\index{engine\-::\-T\-Rect@{engine\-::\-T\-Rect}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!engine::TRect@{engine\-::\-T\-Rect}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf engine\-::\-T\-Rect}$<$ T $>$\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{T}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classengine_1_1TRect_aad5a2530169d7953634fea4515381c37}
+
+
+Definition at line 184 of file T\-Rect.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Physics/\hyperlink{TRect_8h}{T\-Rect.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,279 @@
+\hypertarget{classengine_1_1CCollidable}{\section{engine\-:\-:C\-Collidable Class Reference}
+\label{classengine_1_1CCollidable}\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}}
+}
+
+
+The base class for all physics objects.  
+
+
+
+
+{\ttfamily \#include $<$C\-Collidable.\-h$>$}
+
+
+
+Inheritance diagram for engine\-:\-:C\-Collidable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classengine_1_1CCollidable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for engine\-:\-:C\-Collidable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classengine_1_1CCollidable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1CCollidable_af462862c9147ddecb794456bac7d24af}{C\-Collidable} (\hyperlink{classCSprite}{C\-Sprite} $\ast$sprite)
+\item 
+\hyperlink{classengine_1_1CCollidable_a0cf5d0adac82ce344fa0a9944739d87b}{C\-Collidable} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$rect)
+\item 
+virtual \hyperlink{classengine_1_1CCollidable_aab6e393808cd5f3a6144889df36e9523}{$\sim$\-C\-Collidable} ()
+\item 
+int \hyperlink{classengine_1_1CCollidable_a4144d3b4711ae7570f6b122e5b4e1435}{get\-Left} () const 
+\item 
+int \hyperlink{classengine_1_1CCollidable_adb2d96cc98dc4b6ed5a26cd9129e1d2d}{get\-Top} () const 
+\item 
+int \hyperlink{classengine_1_1CCollidable_afba2923113db4ebde67912978885ec72}{get\-Width} () const 
+\item 
+int \hyperlink{classengine_1_1CCollidable_a6436c774e28bcbee83472f91c059283a}{get\-Height} () const 
+\item 
+void \hyperlink{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}{get\-All} (int \&left, int \&top, int \&width, int \&height) const 
+\item 
+void \hyperlink{classengine_1_1CCollidable_ae026a66abb2bfa169227255335d9f78b}{get\-Rect} (\hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$rect) const 
+\item 
+void \hyperlink{classengine_1_1CCollidable_a60fa629f81692094f135d01c2a4f5b69}{get\-Position} (int \&left, int \&top) const 
+\item 
+void \hyperlink{classengine_1_1CCollidable_a1855752c68f9d17856ce6c48234818fc}{get\-Center} (int \&x, int \&y) const 
+\item 
+virtual void \hyperlink{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{print} () const 
+\item 
+bool \hyperlink{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}{is\-Collision} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
+\begin{DoxyCompactList}\small\item\em Does 'this' and 'other\-\_\-rect' intersect? \end{DoxyCompactList}\item 
+virtual void \hyperlink{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}{collision\-\_\-active} ()
+\item 
+virtual void \hyperlink{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{collision\-\_\-passive} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ \hyperlink{classengine_1_1CCollidable_aca283a2f940e99dcd6b0f57e7812968d}{m\-\_\-aabb}
+\begin{DoxyCompactList}\small\item\em Axis Aligned Bounding Box (A\-A\-B\-B), the thing that is the defined region of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The base class for all physics objects. 
+
+Objects who inherit from this can collide with other \hyperlink{classengine_1_1CCollidable}{C\-Collidable} objects 
+
+Definition at line 14 of file C\-Collidable.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1CCollidable_af462862c9147ddecb794456bac7d24af}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!C\-Collidable@{C\-Collidable}}
+\index{C\-Collidable@{C\-Collidable}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{C\-Collidable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Collidable\-::\-C\-Collidable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{sprite}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CCollidable_af462862c9147ddecb794456bac7d24af}
+
+
+Definition at line 8 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a0cf5d0adac82ce344fa0a9944739d87b}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!C\-Collidable@{C\-Collidable}}
+\index{C\-Collidable@{C\-Collidable}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{C\-Collidable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Collidable\-::\-C\-Collidable (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ int $>$ $\ast$}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CCollidable_a0cf5d0adac82ce344fa0a9944739d87b}
+
+
+Definition at line 14 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_aab6e393808cd5f3a6144889df36e9523}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!$\sim$\-C\-Collidable@{$\sim$\-C\-Collidable}}
+\index{$\sim$\-C\-Collidable@{$\sim$\-C\-Collidable}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{$\sim$\-C\-Collidable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Collidable\-::$\sim$\-C\-Collidable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_aab6e393808cd5f3a6144889df36e9523}
+
+
+Definition at line 21 of file C\-Collidable.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}
+
+
+Definition at line 118 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
+\index{collision\-\_\-passive@{collision\-\_\-passive}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{collision\-\_\-passive}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::collision\-\_\-passive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}
+
+
+Definition at line 123 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::get\-All (
+\begin{DoxyParamCaption}
+\item[{int \&}]{left, }
+\item[{int \&}]{top, }
+\item[{int \&}]{width, }
+\item[{int \&}]{height}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}
+
+
+Definition at line 50 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a1855752c68f9d17856ce6c48234818fc}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::get\-Center (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a1855752c68f9d17856ce6c48234818fc}
+
+
+Definition at line 72 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a6436c774e28bcbee83472f91c059283a}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Collidable\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a6436c774e28bcbee83472f91c059283a}
+
+
+Definition at line 44 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a4144d3b4711ae7570f6b122e5b4e1435}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Collidable\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a4144d3b4711ae7570f6b122e5b4e1435}
+
+
+Definition at line 26 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a60fa629f81692094f135d01c2a4f5b69}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::get\-Position (
+\begin{DoxyParamCaption}
+\item[{int \&}]{left, }
+\item[{int \&}]{top}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a60fa629f81692094f135d01c2a4f5b69}
+
+
+Definition at line 65 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_ae026a66abb2bfa169227255335d9f78b}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Rect@{get\-Rect}}
+\index{get\-Rect@{get\-Rect}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::get\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-Rect}$<$ int $>$ $\ast$}]{rect}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_ae026a66abb2bfa169227255335d9f78b}
+
+
+Definition at line 59 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_adb2d96cc98dc4b6ed5a26cd9129e1d2d}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Top@{get\-Top}}
+\index{get\-Top@{get\-Top}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Top}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Collidable\-::get\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_adb2d96cc98dc4b6ed5a26cd9129e1d2d}
+
+
+Definition at line 32 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_afba2923113db4ebde67912978885ec72}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Collidable\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_afba2923113db4ebde67912978885ec72}
+
+
+Definition at line 38 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!is\-Collision@{is\-Collision}}
+\index{is\-Collision@{is\-Collision}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{is\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Collidable\-::is\-Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ int $>$ $\ast$}]{other\-\_\-rect}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}
+
+
+Does 'this' and 'other\-\_\-rect' intersect? 
+
+
+
+Definition at line 87 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!print@{print}}
+\index{print@{print}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}
+
+
+Definition at line 78 of file C\-Collidable.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classengine_1_1CCollidable_aca283a2f940e99dcd6b0f57e7812968d}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!m\-\_\-aabb@{m\-\_\-aabb}}
+\index{m\-\_\-aabb@{m\-\_\-aabb}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{m\-\_\-aabb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Rect}$<$int$>$ engine\-::\-C\-Collidable\-::m\-\_\-aabb\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CCollidable_aca283a2f940e99dcd6b0f57e7812968d}
+
+
+Axis Aligned Bounding Box (A\-A\-B\-B), the thing that is the defined region of this object. 
+
+
+
+Definition at line 45 of file C\-Collidable.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Physics/\hyperlink{CCollidable_8h}{C\-Collidable.\-h}\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Physics/\hyperlink{CCollidable_8cpp}{C\-Collidable.\-cpp}\end{DoxyCompactItemize}

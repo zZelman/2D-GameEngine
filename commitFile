@@ -1,1 +1,5 @@
-Finished Rectangle template
+Significant progress has been made.
+* Rectangle Template finished
+* Collidable base class finished
+* Movable class finished
+* Framework for PhysicsEngine finished

@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Physics/TRect.cpp 
+../Physics/CCollidable.cpp 
 
 OBJS += \
-./Physics/TRect.o 
+./Physics/CCollidable.o 
 
 CPP_DEPS += \
-./Physics/TRect.d 
+./Physics/CCollidable.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
