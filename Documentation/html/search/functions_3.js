@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gameelement_5fgravity',['GameElement_gravity',['../classGameElement__gravity.html#abe7ee1a61b9250149bf93fb589e4fcfe',1,'GameElement_gravity']]],
   ['gameelement_5fmovable',['GameElement_movable',['../classGameElement__movable.html#ac9009600530046f90e75ebcea411d907',1,'GameElement_movable']]],
   ['gameelement_5fstatic',['GameElement_static',['../classGameElement__static.html#a017fea700136c9c17333f3b20cec05e8',1,'GameElement_static']]],
   ['getall',['getAll',['../classengine_1_1CCollidable.html#a0945e8a00846ff20ecdd86102afe04aa',1,'engine::CCollidable::getAll()'],['../classengine_1_1TRect.html#a73a225ba48ce45915087fe7a94c2ab1f',1,'engine::TRect::getAll()']]],
@@ -11,8 +12,11 @@ var searchData=
   ['getissideblocked_5fright',['getIsSideBlocked_right',['../classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef',1,'engine::CMovable']]],
   ['getissideblocked_5fup',['getIsSideBlocked_up',['../classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06',1,'engine::CMovable']]],
   ['getleft',['getLeft',['../classengine_1_1CCollidable.html#a4144d3b4711ae7570f6b122e5b4e1435',1,'engine::CCollidable::getLeft()'],['../classengine_1_1TRect.html#aa813022ee910757ce429aae829023d53',1,'engine::TRect::getLeft()']]],
+  ['getmicroseconds',['getMicroseconds',['../classengine_1_1CGravityBased.html#ae8168fa3497abc6a1a6fd06124b751e5',1,'engine::CGravityBased']]],
+  ['getmilliseconds',['getMilliseconds',['../classengine_1_1CGravityBased.html#a3b08ec9890633769718987a88a80ef83',1,'engine::CGravityBased']]],
   ['getposition',['getPosition',['../classengine_1_1CCollidable.html#a60fa629f81692094f135d01c2a4f5b69',1,'engine::CCollidable::getPosition()'],['../classengine_1_1TRect.html#a6ec7dc08118c6012d17327ca8934d2e0',1,'engine::TRect::getPosition()']]],
   ['getrect',['getRect',['../classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b',1,'engine::CCollidable::getRect()'],['../classengine_1_1TRect.html#a9b563983bf2839c51db741cdd0b90058',1,'engine::TRect::getRect()']]],
+  ['getseconds',['getSeconds',['../classengine_1_1CGravityBased.html#a723ff2142db951f2de1936b895e4037b',1,'engine::CGravityBased']]],
   ['getsubnum',['getSubNum',['../classCTexture.html#a52a074211eaa812a91200f73f8387aca',1,'CTexture']]],
   ['getsubsize',['getSubSize',['../classCTexture.html#a100f28379f113485d1e7574705ba977f',1,'CTexture']]],
   ['gettop',['getTop',['../classengine_1_1CCollidable.html#adb2d96cc98dc4b6ed5a26cd9129e1d2d',1,'engine::CCollidable::getTop()'],['../classengine_1_1TRect.html#ae622bc0564f8d15556f32844be907adf',1,'engine::TRect::getTop()']]],

@@ -57,8 +57,12 @@ void \hyperlink{classengine_1_1CCollidable_a1855752c68f9d17856ce6c48234818fc}{ge
 \item 
 virtual void \hyperlink{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{print} () const 
 \item 
-bool \hyperlink{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}{is\-Collision} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
+bool \hyperlink{classengine_1_1CCollidable_a1eca3fcd9ed995b5e2d7ea4d1c6d6a60}{is\-Collision\-\_\-horizontal} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
 \begin{DoxyCompactList}\small\item\em Does 'this' and 'other\-\_\-rect' intersect? \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1CCollidable_a6257421db6a378f596fdacd037188f34}{is\-Collision\-\_\-vertical} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
+\item 
+bool \hyperlink{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}{is\-Collision} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
+\item 
 virtual void \hyperlink{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}{collision\-\_\-active} ()
 \item 
 virtual void \hyperlink{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{collision\-\_\-passive} ()
@@ -125,7 +129,7 @@ Definition at line 21 of file C\-Collidable.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}
 
 
-Definition at line 128 of file C\-Collidable.\-cpp.
+Definition at line 179 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
 \index{collision\-\_\-passive@{collision\-\_\-passive}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -136,7 +140,7 @@ Definition at line 128 of file C\-Collidable.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}
 
 
-Definition at line 133 of file C\-Collidable.\-cpp.
+Definition at line 184 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-All@{get\-All}}
 \index{get\-All@{get\-All}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -240,11 +244,33 @@ Definition at line 38 of file C\-Collidable.\-cpp.
 ) const}}\label{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}
 
 
+Definition at line 148 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a1eca3fcd9ed995b5e2d7ea4d1c6d6a60}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!is\-Collision\-\_\-horizontal@{is\-Collision\-\_\-horizontal}}
+\index{is\-Collision\-\_\-horizontal@{is\-Collision\-\_\-horizontal}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{is\-Collision\-\_\-horizontal}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Collidable\-::is\-Collision\-\_\-horizontal (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ int $>$ $\ast$}]{other\-\_\-rect}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a1eca3fcd9ed995b5e2d7ea4d1c6d6a60}
+
+
 Does 'this' and 'other\-\_\-rect' intersect? 
 
-Note\-: the equals to in the equalities means that being 1 pixel away is not a collision, ie a ray-\/cast through it will not pass, but they are not colliding
+
 
 Definition at line 84 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_a6257421db6a378f596fdacd037188f34}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!is\-Collision\-\_\-vertical@{is\-Collision\-\_\-vertical}}
+\index{is\-Collision\-\_\-vertical@{is\-Collision\-\_\-vertical}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{is\-Collision\-\_\-vertical}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Collidable\-::is\-Collision\-\_\-vertical (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Rect}$<$ int $>$ $\ast$}]{other\-\_\-rect}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CCollidable_a6257421db6a378f596fdacd037188f34}
+
+
+Definition at line 116 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!print@{print}}
 \index{print@{print}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -255,7 +281,7 @@ Definition at line 84 of file C\-Collidable.\-cpp.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}
 
 
-Reimplemented in \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{engine\-::\-C\-Movable}.
+Reimplemented in \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{engine\-::\-C\-Movable}, and \hyperlink{classengine_1_1CGravityBased_a1fd898d6529eeb9bb8651d7d9bcdb89c}{engine\-::\-C\-Gravity\-Based}.
 
 
 
@@ -273,7 +299,7 @@ Axis Aligned Bounding Box (A\-A\-B\-B), the thing that is the defined region of 
 
 
 
-Definition at line 45 of file C\-Collidable.\-h.
+Definition at line 47 of file C\-Collidable.\-h.
 
 
 

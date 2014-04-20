@@ -77,7 +77,7 @@ src/Physics/PhysicsEngine.d: ../src/Physics/PhysicsEngine.cpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBufferRecorder.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp \
  ../src/Physics/../Graphic/CTexture.h ../src/Physics/../include_sfml.h \
- ../src/Physics/CMovable.h
+ ../src/Physics/CMovable.h ../src/Physics/CGravityBased.h
 
 ../src/Physics/PhysicsEngine.h:
 
@@ -242,3 +242,5 @@ src/Physics/PhysicsEngine.d: ../src/Physics/PhysicsEngine.cpp \
 ../src/Physics/../include_sfml.h:
 
 ../src/Physics/CMovable.h:
+
+../src/Physics/CGravityBased.h:

@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/GameElement_gravity.cpp \
 ../src/GameElement_movable.cpp \
 ../src/GameElement_static.cpp \
 ../src/main.cpp 
 
 OBJS += \
+./src/GameElement_gravity.o \
 ./src/GameElement_movable.o \
 ./src/GameElement_static.o \
 ./src/main.o 
 
 CPP_DEPS += \
+./src/GameElement_gravity.d \
 ./src/GameElement_movable.d \
 ./src/GameElement_static.d \
 ./src/main.d 

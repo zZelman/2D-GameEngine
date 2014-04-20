@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/Physics/CCollidable.cpp \
+../src/Physics/CGravityBased.cpp \
 ../src/Physics/CMovable.cpp \
 ../src/Physics/PhysicsEngine.cpp 
 
 OBJS += \
 ./src/Physics/CCollidable.o \
+./src/Physics/CGravityBased.o \
 ./src/Physics/CMovable.o \
 ./src/Physics/PhysicsEngine.o 
 
 CPP_DEPS += \
 ./src/Physics/CCollidable.d \
+./src/Physics/CGravityBased.d \
 ./src/Physics/CMovable.d \
 ./src/Physics/PhysicsEngine.d 
 

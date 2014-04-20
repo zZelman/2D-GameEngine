@@ -32,6 +32,8 @@ namespace engine
 		/**
 		 * Does 'this' and 'other_rect' intersect?
 		 */
+		bool isCollision_horizontal(const TRect<int>* other_rect) const;
+		bool isCollision_vertical(const TRect<int>* other_rect) const;
 		bool isCollision(const TRect<int>* other_rect) const;
 
 		virtual void collision_active();

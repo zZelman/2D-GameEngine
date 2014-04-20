@@ -1,6 +1,7 @@
 var searchData=
 [
   ['setall',['setAll',['../classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0',1,'engine::CMovable::setAll()'],['../classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe',1,'engine::TRect::setAll(T left, T top, T width, T height)'],['../classengine_1_1TRect.html#a41cce51fffc829c4d3e5dc40f605cb9e',1,'engine::TRect::setAll(CSprite *sprite)']]],
+  ['setfalling',['setFalling',['../classengine_1_1CGravityBased.html#aaaa791268b4c455f6137a3319473bf3c',1,'engine::CGravityBased']]],
   ['setheight',['setHeight',['../classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025',1,'engine::CMovable::setHeight()'],['../classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b',1,'engine::TRect::setHeight()']]],
   ['setissideblocked',['setIsSideBlocked',['../classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f',1,'engine::CMovable::setIsSideBlocked(SSideBlocked s)'],['../classengine_1_1CMovable.html#a61e5537f10e7ff0f111c1ad355f0f6ed',1,'engine::CMovable::setIsSideBlocked(bool left, bool right, bool up, bool down)']]],
   ['setissideblocked_5fdown',['setIsSideBlocked_down',['../classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673',1,'engine::CMovable']]],

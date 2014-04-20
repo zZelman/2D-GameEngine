@@ -79,7 +79,9 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
  ../src/Physics/CCollidable.h ../src/Physics/TRect.h \
  ../src/Physics/../Graphic/CSprite.h ../src/Physics/../include_sfml.h \
  ../src/GameElement_static.h ../src/Physics/CCollidable.h \
- ../src/Physics/PhysicsEngine.h ../src/Physics/CMovable.h
+ ../src/GameElement_gravity.h ../src/Physics/CGravityBased.h \
+ ../src/Physics/CMovable.h ../src/Physics/PhysicsEngine.h \
+ ../src/Physics/CGravityBased.h
 
 ../src/include_sfml.h:
 
@@ -255,6 +257,12 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
 
 ../src/Physics/CCollidable.h:
 
-../src/Physics/PhysicsEngine.h:
+../src/GameElement_gravity.h:
+
+../src/Physics/CGravityBased.h:
 
 ../src/Physics/CMovable.h:
+
+../src/Physics/PhysicsEngine.h:
+
+../src/Physics/CGravityBased.h:

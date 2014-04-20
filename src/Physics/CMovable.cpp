@@ -267,7 +267,7 @@ namespace engine
 	{
 //		CCollidable::print();
 
-//		std::cout << "vel:[" << velosity_x << ", " << velosity_y << "] ";
+		std::cout << "vel:[" << velosity_x << ", " << velosity_y << "] ";
 
 		std::cout << "block:{" << isSideBlocked.left << ", " << isSideBlocked.right <<
 		          ", " << isSideBlocked.up << ", " << isSideBlocked.down << "} ";

@@ -81,47 +81,98 @@ namespace engine
 	}
 
 
-	bool CCollidable::isCollision(const TRect<int>* other_rect) const
+	bool CCollidable::isCollision_horizontal(const TRect<int>* other_rect) const
 	{
+		// debug printing
+//		this->print();
+		other_rect->print();
+		std::cout << std::endl;
+
+
 		// general min/max variables for this and other
 		int this_max, this_min, other_max, other_min;
 
-		/**
-		 * Note: the equals to in the equalities means that being 1 pixel away
-		 * is not a collision, ie a ray-cast through it will not pass, but they are
-		 * not colliding
-		 */
-
-		// X axis testing
-		this_max = getLeft() + getWidth();
+		// x-axis
 		this_min = getLeft();
-		other_max = other_rect->getLeft() + other_rect->getWidth();
+		this_max = getLeft() + getWidth();
 		other_min = other_rect->getLeft();
-		if (this_max <= other_min || this_min >= other_max)
+		other_max = other_rect->getLeft() + other_rect->getWidth();
+
+		// right penetration
+		if (this_min >= other_min && this_min <= other_max)
 		{
-			return false;
+			return true;
+		}
+		// left penetration
+		if (other_min <= this_max && this_max <= other_max)
+		{
+			return true;
 		}
 
-		// Y axis testing
-		this_max = getTop() + getHeight();
-		this_min = getTop();
-		other_max = other_rect->getTop() + other_rect->getHeight();
-		other_min = other_rect->getTop();
-		if (this_max <= other_min || this_min >= other_max)
-		{
-			return false;
-		}
+		return false;
+	}
 
+
+	bool CCollidable::isCollision_vertical(const TRect<int>* other_rect) const
+	{
 		// debug printing
 //		this->print();
 //		other_rect->print();
 //		std::cout << std::endl;
 
-		// No seperating axis found
-		// Therefore there is atleast one overlapping axis
-		return true;
+
+		// general min/max variables for this and other
+		int this_max, this_min, other_max, other_min;
+
+		// y-axis
+		this_min = getTop();
+		this_max = getTop() + getHeight();
+		other_min = other_rect->getTop();
+		other_max = other_rect->getTop() + other_rect->getHeight();
+
+		// up penetration
+		if (other_min <= this_min && this_min <= other_max)
+		{
+			return true;
+		}
+		// down penetration
+		if (other_min <= this_max && this_max <= other_max)
+		{
+			return true;
+		}
+
+		return false;
 	}
 
+
+	bool CCollidable::isCollision(const TRect<int>* other_rect) const
+	{
+		// general min/max variables for this and other
+		int this_max, this_min, other_max, other_min;
+
+		// x-axis
+		this_min = getLeft();
+		this_max = getLeft() + getWidth();
+		other_min = other_rect->getLeft();
+		other_max = other_rect->getLeft() + other_rect->getWidth();
+		if (this_max <= other_min || this_min >= other_max)
+		{
+			return false;
+		}
+
+		// y-axis
+		this_min = getTop();
+		this_max = getTop() + getHeight();
+		other_min = other_rect->getTop();
+		other_max = other_rect->getTop() + other_rect->getHeight();
+		if (this_max <= other_min || this_min >= other_max)
+		{
+			return false;
+		}
+
+		// No separating axis found
+		return true;
+	}
 
 
 

@@ -3,12 +3,16 @@
 #include "Graphic/CSprite.h"
 #include "GameElement_movable.h"
 #include "GameElement_static.h"
+#include "GameElement_gravity.h"
 #include "Physics/PhysicsEngine.h"
 
 #include <iostream>
 
 sf::RenderWindow* g_window;
 CTexture* g_texture;
+
+CSprite* g_sprite_gravity;
+GameElement_gravity* g_element_gravity;
 
 CSprite* g_sprite_movable;
 GameElement_movable* g_element_movable;
@@ -121,6 +125,7 @@ void render_elements()
 	g_element_static_1->render();
 	g_element_static_2->render();
 	g_element_movable->render();
+//	g_element_gravity->render();
 
 	g_window->display();
 }
@@ -130,28 +135,40 @@ void render_elements()
  */
 void init_elements()
 {
+	// window
 	g_window = new sf::RenderWindow(sf::VideoMode(800, 600), "My window");
 
+	// texture for sprites
 	g_texture = new CTexture("res/Players/letter debug(32x32, 2x2).png",
 	                         sf::Vector2<int>(32, 32),
 	                         sf::Vector2<int>(2, 2));
 
+	// gravity
+	g_sprite_gravity = new CSprite(g_texture, sf::Vector2<int>(1, 2));
+	g_sprite_gravity->setPosition(0, 0);
+	g_element_gravity = new GameElement_gravity(g_sprite_gravity, g_window);
+
+	// movable
 	g_sprite_movable = new CSprite(g_texture, sf::Vector2<int>(2, 1));
 	g_sprite_movable->setPosition(0, 0);
 	g_element_movable = new GameElement_movable(g_sprite_movable, g_window);
 
+	// static 1
 	g_sprite_static_1 = new CSprite(g_texture, sf::Vector2<int>(1, 1));
-	g_sprite_static_1->setPosition(60, 60);
+	g_sprite_static_1->setPosition(10 + 0, 32 * 5);
 	g_element_static_1 = new GameElement_static(g_sprite_static_1, g_window);
 
+	// static 2
 	g_sprite_static_2 = new CSprite(g_texture, sf::Vector2<int>(1, 1));
-	g_sprite_static_2->setPosition(60 + 32, 60);
+	g_sprite_static_2->setPosition(10 + 32, 32 * 5);
 	g_element_static_2 = new GameElement_static(g_sprite_static_2, g_window);
 
+	// physics engine
 	g_physicsEngine = new engine::PhysicsEngine();
 	g_physicsEngine->addCollidable(g_element_static_1);
 	g_physicsEngine->addCollidable(g_element_static_2);
 	g_physicsEngine->addMovable(g_element_movable);
+	g_physicsEngine->addGravityBased(g_element_gravity);
 }
 
 
@@ -161,6 +178,9 @@ void init_elements()
 void delete_elements()
 {
 	delete g_physicsEngine;
+
+	delete g_sprite_gravity;
+	delete g_element_gravity;
 
 	delete g_element_static_2;
 	delete g_sprite_static_2;

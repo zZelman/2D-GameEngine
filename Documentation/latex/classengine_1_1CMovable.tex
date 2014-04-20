@@ -86,7 +86,7 @@ void \hyperlink{classengine_1_1CMovable_aafcffa645994fb19515bcb84cf083c9f}{set\-
 \item 
 void \hyperlink{classengine_1_1CMovable_a61e5537f10e7ff0f111c1ad355f0f6ed}{set\-Is\-Side\-Blocked} (bool left, bool right, bool up, bool down)
 \item 
-void \hyperlink{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}{move\-\_\-normally} ()
+virtual void \hyperlink{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}{move\-\_\-normally} ()
 \begin{DoxyCompactList}\small\item\em Update position based on x and y velocities. \end{DoxyCompactList}\item 
 void \hyperlink{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}{determine\-\_\-side\-Blocked} (\hyperlink{classengine_1_1CCollidable}{C\-Collidable} $\ast$c)
 \begin{DoxyCompactList}\small\item\em Given the \hyperlink{classengine_1_1CCollidable}{C\-Collidable} object, does it block one of your sides? \end{DoxyCompactList}\item 
@@ -260,7 +260,7 @@ Definition at line 111 of file C\-Movable.\-cpp.
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}
 
 
 Update position based on x and y velocities. 
@@ -313,6 +313,10 @@ Definition at line 87 of file C\-Movable.\-cpp.
 
 
 Reimplemented from \hyperlink{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{engine\-::\-C\-Collidable}.
+
+
+
+Reimplemented in \hyperlink{classengine_1_1CGravityBased_a1fd898d6529eeb9bb8651d7d9bcdb89c}{engine\-::\-C\-Gravity\-Based}.
 
 
 

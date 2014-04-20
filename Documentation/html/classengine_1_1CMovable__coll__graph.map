@@ -1,5 +1,5 @@
 <map id="engine::CMovable" name="engine::CMovable">
-<area shape="rect" id="node2" href="$classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="5,293,147,576"/>
+<area shape="rect" id="node2" href="$classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="9,293,143,517"/>
 <area shape="rect" id="node3" href="$classengine_1_1TRect.html" title="{engine::TRect\&lt; int \&gt;\n||+ TRect()\l+ TRect()\l+ TRect()\l+ TRect()\l+ operator=()\l+ getLeft()\l+ getTop()\l+ getWidth()\l+ getHeight()\l+ getAll()\land 14 more...\l}" alt="" coords="5,5,147,229"/>
-<area shape="rect" id="node4" href="$structengine_1_1SSideBlocked.html" title="A plane&#45;old&#45;data&#45;structure to tell whether the directions are &quot;physically&quot; blocked for movement..." alt="" coords="171,374,321,495"/>
+<area shape="rect" id="node4" href="$structengine_1_1SSideBlocked.html" title="A plane&#45;old&#45;data&#45;structure to tell whether the directions are &quot;physically&quot; blocked for movement..." alt="" coords="167,345,317,466"/>
 </map>

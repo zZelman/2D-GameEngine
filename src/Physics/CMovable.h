@@ -64,7 +64,7 @@ namespace engine
 		/**
 		 * Update position based on x and y velocities
 		 */
-		void move_normally();
+		virtual void move_normally();
 
 		/**
 		 * Given the CCollidable object, does it block one of your sides?

@@ -1,4 +1,6 @@
 <map id="engine::CMovable" name="engine::CMovable">
-<area shape="rect" id="node3" href="$classGameElement__movable.html" title="{GameElement_movable\n||+ GameElement_movable()\l+ render()\l}" alt="" coords="5,638,187,730"/>
-<area shape="rect" id="node2" href="$classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="25,5,167,288"/>
+<area shape="rect" id="node3" href="$classengine_1_1CGravityBased.html" title="{engine::CGravityBased\n|# m_gravityTimer\l# m_falling\l|+ CGravityBased()\l+ ~CGravityBased()\l+ getSeconds()\l+ getMilliseconds()\l+ getMicroseconds()\l+ restartGravityClock()\l+ isFalling()\l+ setFalling()\l+ print()\l}" alt="" coords="12,579,169,789"/>
+<area shape="rect" id="node5" href="$classGameElement__movable.html" title="{GameElement_movable\n||+ GameElement_movable()\l+ render()\l}" alt="" coords="193,638,375,730"/>
+<area shape="rect" id="node2" href="$classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="119,5,253,229"/>
+<area shape="rect" id="node4" href="$classGameElement__gravity.html" title="{GameElement_gravity\n||+ GameElement_gravity()\l+ render()\l}" alt="" coords="5,838,176,930"/>
 </map>

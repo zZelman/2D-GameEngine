@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// End getters/setters, begin useful functions</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">move_normally</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">move_normally</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a9643f34424f25ec389cb784c84988f14">determine_sideBlocked</a>(<a class="code" href="classengine_1_1CCollidable.html">CCollidable</a>* c);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
@@ -193,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1CMovable_html_a082d0f378616726256e96724c3009493"><div class="ttname"><a href="classengine_1_1CMovable.html#a082d0f378616726256e96724c3009493">engine::CMovable::getVelosity_y</a></div><div class="ttdeci">void getVelosity_y(float &amp;y) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00111">CMovable.cpp:111</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html_a9f1674b45a63529f2cf1bcbfd65c1a28"><div class="ttname"><a href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">engine::CMovable::setVelosity_x</a></div><div class="ttdeci">void setVelosity_x(float x)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00124">CMovable.cpp:124</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html_a7790f286b529e31de0226f72c574faef"><div class="ttname"><a href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">engine::CMovable::getIsSideBlocked_right</a></div><div class="ttdeci">void getIsSideBlocked_right(bool &amp;right) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00149">CMovable.cpp:149</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a6184018afcab4be164c3b02228175a9c"><div class="ttname"><a href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">engine::CMovable::move_normally</a></div><div class="ttdeci">void move_normally()</div><div class="ttdoc">Update position based on x and y velocities. </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00226">CMovable.cpp:226</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a6184018afcab4be164c3b02228175a9c"><div class="ttname"><a href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">engine::CMovable::move_normally</a></div><div class="ttdeci">virtual void move_normally()</div><div class="ttdoc">Update position based on x and y velocities. </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00226">CMovable.cpp:226</a></div></div>
 <div class="ttc" id="structengine_1_1SSideBlocked_html_ab0a5ec3de4a3a1f71eb8c28dcaa113ec"><div class="ttname"><a href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">engine::SSideBlocked::down</a></div><div class="ttdeci">bool down</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00015">CMovable.h:15</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html_a542748edb84d3e43bb479278c8b38e06"><div class="ttname"><a href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">engine::CMovable::getIsSideBlocked_up</a></div><div class="ttdeci">void getIsSideBlocked_up(bool &amp;up) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00155">CMovable.cpp:155</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html_a680ee306f10a10a79616e3483300edb0"><div class="ttname"><a href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">engine::CMovable::setTop</a></div><div class="ttdeci">void setTop(int top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00035">CMovable.cpp:35</a></div></div>
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 20 2014 01:52:46 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 20 2014 17:00:18 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
