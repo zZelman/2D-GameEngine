@@ -90,167 +90,337 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="CMovable_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CMovable_8h.html">CMovable.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>engine</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">    7</a></span>&#160;    <a class="code" href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">CMovable::CMovable</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        : <a class="code" href="classengine_1_1CCollidable.html">CCollidable</a>(sprite)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        m_pSprite = sprite;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">   14</a></span>&#160;    <a class="code" href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">CMovable::~CMovable</a>()</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>engine</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">    9</a></span>&#160;    <a class="code" href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">CMovable::CMovable</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        : <a class="code" href="classengine_1_1CCollidable.html">CCollidable</a>(sprite)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        m_pSprite = sprite;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a5e7a42eb65b12035d2c6104f28f2f0fc">setVelosity</a>(0, 0);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f">setIsSideBlocked</a>(<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">CMovable::setLeft</a>(<span class="keywordtype">int</span> left)</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">   19</a></span>&#160;    <a class="code" href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">CMovable::~CMovable</a>()</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3">setLeft</a>(left);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        m_pSprite-&gt;setPosition(left, <a class="code" href="classengine_1_1CCollidable.html#adb2d96cc98dc4b6ed5a26cd9129e1d2d">getTop</a>());</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">CMovable::setLeft</a>(<span class="keywordtype">int</span> left)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3">setLeft</a>(left);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">CMovable::setTop</a>(<span class="keywordtype">int</span> top)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f">setTop</a>(top);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        m_pSprite-&gt;setPosition(left, <a class="code" href="classengine_1_1CCollidable.html#adb2d96cc98dc4b6ed5a26cd9129e1d2d">getTop</a>());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        m_pSprite-&gt;setPosition(<a class="code" href="classengine_1_1CCollidable.html#a4144d3b4711ae7570f6b122e5b4e1435">getLeft</a>(), top);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">CMovable::setTop</a>(<span class="keywordtype">int</span> top)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f">setTop</a>(top);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">CMovable::setWidth</a>(<span class="keywordtype">int</span> width)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">setWidth</a>(width);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">CMovable::setHeight</a>(<span class="keywordtype">int</span> height)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b">setHeight</a>(height);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">CMovable::setAll</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">setLeft</a>(left);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">setTop</a>(top);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">setWidth</a>(width);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">setHeight</a>(height);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">   64</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">CMovable::setPosition</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">setLeft</a>(left);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">setTop</a>(top);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">CMovable::moveLeft</a>(<span class="keywordtype">int</span> d_left)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">moveLeft</a>(d_left);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m_pSprite-&gt;setPosition(<a class="code" href="classengine_1_1CCollidable.html#a4144d3b4711ae7570f6b122e5b4e1435">getLeft</a>(), top);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">CMovable::setWidth</a>(<span class="keywordtype">int</span> width)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">setWidth</a>(width);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">CMovable::setHeight</a>(<span class="keywordtype">int</span> height)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b">setHeight</a>(height);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">CMovable::setAll</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">setLeft</a>(left);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">setTop</a>(top);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">setWidth</a>(width);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">setHeight</a>(height);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">   69</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">CMovable::setPosition</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">setLeft</a>(left);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">setTop</a>(top);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        m_pSprite-&gt;move(d_left, 0);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">   76</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">CMovable::moveLeft</a>(<span class="keywordtype">int</span> d_left)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">moveLeft</a>(d_left);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">CMovable::moveTop</a>(<span class="keywordtype">int</span> d_top)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">moveTop</a>(d_top);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        m_pSprite-&gt;move(d_left, 0);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        m_pSprite-&gt;move(0, d_top);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">CMovable::moveTop</a>(<span class="keywordtype">int</span> d_top)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// set the arbitrary rectangle</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">moveTop</a>(d_top);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">   93</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">CMovable::movePosition</a>(<span class="keywordtype">int</span> d_left, <span class="keywordtype">int</span> d_top)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">moveLeft</a>(d_left);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">moveTop</a>(d_top);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// TODO changeWidth &amp;&amp; changeHeight</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//  void CMovable::changeWidth(int new_width) {</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//      // set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//      m_aabb.changeWidth(new_width);</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">//      // set the sfml api rectangle</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//      float f_width = (float) getWidth();</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">//      float f_width_prime = (float) new_width;</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//      // Wx=W&#39;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">//      // x = W&#39;/W</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//      float factor = f_width / f_width_prime;</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">//      const sf::Vector2f scale = m_pSprite-&gt;getScale();</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">//      m_pSprite-&gt;setScale(factor, scale.y);</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">//  }</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">//  void CMovable::changeHeight(int new_height) {</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">//      // set the arbitrary rectangle</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">//      m_aabb.changeHeight(new_height);</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//      // set the sfml api rectangle</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//      float f_height = (float) getHeight();</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//      float f_height_prime = (float) new_height;</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//      // Hx=H&#39;</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//      // x = H&#39;/H</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">//      float factor = f_height / f_height_prime;</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">//      const sf::Vector2f scale = m_pSprite-&gt;getScale();</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//      m_pSprite-&gt;setScale(scale.x, factor);</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//  }</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// set the sfml api rectangle</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        m_pSprite-&gt;move(0, d_top);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">   98</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">CMovable::movePosition</a>(<span class="keywordtype">int</span> d_left, <span class="keywordtype">int</span> d_top)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">moveLeft</a>(d_left);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">moveTop</a>(d_top);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aa9c441a7c6ea04959db6968f78dd9158">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aa9c441a7c6ea04959db6968f78dd9158">CMovable::getVelosity_x</a>(<span class="keywordtype">float</span>&amp; x)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        x = <a class="code" href="classengine_1_1CMovable.html#a7bc34defa8ea4190a6c3011ef254e48b">velosity_x</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a082d0f378616726256e96724c3009493">  111</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a082d0f378616726256e96724c3009493">CMovable::getVelosity_y</a>(<span class="keywordtype">float</span>&amp; y)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        y = <a class="code" href="classengine_1_1CMovable.html#a7a1a4581926122ae31753261d1d35cf3">velosity_y</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a7fa5504cad44efed5da9cc2298bed93b">  117</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a7fa5504cad44efed5da9cc2298bed93b">CMovable::getVelosity</a>(<span class="keywordtype">float</span>&amp; x, <span class="keywordtype">float</span>&amp; y)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa9c441a7c6ea04959db6968f78dd9158">getVelosity_x</a>(x);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a082d0f378616726256e96724c3009493">getVelosity_y</a>(y);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">  124</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">CMovable::setVelosity_x</a>(<span class="keywordtype">float</span> x)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a7bc34defa8ea4190a6c3011ef254e48b">velosity_x</a> = x;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">  130</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">CMovable::setVelosity_y</a>(<span class="keywordtype">float</span> y)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a7a1a4581926122ae31753261d1d35cf3">velosity_y</a> = y;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">/* namespace engine */</span></div>
-<div class="ttc" id="classengine_1_1CMovable_html_af8a646f2cebafb3f1cec4934132e3128"><div class="ttname"><a href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">engine::CMovable::setWidth</a></div><div class="ttdeci">void setWidth(int width)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00041">CMovable.cpp:41</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_a7e65ccfa166f4d7690d87e6985182379"><div class="ttname"><a href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">engine::TRect::moveTop</a></div><div class="ttdeci">void moveTop(T d_top)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00227">TRect.h:227</a></div></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a5e7a42eb65b12035d2c6104f28f2f0fc">  136</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a5e7a42eb65b12035d2c6104f28f2f0fc">CMovable::setVelosity</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(x);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(y);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a5774652cd5369fad6b08cf4de56f91c0">  143</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a5774652cd5369fad6b08cf4de56f91c0">CMovable::getIsSideBlocked_left</a>(<span class="keywordtype">bool</span>&amp; left)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        left = <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">  149</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">CMovable::getIsSideBlocked_right</a>(<span class="keywordtype">bool</span>&amp; right)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        right = <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">  155</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">CMovable::getIsSideBlocked_up</a>(<span class="keywordtype">bool</span>&amp; up)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        up = <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a85d5cf13541670517f1a49d57d49107a">  161</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a85d5cf13541670517f1a49d57d49107a">CMovable::getIsSideBlocked_down</a>(<span class="keywordtype">bool</span>&amp; down)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        down = <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a7252ea478abaab25c1774ccfd1f52554">  167</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a7252ea478abaab25c1774ccfd1f52554">CMovable::getIsSideBlocked</a>(<a class="code" href="structengine_1_1SSideBlocked.html">SSideBlocked</a>&amp; s)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a5774652cd5369fad6b08cf4de56f91c0">getIsSideBlocked_left</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">getIsSideBlocked_right</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">getIsSideBlocked_up</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a85d5cf13541670517f1a49d57d49107a">getIsSideBlocked_down</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a19c9b69038fe22d0a08228b7eaed8c1b">  175</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a7252ea478abaab25c1774ccfd1f52554">CMovable::getIsSideBlocked</a>(<span class="keywordtype">bool</span>&amp; left, <span class="keywordtype">bool</span>&amp; right, <span class="keywordtype">bool</span>&amp; up, <span class="keywordtype">bool</span>&amp; down)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a5774652cd5369fad6b08cf4de56f91c0">getIsSideBlocked_left</a>(left);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">getIsSideBlocked_right</a>(right);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">getIsSideBlocked_up</a>(up);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a85d5cf13541670517f1a49d57d49107a">getIsSideBlocked_down</a>(down);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aa7f9177dee6821517c845f1d369f8cde">  184</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aa7f9177dee6821517c845f1d369f8cde">CMovable::setIsSideBlocked_left</a>(<span class="keywordtype">bool</span> left)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a> = left;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#af1059fe2fbaf39598efe0a234d8cbc9e">  190</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#af1059fe2fbaf39598efe0a234d8cbc9e">CMovable::setIsSideBlocked_right</a>(<span class="keywordtype">bool</span> right)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a> = right;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7">  196</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7">CMovable::setIsSideBlocked_up</a>(<span class="keywordtype">bool</span> up)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a> = up;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673">  202</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673">CMovable::setIsSideBlocked_down</a>(<span class="keywordtype">bool</span> down)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a> = down;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f">  208</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f">CMovable::setIsSideBlocked</a>(<a class="code" href="structengine_1_1SSideBlocked.html">SSideBlocked</a> s)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa7f9177dee6821517c845f1d369f8cde">setIsSideBlocked_left</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#af1059fe2fbaf39598efe0a234d8cbc9e">setIsSideBlocked_right</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7">setIsSideBlocked_up</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a>);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673">setIsSideBlocked_down</a>(s.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a61e5537f10e7ff0f111c1ad355f0f6ed">  217</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f">CMovable::setIsSideBlocked</a>(<span class="keywordtype">bool</span> left, <span class="keywordtype">bool</span> right, <span class="keywordtype">bool</span> up, <span class="keywordtype">bool</span> down)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#aa7f9177dee6821517c845f1d369f8cde">setIsSideBlocked_left</a>(left);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#af1059fe2fbaf39598efe0a234d8cbc9e">setIsSideBlocked_right</a>(right);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7">setIsSideBlocked_up</a>(up);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673">setIsSideBlocked_down</a>(down);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">  226</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">CMovable::move_normally</a>()</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">movePosition</a>(<a class="code" href="classengine_1_1CMovable.html#a7bc34defa8ea4190a6c3011ef254e48b">velosity_x</a>, <a class="code" href="classengine_1_1CMovable.html#a7a1a4581926122ae31753261d1d35cf3">velosity_y</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a9643f34424f25ec389cb784c84988f14">  232</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a9643f34424f25ec389cb784c84988f14">CMovable::determine_sideBlocked</a>(<a class="code" href="classengine_1_1CCollidable.html">CCollidable</a>* c)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">int</span> blocking_size = 1;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="classengine_1_1TRect.html">TRect&lt;int&gt;</a> left, right, up, down;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">getRect</a>(&amp;left);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">getRect</a>(&amp;right);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">getRect</a>(&amp;up);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">getRect</a>(&amp;down);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        left.<a class="code" href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">moveLeft</a>(-blocking_size);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        right.<a class="code" href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">moveLeft</a>(blocking_size);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        up.<a class="code" href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">moveTop</a>(-blocking_size);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        down.<a class="code" href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">moveTop</a>(blocking_size);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span> (c-&gt;<a class="code" href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">isCollision</a>(&amp;left))</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">if</span> (c-&gt;<a class="code" href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">isCollision</a>(&amp;right))</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> (c-&gt;<a class="code" href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">isCollision</a>(&amp;up))</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span> (c-&gt;<a class="code" href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">isCollision</a>(&amp;down))</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classengine_1_1CMovable.html#a18299a0373464c4e1aadcdc9824eed9a">  266</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CMovable.html#a18299a0373464c4e1aadcdc9824eed9a">CMovable::print</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">//      CCollidable::print();</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">//      std::cout &lt;&lt; &quot;vel:[&quot; &lt;&lt; velosity_x &lt;&lt; &quot;, &quot; &lt;&lt; velosity_y &lt;&lt; &quot;] &quot;;</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;block:{&quot;</span> &lt;&lt; <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">left</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">right</a> &lt;&lt;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                  <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">up</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; <a class="code" href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">isSideBlocked</a>.<a class="code" href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">down</a> &lt;&lt; <span class="stringliteral">&quot;} &quot;</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;} <span class="comment">/* namespace engine */</span></div>
+<div class="ttc" id="classengine_1_1CMovable_html_af8a646f2cebafb3f1cec4934132e3128"><div class="ttname"><a href="classengine_1_1CMovable.html#af8a646f2cebafb3f1cec4934132e3128">engine::CMovable::setWidth</a></div><div class="ttdeci">void setWidth(int width)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00046">CMovable.cpp:46</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_a7e65ccfa166f4d7690d87e6985182379"><div class="ttname"><a href="classengine_1_1TRect.html#a7e65ccfa166f4d7690d87e6985182379">engine::TRect::moveTop</a></div><div class="ttdeci">void moveTop(T d_top)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00229">TRect.h:229</a></div></div>
+<div class="ttc" id="structengine_1_1SSideBlocked_html_a62f8b294229bf0f52bc01ffcc9086202"><div class="ttname"><a href="structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202">engine::SSideBlocked::up</a></div><div class="ttdeci">bool up</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00015">CMovable.h:15</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html"><div class="ttname"><a href="classengine_1_1TRect.html">engine::TRect&lt; int &gt;</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_aa9c441a7c6ea04959db6968f78dd9158"><div class="ttname"><a href="classengine_1_1CMovable.html#aa9c441a7c6ea04959db6968f78dd9158">engine::CMovable::getVelosity_x</a></div><div class="ttdeci">void getVelosity_x(float &amp;x) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00105">CMovable.cpp:105</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_a4144d3b4711ae7570f6b122e5b4e1435"><div class="ttname"><a href="classengine_1_1CCollidable.html#a4144d3b4711ae7570f6b122e5b4e1435">engine::CCollidable::getLeft</a></div><div class="ttdeci">int getLeft() const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00026">CCollidable.cpp:26</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_ad8f9971aa2d8c6a056d9ca04a2aba195"><div class="ttname"><a href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">engine::CMovable::moveTop</a></div><div class="ttdeci">void moveTop(int d_top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00082">CMovable.cpp:82</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_aad5a2530169d7953634fea4515381c37"><div class="ttname"><a href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">engine::TRect::setWidth</a></div><div class="ttdeci">void setWidth(T width)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00184">TRect.h:184</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_ad8f9971aa2d8c6a056d9ca04a2aba195"><div class="ttname"><a href="classengine_1_1CMovable.html#ad8f9971aa2d8c6a056d9ca04a2aba195">engine::CMovable::moveTop</a></div><div class="ttdeci">void moveTop(int d_top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00087">CMovable.cpp:87</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_aad5a2530169d7953634fea4515381c37"><div class="ttname"><a href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">engine::TRect::setWidth</a></div><div class="ttdeci">void setWidth(T width)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00186">TRect.h:186</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a7a1a4581926122ae31753261d1d35cf3"><div class="ttname"><a href="classengine_1_1CMovable.html#a7a1a4581926122ae31753261d1d35cf3">engine::CMovable::velosity_y</a></div><div class="ttdeci">float velosity_y</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00077">CMovable.h:77</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a5e7a42eb65b12035d2c6104f28f2f0fc"><div class="ttname"><a href="classengine_1_1CMovable.html#a5e7a42eb65b12035d2c6104f28f2f0fc">engine::CMovable::setVelosity</a></div><div class="ttdeci">void setVelosity(float x, float y)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00136">CMovable.cpp:136</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a85d5cf13541670517f1a49d57d49107a"><div class="ttname"><a href="classengine_1_1CMovable.html#a85d5cf13541670517f1a49d57d49107a">engine::CMovable::getIsSideBlocked_down</a></div><div class="ttdeci">void getIsSideBlocked_down(bool &amp;down) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00161">CMovable.cpp:161</a></div></div>
 <div class="ttc" id="classCSprite_html"><div class="ttname"><a href="classCSprite.html">CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00010">CSprite.h:10</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_aca4664e0e6d9736ffbc48663f9e8cd3f"><div class="ttname"><a href="classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f">engine::TRect::setTop</a></div><div class="ttdeci">void setTop(T top)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00178">TRect.h:178</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_aa4b25f57e8b5613035463f28eaa4fc36"><div class="ttname"><a href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">engine::CMovable::setLeft</a></div><div class="ttdeci">void setLeft(int left)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00019">CMovable.cpp:19</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_aca4664e0e6d9736ffbc48663f9e8cd3f"><div class="ttname"><a href="classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f">engine::TRect::setTop</a></div><div class="ttdeci">void setTop(T top)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00180">TRect.h:180</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_aa4b25f57e8b5613035463f28eaa4fc36"><div class="ttname"><a href="classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36">engine::CMovable::setLeft</a></div><div class="ttdeci">void setLeft(int left)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00024">CMovable.cpp:24</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html"><div class="ttname"><a href="classengine_1_1CCollidable.html">engine::CCollidable</a></div><div class="ttdoc">The base class for all physics objects. </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8h_source.html#l00014">CCollidable.h:14</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a6e78d43b1968931da9c91e4657502025"><div class="ttname"><a href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">engine::CMovable::setHeight</a></div><div class="ttdeci">void setHeight(int height)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00048">CMovable.cpp:48</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a73ec50c7ed0037c4abe4aaa41ffe68d7"><div class="ttname"><a href="classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7">engine::CMovable::setIsSideBlocked_up</a></div><div class="ttdeci">void setIsSideBlocked_up(bool up)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00196">CMovable.cpp:196</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_af1059fe2fbaf39598efe0a234d8cbc9e"><div class="ttname"><a href="classengine_1_1CMovable.html#af1059fe2fbaf39598efe0a234d8cbc9e">engine::CMovable::setIsSideBlocked_right</a></div><div class="ttdeci">void setIsSideBlocked_right(bool right)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00190">CMovable.cpp:190</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a454f67c854ad8f16c7251bc1011a2673"><div class="ttname"><a href="classengine_1_1CMovable.html#a454f67c854ad8f16c7251bc1011a2673">engine::CMovable::setIsSideBlocked_down</a></div><div class="ttdeci">void setIsSideBlocked_down(bool down)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00202">CMovable.cpp:202</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a6e78d43b1968931da9c91e4657502025"><div class="ttname"><a href="classengine_1_1CMovable.html#a6e78d43b1968931da9c91e4657502025">engine::CMovable::setHeight</a></div><div class="ttdeci">void setHeight(int height)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00053">CMovable.cpp:53</a></div></div>
 <div class="ttc" id="CMovable_8h_html"><div class="ttname"><a href="CMovable_8h.html">CMovable.h</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_ad6342adfc04b24120e5b19cf77fe44f5"><div class="ttname"><a href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">engine::CMovable::setPosition</a></div><div class="ttdeci">void setPosition(int left, int top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00064">CMovable.cpp:64</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_a0699fb896f494a85e24abe32066ae5d9"><div class="ttname"><a href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">engine::TRect::moveLeft</a></div><div class="ttdeci">void moveLeft(T d_left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00221">TRect.h:221</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a680b7faa861881cca82952f01d0fb20e"><div class="ttname"><a href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">engine::CMovable::movePosition</a></div><div class="ttdeci">void movePosition(int d_left, int d_top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00093">CMovable.cpp:93</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a98ef52dedd948dc2cc6fd5cad92444c0"><div class="ttname"><a href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">engine::CMovable::setAll</a></div><div class="ttdeci">void setAll(int left, int top, int width, int height)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00055">CMovable.cpp:55</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_af28d9429a4bf12fc37fb807bb0ae9c05"><div class="ttname"><a href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">engine::CMovable::CMovable</a></div><div class="ttdeci">CMovable(CSprite *sprite)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00007">CMovable.cpp:7</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_aba30b69bd14b16076f3d11c7b0471b83"><div class="ttname"><a href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">engine::CMovable::moveLeft</a></div><div class="ttdeci">void moveLeft(int d_left)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00071">CMovable.cpp:71</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a680ee306f10a10a79616e3483300edb0"><div class="ttname"><a href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">engine::CMovable::setTop</a></div><div class="ttdeci">void setTop(int top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00030">CMovable.cpp:30</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_ae29fe9d2401f49e84f6c070ef60e9d7b"><div class="ttname"><a href="classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b">engine::TRect::setHeight</a></div><div class="ttdeci">void setHeight(T height)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00190">TRect.h:190</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_aafcffa645994fb19515bcb84cf083c9f"><div class="ttname"><a href="classengine_1_1CMovable.html#aafcffa645994fb19515bcb84cf083c9f">engine::CMovable::setIsSideBlocked</a></div><div class="ttdeci">void setIsSideBlocked(SSideBlocked s)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00208">CMovable.cpp:208</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_ad6342adfc04b24120e5b19cf77fe44f5"><div class="ttname"><a href="classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5">engine::CMovable::setPosition</a></div><div class="ttdeci">void setPosition(int left, int top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00069">CMovable.cpp:69</a></div></div>
+<div class="ttc" id="classengine_1_1CCollidable_html_afd5adee0a4b0a4f18ff2bdcda656c632"><div class="ttname"><a href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">engine::CCollidable::isCollision</a></div><div class="ttdeci">bool isCollision(const TRect&lt; int &gt; *other_rect) const </div><div class="ttdoc">Does &amp;#39;this&amp;#39; and &amp;#39;other_rect&amp;#39; intersect? </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00084">CCollidable.cpp:84</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_a0699fb896f494a85e24abe32066ae5d9"><div class="ttname"><a href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">engine::TRect::moveLeft</a></div><div class="ttdeci">void moveLeft(T d_left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00223">TRect.h:223</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a680b7faa861881cca82952f01d0fb20e"><div class="ttname"><a href="classengine_1_1CMovable.html#a680b7faa861881cca82952f01d0fb20e">engine::CMovable::movePosition</a></div><div class="ttdeci">void movePosition(int d_left, int d_top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00098">CMovable.cpp:98</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a98ef52dedd948dc2cc6fd5cad92444c0"><div class="ttname"><a href="classengine_1_1CMovable.html#a98ef52dedd948dc2cc6fd5cad92444c0">engine::CMovable::setAll</a></div><div class="ttdeci">void setAll(int left, int top, int width, int height)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00060">CMovable.cpp:60</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_af28d9429a4bf12fc37fb807bb0ae9c05"><div class="ttname"><a href="classengine_1_1CMovable.html#af28d9429a4bf12fc37fb807bb0ae9c05">engine::CMovable::CMovable</a></div><div class="ttdeci">CMovable(CSprite *sprite)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00009">CMovable.cpp:9</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_aa7f9177dee6821517c845f1d369f8cde"><div class="ttname"><a href="classengine_1_1CMovable.html#aa7f9177dee6821517c845f1d369f8cde">engine::CMovable::setIsSideBlocked_left</a></div><div class="ttdeci">void setIsSideBlocked_left(bool left)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00184">CMovable.cpp:184</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_aba30b69bd14b16076f3d11c7b0471b83"><div class="ttname"><a href="classengine_1_1CMovable.html#aba30b69bd14b16076f3d11c7b0471b83">engine::CMovable::moveLeft</a></div><div class="ttdeci">void moveLeft(int d_left)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00076">CMovable.cpp:76</a></div></div>
+<div class="ttc" id="structengine_1_1SSideBlocked_html_aab2ebe596bade5dd2111290ff4171268"><div class="ttname"><a href="structengine_1_1SSideBlocked.html#aab2ebe596bade5dd2111290ff4171268">engine::SSideBlocked::left</a></div><div class="ttdeci">bool left</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00015">CMovable.h:15</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a9643f34424f25ec389cb784c84988f14"><div class="ttname"><a href="classengine_1_1CMovable.html#a9643f34424f25ec389cb784c84988f14">engine::CMovable::determine_sideBlocked</a></div><div class="ttdeci">void determine_sideBlocked(CCollidable *c)</div><div class="ttdoc">Given the CCollidable object, does it block one of your sides? </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00232">CMovable.cpp:232</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a18299a0373464c4e1aadcdc9824eed9a"><div class="ttname"><a href="classengine_1_1CMovable.html#a18299a0373464c4e1aadcdc9824eed9a">engine::CMovable::print</a></div><div class="ttdeci">virtual void print() const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00266">CMovable.cpp:266</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a7252ea478abaab25c1774ccfd1f52554"><div class="ttname"><a href="classengine_1_1CMovable.html#a7252ea478abaab25c1774ccfd1f52554">engine::CMovable::getIsSideBlocked</a></div><div class="ttdeci">void getIsSideBlocked(SSideBlocked &amp;s) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00167">CMovable.cpp:167</a></div></div>
+<div class="ttc" id="structengine_1_1SSideBlocked_html_af6f555a50cd295e753bc57ba1fe98b7b"><div class="ttname"><a href="structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b">engine::SSideBlocked::right</a></div><div class="ttdeci">bool right</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00015">CMovable.h:15</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a082d0f378616726256e96724c3009493"><div class="ttname"><a href="classengine_1_1CMovable.html#a082d0f378616726256e96724c3009493">engine::CMovable::getVelosity_y</a></div><div class="ttdeci">void getVelosity_y(float &amp;y) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00111">CMovable.cpp:111</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a9f1674b45a63529f2cf1bcbfd65c1a28"><div class="ttname"><a href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">engine::CMovable::setVelosity_x</a></div><div class="ttdeci">void setVelosity_x(float x)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00124">CMovable.cpp:124</a></div></div>
+<div class="ttc" id="classengine_1_1CCollidable_html_ae026a66abb2bfa169227255335d9f78b"><div class="ttname"><a href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">engine::CCollidable::getRect</a></div><div class="ttdeci">void getRect(TRect&lt; int &gt; *rect) const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00059">CCollidable.cpp:59</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a7790f286b529e31de0226f72c574faef"><div class="ttname"><a href="classengine_1_1CMovable.html#a7790f286b529e31de0226f72c574faef">engine::CMovable::getIsSideBlocked_right</a></div><div class="ttdeci">void getIsSideBlocked_right(bool &amp;right) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00149">CMovable.cpp:149</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a6184018afcab4be164c3b02228175a9c"><div class="ttname"><a href="classengine_1_1CMovable.html#a6184018afcab4be164c3b02228175a9c">engine::CMovable::move_normally</a></div><div class="ttdeci">void move_normally()</div><div class="ttdoc">Update position based on x and y velocities. </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00226">CMovable.cpp:226</a></div></div>
+<div class="ttc" id="structengine_1_1SSideBlocked_html_ab0a5ec3de4a3a1f71eb8c28dcaa113ec"><div class="ttname"><a href="structengine_1_1SSideBlocked.html#ab0a5ec3de4a3a1f71eb8c28dcaa113ec">engine::SSideBlocked::down</a></div><div class="ttdeci">bool down</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00015">CMovable.h:15</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a542748edb84d3e43bb479278c8b38e06"><div class="ttname"><a href="classengine_1_1CMovable.html#a542748edb84d3e43bb479278c8b38e06">engine::CMovable::getIsSideBlocked_up</a></div><div class="ttdeci">void getIsSideBlocked_up(bool &amp;up) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00155">CMovable.cpp:155</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a680ee306f10a10a79616e3483300edb0"><div class="ttname"><a href="classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0">engine::CMovable::setTop</a></div><div class="ttdeci">void setTop(int top)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00035">CMovable.cpp:35</a></div></div>
+<div class="ttc" id="structengine_1_1SSideBlocked_html"><div class="ttname"><a href="structengine_1_1SSideBlocked.html">engine::SSideBlocked</a></div><div class="ttdoc">A plane-old-data-structure to tell whether the directions are &amp;quot;physically&amp;quot; blocked for movement...</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00013">CMovable.h:13</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a5774652cd5369fad6b08cf4de56f91c0"><div class="ttname"><a href="classengine_1_1CMovable.html#a5774652cd5369fad6b08cf4de56f91c0">engine::CMovable::getIsSideBlocked_left</a></div><div class="ttdeci">void getIsSideBlocked_left(bool &amp;left) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00143">CMovable.cpp:143</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_ae29fe9d2401f49e84f6c070ef60e9d7b"><div class="ttname"><a href="classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b">engine::TRect::setHeight</a></div><div class="ttdeci">void setHeight(T height)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00192">TRect.h:192</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_adb2d96cc98dc4b6ed5a26cd9129e1d2d"><div class="ttname"><a href="classengine_1_1CCollidable.html#adb2d96cc98dc4b6ed5a26cd9129e1d2d">engine::CCollidable::getTop</a></div><div class="ttdeci">int getTop() const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00032">CCollidable.cpp:32</a></div></div>
-<div class="ttc" id="classengine_1_1CMovable_html_a2a8adce4d82128afdde96d0c9eb724b7"><div class="ttname"><a href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">engine::CMovable::~CMovable</a></div><div class="ttdeci">virtual ~CMovable()</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00014">CMovable.cpp:14</a></div></div>
-<div class="ttc" id="classengine_1_1TRect_html_aa0f1c4e8042c553fb3a9ad0805a58bb3"><div class="ttname"><a href="classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3">engine::TRect::setLeft</a></div><div class="ttdeci">void setLeft(T left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00172">TRect.h:172</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_ac1ed31991776939ada3d50e551017ab4"><div class="ttname"><a href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">engine::CMovable::setVelosity_y</a></div><div class="ttdeci">void setVelosity_y(float y)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00130">CMovable.cpp:130</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a2a8adce4d82128afdde96d0c9eb724b7"><div class="ttname"><a href="classengine_1_1CMovable.html#a2a8adce4d82128afdde96d0c9eb724b7">engine::CMovable::~CMovable</a></div><div class="ttdeci">virtual ~CMovable()</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00019">CMovable.cpp:19</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_afa7eb7bff0a1475aab175c9de7cd428a"><div class="ttname"><a href="classengine_1_1CMovable.html#afa7eb7bff0a1475aab175c9de7cd428a">engine::CMovable::isSideBlocked</a></div><div class="ttdeci">struct SSideBlocked isSideBlocked</div><div class="ttdoc">Blocked == true. </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00082">CMovable.h:82</a></div></div>
+<div class="ttc" id="classengine_1_1TRect_html_aa0f1c4e8042c553fb3a9ad0805a58bb3"><div class="ttname"><a href="classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3">engine::TRect::setLeft</a></div><div class="ttdeci">void setLeft(T left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00174">TRect.h:174</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_aca283a2f940e99dcd6b0f57e7812968d"><div class="ttname"><a href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">engine::CCollidable::m_aabb</a></div><div class="ttdeci">TRect&lt; int &gt; m_aabb</div><div class="ttdoc">Axis Aligned Bounding Box (AABB), the thing that is the defined region of this object. </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8h_source.html#l00045">CCollidable.h:45</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a7fa5504cad44efed5da9cc2298bed93b"><div class="ttname"><a href="classengine_1_1CMovable.html#a7fa5504cad44efed5da9cc2298bed93b">engine::CMovable::getVelosity</a></div><div class="ttdeci">void getVelosity(float &amp;x, float &amp;y) const </div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00117">CMovable.cpp:117</a></div></div>
+<div class="ttc" id="classengine_1_1CMovable_html_a7bc34defa8ea4190a6c3011ef254e48b"><div class="ttname"><a href="classengine_1_1CMovable.html#a7bc34defa8ea4190a6c3011ef254e48b">engine::CMovable::velosity_x</a></div><div class="ttdeci">float velosity_x</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00077">CMovable.h:77</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 19 2014 20:24:43 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 20 2014 01:52:46 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

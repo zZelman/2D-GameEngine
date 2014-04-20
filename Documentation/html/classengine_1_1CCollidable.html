@@ -104,14 +104,14 @@ Inheritance diagram for engine::CCollidable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classengine_1_1CCollidable__inherit__graph.png" border="0" usemap="#engine_1_1CCollidable_inherit__map" alt="Inheritance graph"/></div>
 <map name="engine_1_1CCollidable_inherit__map" id="engine_1_1CCollidable_inherit__map">
-<area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n||+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\l+ movePosition()\l}" alt="" coords="33,336,159,560"/><area shape="rect" id="node4" href="classGameElement__static.html" title="{GameElement_static\n||+ GameElement_static()\l+ render()\l}" alt="" coords="183,402,347,494"/><area shape="rect" id="node3" href="classGameElement__movable.html" title="{GameElement_movable\n||+ GameElement_movable()\l+ render()\l}" alt="" coords="5,609,187,701"/></map>
+<area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l# isSideBlocked\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 22 more...\l}" alt="" coords="33,336,159,589"/><area shape="rect" id="node4" href="classGameElement__static.html" title="{GameElement_static\n||+ GameElement_static()\l+ render()\l}" alt="" coords="183,417,347,509"/><area shape="rect" id="node3" href="classGameElement__movable.html" title="{GameElement_movable\n||+ GameElement_movable()\l+ render()\l}" alt="" coords="5,638,187,730"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for engine::CCollidable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classengine_1_1CCollidable__coll__graph.png" border="0" usemap="#engine_1_1CCollidable_coll__map" alt="Collaboration graph"/></div>
 <map name="engine_1_1CCollidable_coll__map" id="engine_1_1CCollidable_coll__map">
-<area shape="rect" id="node2" href="classengine_1_1TRect.html" title="{engine::TRect\&lt; int \&gt;\n||+ TRect()\l+ TRect()\l+ TRect()\l+ TRect()\l+ operator=()\l+ getLeft()\l+ getTop()\l+ getWidth()\l+ getHeight()\l+ getAll()\land 13 more...\l}" alt="" coords="5,5,147,229"/></map>
+<area shape="rect" id="node2" href="classengine_1_1TRect.html" title="{engine::TRect\&lt; int \&gt;\n||+ TRect()\l+ TRect()\l+ TRect()\l+ TRect()\l+ operator=()\l+ getLeft()\l+ getTop()\l+ getWidth()\l+ getHeight()\l+ getAll()\land 14 more...\l}" alt="" coords="5,5,147,229"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -243,7 +243,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00118">118</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00128">128</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00123">123</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00133">133</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
 
 </div>
 </div>
@@ -469,8 +469,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Does 'this' and 'other_rect' intersect? </p>
+<p>Note: the equals to in the equalities means that being 1 pixel away is not a collision, ie a ray-cast through it will not pass, but they are not colliding</p>
 
-<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00087">87</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00084">84</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,6 +495,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classengine_1_1CMovable.html#a18299a0373464c4e1aadcdc9824eed9a">engine::CMovable</a>.</p>
 
 <p>Definition at line <a class="el" href="CCollidable_8cpp_source.html#l00078">78</a> of file <a class="el" href="CCollidable_8cpp_source.html">CCollidable.cpp</a>.</p>
 
@@ -531,7 +534,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 19 2014 20:24:43 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 20 2014 01:52:46 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

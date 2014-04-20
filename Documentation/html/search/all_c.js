@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['update',['update',['../classengine_1_1PhysicsEngine.html#a468ef9599ccd80e7e5c170d741ab1d21',1,'engine::PhysicsEngine']]],
-  ['update_5felements',['update_elements',['../main_8cpp.html#a6bbf2b1b4a5441f0205c3258bd661077',1,'main.cpp']]]
+  ['trect',['TRect',['../classengine_1_1TRect.html',1,'engine']]],
+  ['trect',['TRect',['../classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7',1,'engine::TRect::TRect()'],['../classengine_1_1TRect.html#af74e4c9b5d570438a25c8b92d9b946d4',1,'engine::TRect::TRect(T left, T top, T width, T height)'],['../classengine_1_1TRect.html#a3d400a91242673bf38496a724543f98a',1,'engine::TRect::TRect(CSprite *sprite)'],['../classengine_1_1TRect.html#a4a4706672995ba4fabd6be900b58ce1f',1,'engine::TRect::TRect(const TRect&lt; T &gt; &amp;other)']]],
+  ['trect_2eh',['TRect.h',['../TRect_8h.html',1,'']]],
+  ['trect_3c_20int_20_3e',['TRect&lt; int &gt;',['../classengine_1_1TRect.html',1,'engine']]]
 ];

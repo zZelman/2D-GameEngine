@@ -125,7 +125,7 @@ Definition at line 21 of file C\-Collidable.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}
 
 
-Definition at line 118 of file C\-Collidable.\-cpp.
+Definition at line 128 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
 \index{collision\-\_\-passive@{collision\-\_\-passive}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -136,7 +136,7 @@ Definition at line 118 of file C\-Collidable.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}
 
 
-Definition at line 123 of file C\-Collidable.\-cpp.
+Definition at line 133 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-All@{get\-All}}
 \index{get\-All@{get\-All}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -242,9 +242,9 @@ Definition at line 38 of file C\-Collidable.\-cpp.
 
 Does 'this' and 'other\-\_\-rect' intersect? 
 
+Note\-: the equals to in the equalities means that being 1 pixel away is not a collision, ie a ray-\/cast through it will not pass, but they are not colliding
 
-
-Definition at line 87 of file C\-Collidable.\-cpp.
+Definition at line 84 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!print@{print}}
 \index{print@{print}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -253,6 +253,10 @@ Definition at line 87 of file C\-Collidable.\-cpp.
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}
+
+
+Reimplemented in \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{engine\-::\-C\-Movable}.
+
 
 
 Definition at line 78 of file C\-Collidable.\-cpp.

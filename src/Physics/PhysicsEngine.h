@@ -5,6 +5,7 @@
 #include "CMovable.h"
 
 #include <vector>
+#include <list>
 
 namespace engine
 {
@@ -25,8 +26,9 @@ namespace engine
 		std::vector<CMovable*> m_movables;
 
 		void n2_collision();
+		void applyMoveNormally(std::list<CMovable*>* list) const;
 
-		void resolve_move_collide(CMovable* m, CCollidable* c);
+		void resolve_collision(CMovable* m, float vel_x, float vel_y, CCollidable* c) const;
 	};
 
 } /* namespace engine */

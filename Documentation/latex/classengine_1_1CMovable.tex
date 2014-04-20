@@ -49,14 +49,64 @@ void \hyperlink{classengine_1_1CMovable_aba30b69bd14b16076f3d11c7b0471b83}{move\
 void \hyperlink{classengine_1_1CMovable_ad8f9971aa2d8c6a056d9ca04a2aba195}{move\-Top} (int d\-\_\-top)
 \item 
 void \hyperlink{classengine_1_1CMovable_a680b7faa861881cca82952f01d0fb20e}{move\-Position} (int d\-\_\-left, int d\-\_\-top)
+\item 
+void \hyperlink{classengine_1_1CMovable_aa9c441a7c6ea04959db6968f78dd9158}{get\-Velosity\-\_\-x} (float \&x) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a082d0f378616726256e96724c3009493}{get\-Velosity\-\_\-y} (float \&y) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a7fa5504cad44efed5da9cc2298bed93b}{get\-Velosity} (float \&x, float \&y) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a9f1674b45a63529f2cf1bcbfd65c1a28}{set\-Velosity\-\_\-x} (float x)
+\item 
+void \hyperlink{classengine_1_1CMovable_ac1ed31991776939ada3d50e551017ab4}{set\-Velosity\-\_\-y} (float y)
+\item 
+void \hyperlink{classengine_1_1CMovable_a5e7a42eb65b12035d2c6104f28f2f0fc}{set\-Velosity} (float x, float y)
+\item 
+void \hyperlink{classengine_1_1CMovable_a5774652cd5369fad6b08cf4de56f91c0}{get\-Is\-Side\-Blocked\-\_\-left} (bool \&left) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a7790f286b529e31de0226f72c574faef}{get\-Is\-Side\-Blocked\-\_\-right} (bool \&right) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a542748edb84d3e43bb479278c8b38e06}{get\-Is\-Side\-Blocked\-\_\-up} (bool \&up) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a85d5cf13541670517f1a49d57d49107a}{get\-Is\-Side\-Blocked\-\_\-down} (bool \&down) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a7252ea478abaab25c1774ccfd1f52554}{get\-Is\-Side\-Blocked} (\hyperlink{structengine_1_1SSideBlocked}{S\-Side\-Blocked} \&s) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_a19c9b69038fe22d0a08228b7eaed8c1b}{get\-Is\-Side\-Blocked} (bool \&left, bool \&right, bool \&up, bool \&down) const 
+\item 
+void \hyperlink{classengine_1_1CMovable_aa7f9177dee6821517c845f1d369f8cde}{set\-Is\-Side\-Blocked\-\_\-left} (bool left)
+\item 
+void \hyperlink{classengine_1_1CMovable_af1059fe2fbaf39598efe0a234d8cbc9e}{set\-Is\-Side\-Blocked\-\_\-right} (bool right)
+\item 
+void \hyperlink{classengine_1_1CMovable_a73ec50c7ed0037c4abe4aaa41ffe68d7}{set\-Is\-Side\-Blocked\-\_\-up} (bool up)
+\item 
+void \hyperlink{classengine_1_1CMovable_a454f67c854ad8f16c7251bc1011a2673}{set\-Is\-Side\-Blocked\-\_\-down} (bool down)
+\item 
+void \hyperlink{classengine_1_1CMovable_aafcffa645994fb19515bcb84cf083c9f}{set\-Is\-Side\-Blocked} (\hyperlink{structengine_1_1SSideBlocked}{S\-Side\-Blocked} s)
+\item 
+void \hyperlink{classengine_1_1CMovable_a61e5537f10e7ff0f111c1ad355f0f6ed}{set\-Is\-Side\-Blocked} (bool left, bool right, bool up, bool down)
+\item 
+void \hyperlink{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}{move\-\_\-normally} ()
+\begin{DoxyCompactList}\small\item\em Update position based on x and y velocities. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}{determine\-\_\-side\-Blocked} (\hyperlink{classengine_1_1CCollidable}{C\-Collidable} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Given the \hyperlink{classengine_1_1CCollidable}{C\-Collidable} object, does it block one of your sides? \end{DoxyCompactList}\item 
+virtual void \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{print} () const 
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classengine_1_1CMovable_a7bc34defa8ea4190a6c3011ef254e48b}{velosity\-\_\-x}
+\item 
+float \hyperlink{classengine_1_1CMovable_a7a1a4581926122ae31753261d1d35cf3}{velosity\-\_\-y}
+\item 
+struct \hyperlink{structengine_1_1SSideBlocked}{S\-Side\-Blocked} \hyperlink{classengine_1_1CMovable_afa7eb7bff0a1475aab175c9de7cd428a}{is\-Side\-Blocked}
+\begin{DoxyCompactList}\small\item\em Blocked == true. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 9 of file C\-Movable.\-h.
+Definition at line 19 of file C\-Movable.\-h.
 
 
 
@@ -70,7 +120,7 @@ Definition at line 9 of file C\-Movable.\-h.
 )}}\label{classengine_1_1CMovable_af28d9429a4bf12fc37fb807bb0ae9c05}
 
 
-Definition at line 7 of file C\-Movable.\-cpp.
+Definition at line 9 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a2a8adce4d82128afdde96d0c9eb724b7}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!$\sim$\-C\-Movable@{$\sim$\-C\-Movable}}
 \index{$\sim$\-C\-Movable@{$\sim$\-C\-Movable}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -81,11 +131,144 @@ Definition at line 7 of file C\-Movable.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_a2a8adce4d82128afdde96d0c9eb724b7}
 
 
-Definition at line 14 of file C\-Movable.\-cpp.
+Definition at line 19 of file C\-Movable.\-cpp.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!determine\-\_\-side\-Blocked@{determine\-\_\-side\-Blocked}}
+\index{determine\-\_\-side\-Blocked@{determine\-\_\-side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{determine\-\_\-side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::determine\-\_\-side\-Blocked (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Collidable} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}
+
+
+Given the \hyperlink{classengine_1_1CCollidable}{C\-Collidable} object, does it block one of your sides? 
+
+
+
+Definition at line 232 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a7252ea478abaab25c1774ccfd1f52554}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked@{get\-Is\-Side\-Blocked}}
+\index{get\-Is\-Side\-Blocked@{get\-Is\-Side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-Side\-Blocked} \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a7252ea478abaab25c1774ccfd1f52554}
+
+
+Definition at line 167 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a19c9b69038fe22d0a08228b7eaed8c1b}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked@{get\-Is\-Side\-Blocked}}
+\index{get\-Is\-Side\-Blocked@{get\-Is\-Side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{left, }
+\item[{bool \&}]{right, }
+\item[{bool \&}]{up, }
+\item[{bool \&}]{down}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a19c9b69038fe22d0a08228b7eaed8c1b}
+
+
+Definition at line 175 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a85d5cf13541670517f1a49d57d49107a}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked\-\_\-down@{get\-Is\-Side\-Blocked\-\_\-down}}
+\index{get\-Is\-Side\-Blocked\-\_\-down@{get\-Is\-Side\-Blocked\-\_\-down}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{down}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a85d5cf13541670517f1a49d57d49107a}
+
+
+Definition at line 161 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a5774652cd5369fad6b08cf4de56f91c0}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked\-\_\-left@{get\-Is\-Side\-Blocked\-\_\-left}}
+\index{get\-Is\-Side\-Blocked\-\_\-left@{get\-Is\-Side\-Blocked\-\_\-left}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked\-\_\-left (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{left}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a5774652cd5369fad6b08cf4de56f91c0}
+
+
+Definition at line 143 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a7790f286b529e31de0226f72c574faef}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked\-\_\-right@{get\-Is\-Side\-Blocked\-\_\-right}}
+\index{get\-Is\-Side\-Blocked\-\_\-right@{get\-Is\-Side\-Blocked\-\_\-right}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{right}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a7790f286b529e31de0226f72c574faef}
+
+
+Definition at line 149 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a542748edb84d3e43bb479278c8b38e06}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Is\-Side\-Blocked\-\_\-up@{get\-Is\-Side\-Blocked\-\_\-up}}
+\index{get\-Is\-Side\-Blocked\-\_\-up@{get\-Is\-Side\-Blocked\-\_\-up}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Is\-Side\-Blocked\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Is\-Side\-Blocked\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{up}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a542748edb84d3e43bb479278c8b38e06}
+
+
+Definition at line 155 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a7fa5504cad44efed5da9cc2298bed93b}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Velosity@{get\-Velosity}}
+\index{get\-Velosity@{get\-Velosity}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Velosity}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Velosity (
+\begin{DoxyParamCaption}
+\item[{float \&}]{x, }
+\item[{float \&}]{y}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a7fa5504cad44efed5da9cc2298bed93b}
+
+
+Definition at line 117 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_aa9c441a7c6ea04959db6968f78dd9158}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Velosity\-\_\-x@{get\-Velosity\-\_\-x}}
+\index{get\-Velosity\-\_\-x@{get\-Velosity\-\_\-x}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Velosity\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Velosity\-\_\-x (
+\begin{DoxyParamCaption}
+\item[{float \&}]{x}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_aa9c441a7c6ea04959db6968f78dd9158}
+
+
+Definition at line 105 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a082d0f378616726256e96724c3009493}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!get\-Velosity\-\_\-y@{get\-Velosity\-\_\-y}}
+\index{get\-Velosity\-\_\-y@{get\-Velosity\-\_\-y}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{get\-Velosity\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::get\-Velosity\-\_\-y (
+\begin{DoxyParamCaption}
+\item[{float \&}]{y}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CMovable_a082d0f378616726256e96724c3009493}
+
+
+Definition at line 111 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!move\-\_\-normally@{move\-\_\-normally}}
+\index{move\-\_\-normally@{move\-\_\-normally}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{move\-\_\-normally}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::move\-\_\-normally (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9c}
+
+
+Update position based on x and y velocities. 
+
+
+
+Definition at line 226 of file C\-Movable.\-cpp.
+
 \hypertarget{classengine_1_1CMovable_aba30b69bd14b16076f3d11c7b0471b83}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!move\-Left@{move\-Left}}
 \index{move\-Left@{move\-Left}!engine::CMovable@{engine\-::\-C\-Movable}}
 \subsubsection[{move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::move\-Left (
@@ -95,7 +278,7 @@ Definition at line 14 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_aba30b69bd14b16076f3d11c7b0471b83}
 
 
-Definition at line 71 of file C\-Movable.\-cpp.
+Definition at line 76 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a680b7faa861881cca82952f01d0fb20e}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!move\-Position@{move\-Position}}
 \index{move\-Position@{move\-Position}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -107,7 +290,7 @@ Definition at line 71 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_a680b7faa861881cca82952f01d0fb20e}
 
 
-Definition at line 93 of file C\-Movable.\-cpp.
+Definition at line 98 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_ad8f9971aa2d8c6a056d9ca04a2aba195}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!move\-Top@{move\-Top}}
 \index{move\-Top@{move\-Top}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -118,7 +301,22 @@ Definition at line 93 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_ad8f9971aa2d8c6a056d9ca04a2aba195}
 
 
-Definition at line 82 of file C\-Movable.\-cpp.
+Definition at line 87 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!print@{print}}
+\index{print@{print}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}
+
+
+Reimplemented from \hyperlink{classengine_1_1CCollidable_a94c0157c8fdd9fccbfe8cdd726da2473}{engine\-::\-C\-Collidable}.
+
+
+
+Definition at line 266 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a98ef52dedd948dc2cc6fd5cad92444c0}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-All@{set\-All}}
 \index{set\-All@{set\-All}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -132,7 +330,7 @@ Definition at line 82 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_a98ef52dedd948dc2cc6fd5cad92444c0}
 
 
-Definition at line 55 of file C\-Movable.\-cpp.
+Definition at line 60 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a6e78d43b1968931da9c91e4657502025}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Height@{set\-Height}}
 \index{set\-Height@{set\-Height}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -143,7 +341,76 @@ Definition at line 55 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_a6e78d43b1968931da9c91e4657502025}
 
 
-Definition at line 48 of file C\-Movable.\-cpp.
+Definition at line 53 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_aafcffa645994fb19515bcb84cf083c9f}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked@{set\-Is\-Side\-Blocked}}
+\index{set\-Is\-Side\-Blocked@{set\-Is\-Side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-Side\-Blocked}}]{s}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_aafcffa645994fb19515bcb84cf083c9f}
+
+
+Definition at line 208 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a61e5537f10e7ff0f111c1ad355f0f6ed}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked@{set\-Is\-Side\-Blocked}}
+\index{set\-Is\-Side\-Blocked@{set\-Is\-Side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked (
+\begin{DoxyParamCaption}
+\item[{bool}]{left, }
+\item[{bool}]{right, }
+\item[{bool}]{up, }
+\item[{bool}]{down}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a61e5537f10e7ff0f111c1ad355f0f6ed}
+
+
+Definition at line 217 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a454f67c854ad8f16c7251bc1011a2673}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked\-\_\-down@{set\-Is\-Side\-Blocked\-\_\-down}}
+\index{set\-Is\-Side\-Blocked\-\_\-down@{set\-Is\-Side\-Blocked\-\_\-down}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{bool}]{down}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a454f67c854ad8f16c7251bc1011a2673}
+
+
+Definition at line 202 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_aa7f9177dee6821517c845f1d369f8cde}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked\-\_\-left@{set\-Is\-Side\-Blocked\-\_\-left}}
+\index{set\-Is\-Side\-Blocked\-\_\-left@{set\-Is\-Side\-Blocked\-\_\-left}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked\-\_\-left (
+\begin{DoxyParamCaption}
+\item[{bool}]{left}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_aa7f9177dee6821517c845f1d369f8cde}
+
+
+Definition at line 184 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_af1059fe2fbaf39598efe0a234d8cbc9e}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked\-\_\-right@{set\-Is\-Side\-Blocked\-\_\-right}}
+\index{set\-Is\-Side\-Blocked\-\_\-right@{set\-Is\-Side\-Blocked\-\_\-right}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{bool}]{right}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_af1059fe2fbaf39598efe0a234d8cbc9e}
+
+
+Definition at line 190 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a73ec50c7ed0037c4abe4aaa41ffe68d7}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Is\-Side\-Blocked\-\_\-up@{set\-Is\-Side\-Blocked\-\_\-up}}
+\index{set\-Is\-Side\-Blocked\-\_\-up@{set\-Is\-Side\-Blocked\-\_\-up}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Is\-Side\-Blocked\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Is\-Side\-Blocked\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{bool}]{up}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a73ec50c7ed0037c4abe4aaa41ffe68d7}
+
+
+Definition at line 196 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_aa4b25f57e8b5613035463f28eaa4fc36}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Left@{set\-Left}}
 \index{set\-Left@{set\-Left}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -154,7 +421,7 @@ Definition at line 48 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_aa4b25f57e8b5613035463f28eaa4fc36}
 
 
-Definition at line 19 of file C\-Movable.\-cpp.
+Definition at line 24 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_ad6342adfc04b24120e5b19cf77fe44f5}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Position@{set\-Position}}
 \index{set\-Position@{set\-Position}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -166,7 +433,7 @@ Definition at line 19 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_ad6342adfc04b24120e5b19cf77fe44f5}
 
 
-Definition at line 64 of file C\-Movable.\-cpp.
+Definition at line 69 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a680ee306f10a10a79616e3483300edb0}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Top@{set\-Top}}
 \index{set\-Top@{set\-Top}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -177,7 +444,41 @@ Definition at line 64 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_a680ee306f10a10a79616e3483300edb0}
 
 
-Definition at line 30 of file C\-Movable.\-cpp.
+Definition at line 35 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a5e7a42eb65b12035d2c6104f28f2f0fc}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Velosity@{set\-Velosity}}
+\index{set\-Velosity@{set\-Velosity}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Velosity}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Velosity (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a5e7a42eb65b12035d2c6104f28f2f0fc}
+
+
+Definition at line 136 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_a9f1674b45a63529f2cf1bcbfd65c1a28}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Velosity\-\_\-x@{set\-Velosity\-\_\-x}}
+\index{set\-Velosity\-\_\-x@{set\-Velosity\-\_\-x}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Velosity\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Velosity\-\_\-x (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_a9f1674b45a63529f2cf1bcbfd65c1a28}
+
+
+Definition at line 124 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_ac1ed31991776939ada3d50e551017ab4}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Velosity\-\_\-y@{set\-Velosity\-\_\-y}}
+\index{set\-Velosity\-\_\-y@{set\-Velosity\-\_\-y}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{set\-Velosity\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::set\-Velosity\-\_\-y (
+\begin{DoxyParamCaption}
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CMovable_ac1ed31991776939ada3d50e551017ab4}
+
+
+Definition at line 130 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_af8a646f2cebafb3f1cec4934132e3128}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-Width@{set\-Width}}
 \index{set\-Width@{set\-Width}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -188,7 +489,35 @@ Definition at line 30 of file C\-Movable.\-cpp.
 )}}\label{classengine_1_1CMovable_af8a646f2cebafb3f1cec4934132e3128}
 
 
-Definition at line 41 of file C\-Movable.\-cpp.
+Definition at line 46 of file C\-Movable.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classengine_1_1CMovable_afa7eb7bff0a1475aab175c9de7cd428a}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!is\-Side\-Blocked@{is\-Side\-Blocked}}
+\index{is\-Side\-Blocked@{is\-Side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{is\-Side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf S\-Side\-Blocked} engine\-::\-C\-Movable\-::is\-Side\-Blocked\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CMovable_afa7eb7bff0a1475aab175c9de7cd428a}
+
+
+Blocked == true. 
+
+
+
+Definition at line 82 of file C\-Movable.\-h.
+
+\hypertarget{classengine_1_1CMovable_a7bc34defa8ea4190a6c3011ef254e48b}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!velosity\-\_\-x@{velosity\-\_\-x}}
+\index{velosity\-\_\-x@{velosity\-\_\-x}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{velosity\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}float engine\-::\-C\-Movable\-::velosity\-\_\-x\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CMovable_a7bc34defa8ea4190a6c3011ef254e48b}
+
+
+Definition at line 77 of file C\-Movable.\-h.
+
+\hypertarget{classengine_1_1CMovable_a7a1a4581926122ae31753261d1d35cf3}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!velosity\-\_\-y@{velosity\-\_\-y}}
+\index{velosity\-\_\-y@{velosity\-\_\-y}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{velosity\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}float engine\-::\-C\-Movable\-::velosity\-\_\-y\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CMovable_a7a1a4581926122ae31753261d1d35cf3}
+
+
+Definition at line 77 of file C\-Movable.\-h.
 
 
 

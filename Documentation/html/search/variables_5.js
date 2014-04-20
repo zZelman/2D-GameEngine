@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['right',['../structAUserInput_1_1SKeyStates.html#aa9551aac4a89e8c78e20d4a12a8afcee',1,'AUserInput::SKeyStates']]]
+  ['right',['right',['../structengine_1_1SSideBlocked.html#af6f555a50cd295e753bc57ba1fe98b7b',1,'engine::SSideBlocked']]]
 ];

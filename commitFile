@@ -1,5 +1,1 @@
-Significant progress has been made.
-* Rectangle Template finished
-* Collidable base class finished
-* Movable class finished
-* Framework for PhysicsEngine finished
+Moving objects now at rest know if they have something to their left/right/up/down

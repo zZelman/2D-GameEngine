@@ -77,10 +77,7 @@ namespace engine
 
 	void CCollidable::print() const
 	{
-		using namespace std;
-
-		cout << "(" << getLeft() << ", " << getTop() << ", "
-		     << getWidth() << ", " << getHeight() << ")" << endl;
+		m_aabb.print();
 	}
 
 
@@ -89,12 +86,18 @@ namespace engine
 		// general min/max variables for this and other
 		int this_max, this_min, other_max, other_min;
 
+		/**
+		 * Note: the equals to in the equalities means that being 1 pixel away
+		 * is not a collision, ie a ray-cast through it will not pass, but they are
+		 * not colliding
+		 */
+
 		// X axis testing
 		this_max = getLeft() + getWidth();
 		this_min = getLeft();
 		other_max = other_rect->getLeft() + other_rect->getWidth();
 		other_min = other_rect->getLeft();
-		if (this_max < other_min || this_min > other_max)
+		if (this_max <= other_min || this_min >= other_max)
 		{
 			return false;
 		}
@@ -104,15 +107,22 @@ namespace engine
 		this_min = getTop();
 		other_max = other_rect->getTop() + other_rect->getHeight();
 		other_min = other_rect->getTop();
-		if (this_max < other_min || this_min > other_max)
+		if (this_max <= other_min || this_min >= other_max)
 		{
 			return false;
 		}
+
+		// debug printing
+//		this->print();
+//		other_rect->print();
+//		std::cout << std::endl;
 
 		// No seperating axis found
 		// Therefore there is atleast one overlapping axis
 		return true;
 	}
+
+
 
 
 	void CCollidable::collision_active()

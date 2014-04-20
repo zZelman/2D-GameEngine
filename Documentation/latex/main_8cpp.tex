@@ -7,6 +7,7 @@
 {\ttfamily \#include \char`\"{}Game\-Element\-\_\-movable.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Game\-Element\-\_\-static.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Physics/\-Physics\-Engine.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
 Include dependency graph for main.\-cpp\-:
 \nopagebreak
 \begin{figure}[H]
@@ -41,9 +42,13 @@ sf\-::\-Render\-Window $\ast$ \hyperlink{main_8cpp_a09bf53be0697112e73cc7ceaca47
 \item 
 \hyperlink{classGameElement__movable}{Game\-Element\-\_\-movable} $\ast$ \hyperlink{main_8cpp_ab43805fb979ee1bdb9fa4ef8500736f5}{g\-\_\-element\-\_\-movable}
 \item 
-\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{main_8cpp_acb23cd68aed5278e47711f5b62734397}{g\-\_\-sprite\-\_\-static}
+\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{main_8cpp_abbed1748c9f2a6901a9debf45ae191cc}{g\-\_\-sprite\-\_\-static\-\_\-1}
 \item 
-\hyperlink{classGameElement__static}{Game\-Element\-\_\-static} $\ast$ \hyperlink{main_8cpp_aff6119240a4bf77d3a20abd24127b596}{g\-\_\-element\-\_\-static}
+\hyperlink{classGameElement__static}{Game\-Element\-\_\-static} $\ast$ \hyperlink{main_8cpp_a1b95b11fe21e3c5787fb328db42dd86e}{g\-\_\-element\-\_\-static\-\_\-1}
+\item 
+\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{main_8cpp_aa3a1c9e1462a6d8a6a72c181e2674dc3}{g\-\_\-sprite\-\_\-static\-\_\-2}
+\item 
+\hyperlink{classGameElement__static}{Game\-Element\-\_\-static} $\ast$ \hyperlink{main_8cpp_acbe43b4c6dd5f3bc2f7d8bf1aa72954d}{g\-\_\-element\-\_\-static\-\_\-2}
 \item 
 \hyperlink{classengine_1_1PhysicsEngine}{engine\-::\-Physics\-Engine} $\ast$ \hyperlink{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}{g\-\_\-physics\-Engine}
 \end{DoxyCompactItemize}
@@ -63,7 +68,7 @@ Delete unit testing objects.
 
 
 
-Definition at line 135 of file main.\-cpp.
+Definition at line 161 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a190163a6c0c635f4695f2fdd61d2cb8c}{\index{main.\-cpp@{main.\-cpp}!init\-\_\-elements@{init\-\_\-elements}}
 \index{init\-\_\-elements@{init\-\_\-elements}!main.cpp@{main.\-cpp}}
@@ -78,7 +83,7 @@ Init unit testing objects.
 
 
 
-Definition at line 110 of file main.\-cpp.
+Definition at line 131 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.\-cpp}}
@@ -94,7 +99,7 @@ Start of program.
 
 
 
-Definition at line 154 of file main.\-cpp.
+Definition at line 183 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a20e3a3051df36234b0ce05ffac0741ee}{\index{main.\-cpp@{main.\-cpp}!render\-\_\-elements@{render\-\_\-elements}}
 \index{render\-\_\-elements@{render\-\_\-elements}!main.cpp@{main.\-cpp}}
@@ -109,7 +114,7 @@ Simplistic rendering.
 
 
 
-Definition at line 97 of file main.\-cpp.
+Definition at line 117 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a6bbf2b1b4a5441f0205c3258bd661077}{\index{main.\-cpp@{main.\-cpp}!update\-\_\-elements@{update\-\_\-elements}}
 \index{update\-\_\-elements@{update\-\_\-elements}!main.cpp@{main.\-cpp}}
@@ -124,7 +129,7 @@ Simplistic updating.
 
 
 
-Definition at line 88 of file main.\-cpp.
+Definition at line 108 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a0a462ec35bf9c8a31ea7b4c653ab3f4c}{\index{main.\-cpp@{main.\-cpp}!window\-\_\-events@{window\-\_\-events}}
 \index{window\-\_\-events@{window\-\_\-events}!main.cpp@{main.\-cpp}}
@@ -139,7 +144,7 @@ Simplistic window event handling.
 
 
 
-Definition at line 22 of file main.\-cpp.
+Definition at line 26 of file main.\-cpp.
 
 
 
@@ -149,47 +154,61 @@ Definition at line 22 of file main.\-cpp.
 \subsubsection[{g\-\_\-element\-\_\-movable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-movable}$\ast$ g\-\_\-element\-\_\-movable}}\label{main_8cpp_ab43805fb979ee1bdb9fa4ef8500736f5}
 
 
-Definition at line 12 of file main.\-cpp.
+Definition at line 14 of file main.\-cpp.
 
-\hypertarget{main_8cpp_aff6119240a4bf77d3a20abd24127b596}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-element\-\_\-static@{g\-\_\-element\-\_\-static}}
-\index{g\-\_\-element\-\_\-static@{g\-\_\-element\-\_\-static}!main.cpp@{main.\-cpp}}
-\subsubsection[{g\-\_\-element\-\_\-static}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-static}$\ast$ g\-\_\-element\-\_\-static}}\label{main_8cpp_aff6119240a4bf77d3a20abd24127b596}
+\hypertarget{main_8cpp_a1b95b11fe21e3c5787fb328db42dd86e}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-element\-\_\-static\-\_\-1@{g\-\_\-element\-\_\-static\-\_\-1}}
+\index{g\-\_\-element\-\_\-static\-\_\-1@{g\-\_\-element\-\_\-static\-\_\-1}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-element\-\_\-static\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-static}$\ast$ g\-\_\-element\-\_\-static\-\_\-1}}\label{main_8cpp_a1b95b11fe21e3c5787fb328db42dd86e}
 
 
-Definition at line 15 of file main.\-cpp.
+Definition at line 17 of file main.\-cpp.
+
+\hypertarget{main_8cpp_acbe43b4c6dd5f3bc2f7d8bf1aa72954d}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-element\-\_\-static\-\_\-2@{g\-\_\-element\-\_\-static\-\_\-2}}
+\index{g\-\_\-element\-\_\-static\-\_\-2@{g\-\_\-element\-\_\-static\-\_\-2}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-element\-\_\-static\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Element\-\_\-static}$\ast$ g\-\_\-element\-\_\-static\-\_\-2}}\label{main_8cpp_acbe43b4c6dd5f3bc2f7d8bf1aa72954d}
+
+
+Definition at line 19 of file main.\-cpp.
 
 \hypertarget{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-physics\-Engine@{g\-\_\-physics\-Engine}}
 \index{g\-\_\-physics\-Engine@{g\-\_\-physics\-Engine}!main.cpp@{main.\-cpp}}
 \subsubsection[{g\-\_\-physics\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engine\-::\-Physics\-Engine}$\ast$ g\-\_\-physics\-Engine}}\label{main_8cpp_aee1bcd5912424a8845145c705c1e3e39}
 
 
-Definition at line 17 of file main.\-cpp.
+Definition at line 21 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a68ec2c6cb385b95c73463cbeeb11759d}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-movable@{g\-\_\-sprite\-\_\-movable}}
 \index{g\-\_\-sprite\-\_\-movable@{g\-\_\-sprite\-\_\-movable}!main.cpp@{main.\-cpp}}
 \subsubsection[{g\-\_\-sprite\-\_\-movable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-movable}}\label{main_8cpp_a68ec2c6cb385b95c73463cbeeb11759d}
 
 
-Definition at line 11 of file main.\-cpp.
+Definition at line 13 of file main.\-cpp.
 
-\hypertarget{main_8cpp_acb23cd68aed5278e47711f5b62734397}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-static@{g\-\_\-sprite\-\_\-static}}
-\index{g\-\_\-sprite\-\_\-static@{g\-\_\-sprite\-\_\-static}!main.cpp@{main.\-cpp}}
-\subsubsection[{g\-\_\-sprite\-\_\-static}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-static}}\label{main_8cpp_acb23cd68aed5278e47711f5b62734397}
+\hypertarget{main_8cpp_abbed1748c9f2a6901a9debf45ae191cc}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-static\-\_\-1@{g\-\_\-sprite\-\_\-static\-\_\-1}}
+\index{g\-\_\-sprite\-\_\-static\-\_\-1@{g\-\_\-sprite\-\_\-static\-\_\-1}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-sprite\-\_\-static\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-static\-\_\-1}}\label{main_8cpp_abbed1748c9f2a6901a9debf45ae191cc}
 
 
-Definition at line 14 of file main.\-cpp.
+Definition at line 16 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aa3a1c9e1462a6d8a6a72c181e2674dc3}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-sprite\-\_\-static\-\_\-2@{g\-\_\-sprite\-\_\-static\-\_\-2}}
+\index{g\-\_\-sprite\-\_\-static\-\_\-2@{g\-\_\-sprite\-\_\-static\-\_\-2}!main.cpp@{main.\-cpp}}
+\subsubsection[{g\-\_\-sprite\-\_\-static\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ g\-\_\-sprite\-\_\-static\-\_\-2}}\label{main_8cpp_aa3a1c9e1462a6d8a6a72c181e2674dc3}
+
+
+Definition at line 18 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a7e2879f22f371962a365e7c8d9f0699f}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-texture@{g\-\_\-texture}}
 \index{g\-\_\-texture@{g\-\_\-texture}!main.cpp@{main.\-cpp}}
 \subsubsection[{g\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Texture}$\ast$ g\-\_\-texture}}\label{main_8cpp_a7e2879f22f371962a365e7c8d9f0699f}
 
 
-Definition at line 9 of file main.\-cpp.
+Definition at line 11 of file main.\-cpp.
 
 \hypertarget{main_8cpp_a09bf53be0697112e73cc7ceaca479ef6}{\index{main.\-cpp@{main.\-cpp}!g\-\_\-window@{g\-\_\-window}}
 \index{g\-\_\-window@{g\-\_\-window}!main.cpp@{main.\-cpp}}
 \subsubsection[{g\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window$\ast$ g\-\_\-window}}\label{main_8cpp_a09bf53be0697112e73cc7ceaca479ef6}
 
 
-Definition at line 8 of file main.\-cpp.
+Definition at line 10 of file main.\-cpp.
 

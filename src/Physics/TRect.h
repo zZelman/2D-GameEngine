@@ -61,6 +61,8 @@ namespace engine
 		void moveTop(T d_top);
 		void movePosition(T d_left, T d_top);
 
+		void print() const;
+
 		// TODO changeWidth && changeHeight
 //		void changeWidth(T new_width);
 //		void changeHeight(T new_height);
@@ -236,31 +238,14 @@ namespace engine
 		moveTop(d_top);
 	}
 
-	// TODO changeWidth && changeHeight
-//	template<class T>
-//	inline void TRect<T>::changeWidth(T new_width) {
-//		float f_width = (float) width;
-//		float f_width_prime = (float) new_width;
-//
-//		// Wx=W'
-//		// x = W'/W
-//		float factor = f_width / f_width_prime;
-//
-//		width *= factor;
-//	}
-//
-//	template<class T>
-//	inline void TRect<T>::changeHeight(T new_height) {
-//		float f_height = (float) height;
-//		float f_height_prime = (float) new_height;
-//
-//		// Hx=H'
-//		// x = H'/H
-//		float factor = f_height / f_height_prime;
-//
-//		height *= factor;
-//	}
+	template<class T>
+	inline void TRect<T>::print() const
+	{
+		using namespace std;
 
+		cout << "pos:(" << getLeft() << ", " << getTop() << ", "
+		     << getWidth() << ", " << getHeight() << ") ";
+	}
 
 } /* namespace engine */
 

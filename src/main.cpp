@@ -5,14 +5,18 @@
 #include "GameElement_static.h"
 #include "Physics/PhysicsEngine.h"
 
+#include <iostream>
+
 sf::RenderWindow* g_window;
 CTexture* g_texture;
 
 CSprite* g_sprite_movable;
 GameElement_movable* g_element_movable;
 
-CSprite* g_sprite_static;
-GameElement_static* g_element_static;
+CSprite* g_sprite_static_1;
+GameElement_static* g_element_static_1;
+CSprite* g_sprite_static_2;
+GameElement_static* g_element_static_2;
 
 engine::PhysicsEngine* g_physicsEngine;
 
@@ -39,22 +43,38 @@ void window_events(bool& done)
 				g_window->close();
 				break;
 			case sf::Keyboard::W:
-				g_element_movable->moveTop(-5);
-				g_element_movable->print();
+				g_element_movable->setVelosity_y(-5);
 				break;
 			case sf::Keyboard::A:
-				g_element_movable->moveLeft(-5);
-				g_element_movable->print();
+				g_element_movable->setVelosity_x(-5);
 				break;
 			case sf::Keyboard::S:
-				g_element_movable->moveTop(5);
-				g_element_movable->print();
+				g_element_movable->setVelosity_y(5);
 				break;
 			case sf::Keyboard::D:
-				g_element_movable->moveLeft(5);
-				g_element_movable->print();
+				g_element_movable->setVelosity_x(5);
 				break;
 
+			default:
+				break;
+			}
+			break;
+
+		case sf::Event::KeyReleased:
+			switch (event.key.code)
+			{
+			case sf::Keyboard::W:
+				g_element_movable->setVelosity_y(0);
+				break;
+			case sf::Keyboard::A:
+				g_element_movable->setVelosity_x(0);
+				break;
+			case sf::Keyboard::S:
+				g_element_movable->setVelosity_y(0);
+				break;
+			case sf::Keyboard::D:
+				g_element_movable->setVelosity_x(0);
+				break;
 			default:
 				break;
 			}
@@ -98,7 +118,8 @@ void render_elements()
 {
 	g_window->clear(sf::Color::White);
 
-	g_element_static->render();
+	g_element_static_1->render();
+	g_element_static_2->render();
 	g_element_movable->render();
 
 	g_window->display();
@@ -111,20 +132,25 @@ void init_elements()
 {
 	g_window = new sf::RenderWindow(sf::VideoMode(800, 600), "My window");
 
-	g_texture = new CTexture("res/Players/arrow debug(32x32, 2x2).png",
+	g_texture = new CTexture("res/Players/letter debug(32x32, 2x2).png",
 	                         sf::Vector2<int>(32, 32),
 	                         sf::Vector2<int>(2, 2));
 
-	g_sprite_movable = new CSprite(g_texture, sf::Vector2<int>(1, 1));
+	g_sprite_movable = new CSprite(g_texture, sf::Vector2<int>(2, 1));
 	g_sprite_movable->setPosition(0, 0);
 	g_element_movable = new GameElement_movable(g_sprite_movable, g_window);
 
-	g_sprite_static = new CSprite(g_texture, sf::Vector2<int>(2, 1));
-	g_sprite_static->setPosition(60, 60);
-	g_element_static = new GameElement_static(g_sprite_static, g_window);
+	g_sprite_static_1 = new CSprite(g_texture, sf::Vector2<int>(1, 1));
+	g_sprite_static_1->setPosition(60, 60);
+	g_element_static_1 = new GameElement_static(g_sprite_static_1, g_window);
+
+	g_sprite_static_2 = new CSprite(g_texture, sf::Vector2<int>(1, 1));
+	g_sprite_static_2->setPosition(60 + 32, 60);
+	g_element_static_2 = new GameElement_static(g_sprite_static_2, g_window);
 
 	g_physicsEngine = new engine::PhysicsEngine();
-	g_physicsEngine->addCollidable(g_element_static);
+	g_physicsEngine->addCollidable(g_element_static_1);
+	g_physicsEngine->addCollidable(g_element_static_2);
 	g_physicsEngine->addMovable(g_element_movable);
 }
 
@@ -136,8 +162,11 @@ void delete_elements()
 {
 	delete g_physicsEngine;
 
-	delete g_element_static;
-	delete g_sprite_static;
+	delete g_element_static_2;
+	delete g_sprite_static_2;
+
+	delete g_element_static_1;
+	delete g_sprite_static_1;
 
 	delete g_element_movable;
 	delete g_sprite_movable;
