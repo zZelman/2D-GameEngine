@@ -6,6 +6,10 @@
 namespace engine
 {
 
+	// forward declare to prevent circular includes
+	class CMovable;
+	class CGravityBased;
+
 	/**
 	 * The base class for all physics objects.
 	 *
@@ -36,8 +40,8 @@ namespace engine
 		bool isCollision_vertical(const TRect<int>* other_rect) const;
 		bool isCollision(const TRect<int>* other_rect) const;
 
-		virtual void collision_active();
-		virtual void collision_passive();
+		virtual void collision_passive(CMovable* m);
+		virtual void collision_passive(CGravityBased* g);
 
 	protected:
 		/**

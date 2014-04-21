@@ -175,14 +175,17 @@ namespace engine
 	}
 
 
-
-	void CCollidable::collision_active()
+	void CCollidable::collision_passive(CMovable* m)
 	{
+		std::cout << "CCollidable::collision_passive(CMovable* m)"
+		          << std::endl;
 	}
 
 
-	void CCollidable::collision_passive()
+	void CCollidable::collision_passive(CGravityBased* g)
 	{
+		std::cout << "CCollidable::collision_passive(CGravityBased* g)"
+		          << std::endl;
 	}
 
 } /* namespace engine */

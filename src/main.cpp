@@ -47,16 +47,16 @@ void window_events(bool& done)
 				g_window->close();
 				break;
 			case sf::Keyboard::W:
-				g_element_movable->setVelosity_y(-5);
+				g_element_gravity->setVelosity_y(-5);
 				break;
 			case sf::Keyboard::A:
-				g_element_movable->setVelosity_x(-5);
+				g_element_gravity->setVelosity_x(-5);
 				break;
 			case sf::Keyboard::S:
-				g_element_movable->setVelosity_y(5);
+				g_element_gravity->setVelosity_y(5);
 				break;
 			case sf::Keyboard::D:
-				g_element_movable->setVelosity_x(5);
+				g_element_gravity->setVelosity_x(5);
 				break;
 
 			default:
@@ -68,16 +68,16 @@ void window_events(bool& done)
 			switch (event.key.code)
 			{
 			case sf::Keyboard::W:
-				g_element_movable->setVelosity_y(0);
+				g_element_gravity->setVelosity_y(0);
 				break;
 			case sf::Keyboard::A:
-				g_element_movable->setVelosity_x(0);
+				g_element_gravity->setVelosity_x(0);
 				break;
 			case sf::Keyboard::S:
-				g_element_movable->setVelosity_y(0);
+				g_element_gravity->setVelosity_y(0);
 				break;
 			case sf::Keyboard::D:
-				g_element_movable->setVelosity_x(0);
+				g_element_gravity->setVelosity_x(0);
 				break;
 			default:
 				break;
@@ -124,8 +124,8 @@ void render_elements()
 
 	g_element_static_1->render();
 	g_element_static_2->render();
-	g_element_movable->render();
-//	g_element_gravity->render();
+//	g_element_movable->render();
+	g_element_gravity->render();
 
 	g_window->display();
 }

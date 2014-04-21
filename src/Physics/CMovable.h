@@ -71,6 +71,10 @@ namespace engine
 		 */
 		void determine_sideBlocked(CCollidable* c);
 
+		virtual void collision_active(CCollidable* c);
+		virtual void collision_active(CMovable* m);
+		virtual void collision_active(CGravityBased* g);
+
 		virtual void print() const;
 
 	protected:

@@ -90,6 +90,12 @@ virtual void \hyperlink{classengine_1_1CMovable_a6184018afcab4be164c3b02228175a9
 \begin{DoxyCompactList}\small\item\em Update position based on x and y velocities. \end{DoxyCompactList}\item 
 void \hyperlink{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}{determine\-\_\-side\-Blocked} (\hyperlink{classengine_1_1CCollidable}{C\-Collidable} $\ast$c)
 \begin{DoxyCompactList}\small\item\em Given the \hyperlink{classengine_1_1CCollidable}{C\-Collidable} object, does it block one of your sides? \end{DoxyCompactList}\item 
+virtual void \hyperlink{classengine_1_1CMovable_a7ac299dcc08c6c783b2d77ec665041f4}{collision\-\_\-active} (\hyperlink{classengine_1_1CCollidable}{C\-Collidable} $\ast$c)
+\item 
+virtual void \hyperlink{classengine_1_1CMovable_ad04d949e3d7e2e182df9fbffae48ecd8}{collision\-\_\-active} (\hyperlink{classengine_1_1CMovable}{C\-Movable} $\ast$m)
+\item 
+virtual void \hyperlink{classengine_1_1CMovable_ae4173fad2cbd60a3929c42aee9916cb4}{collision\-\_\-active} (\hyperlink{classengine_1_1CGravityBased}{C\-Gravity\-Based} $\ast$g)
+\item 
 virtual void \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc9824eed9a}{print} () const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -136,6 +142,51 @@ Definition at line 19 of file C\-Movable.\-cpp.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CMovable_a7ac299dcc08c6c783b2d77ec665041f4}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Collidable} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_a7ac299dcc08c6c783b2d77ec665041f4}
+
+
+Reimplemented in \hyperlink{classengine_1_1CGravityBased_aedf5cefc210d802cd219366b30ced9f8}{engine\-::\-C\-Gravity\-Based}.
+
+
+
+Definition at line 267 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_ad04d949e3d7e2e182df9fbffae48ecd8}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Movable} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_ad04d949e3d7e2e182df9fbffae48ecd8}
+
+
+Reimplemented in \hyperlink{classengine_1_1CGravityBased_a47f5f1081f356b4941401e0648a2a3f9}{engine\-::\-C\-Gravity\-Based}.
+
+
+
+Definition at line 274 of file C\-Movable.\-cpp.
+
+\hypertarget{classengine_1_1CMovable_ae4173fad2cbd60a3929c42aee9916cb4}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CMovable@{engine\-::\-C\-Movable}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Gravity\-Based} $\ast$}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CMovable_ae4173fad2cbd60a3929c42aee9916cb4}
+
+
+Reimplemented in \hyperlink{classengine_1_1CGravityBased_ac04bb2389041ba872a22cd575ae52dd6}{engine\-::\-C\-Gravity\-Based}.
+
+
+
+Definition at line 281 of file C\-Movable.\-cpp.
+
 \hypertarget{classengine_1_1CMovable_a9643f34424f25ec389cb784c84988f14}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!determine\-\_\-side\-Blocked@{determine\-\_\-side\-Blocked}}
 \index{determine\-\_\-side\-Blocked@{determine\-\_\-side\-Blocked}!engine::CMovable@{engine\-::\-C\-Movable}}
 \subsubsection[{determine\-\_\-side\-Blocked}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Movable\-::determine\-\_\-side\-Blocked (
@@ -320,7 +371,7 @@ Reimplemented in \hyperlink{classengine_1_1CGravityBased_a1fd898d6529eeb9bb8651d
 
 
 
-Definition at line 266 of file C\-Movable.\-cpp.
+Definition at line 288 of file C\-Movable.\-cpp.
 
 \hypertarget{classengine_1_1CMovable_a98ef52dedd948dc2cc6fd5cad92444c0}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!set\-All@{set\-All}}
 \index{set\-All@{set\-All}!engine::CMovable@{engine\-::\-C\-Movable}}
@@ -507,21 +558,21 @@ Blocked == true.
 
 
 
-Definition at line 82 of file C\-Movable.\-h.
+Definition at line 86 of file C\-Movable.\-h.
 
 \hypertarget{classengine_1_1CMovable_a7bc34defa8ea4190a6c3011ef254e48b}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!velosity\-\_\-x@{velosity\-\_\-x}}
 \index{velosity\-\_\-x@{velosity\-\_\-x}!engine::CMovable@{engine\-::\-C\-Movable}}
 \subsubsection[{velosity\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}float engine\-::\-C\-Movable\-::velosity\-\_\-x\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CMovable_a7bc34defa8ea4190a6c3011ef254e48b}
 
 
-Definition at line 77 of file C\-Movable.\-h.
+Definition at line 81 of file C\-Movable.\-h.
 
 \hypertarget{classengine_1_1CMovable_a7a1a4581926122ae31753261d1d35cf3}{\index{engine\-::\-C\-Movable@{engine\-::\-C\-Movable}!velosity\-\_\-y@{velosity\-\_\-y}}
 \index{velosity\-\_\-y@{velosity\-\_\-y}!engine::CMovable@{engine\-::\-C\-Movable}}
 \subsubsection[{velosity\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}float engine\-::\-C\-Movable\-::velosity\-\_\-y\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CMovable_a7a1a4581926122ae31753261d1d35cf3}
 
 
-Definition at line 77 of file C\-Movable.\-h.
+Definition at line 81 of file C\-Movable.\-h.
 
 
 

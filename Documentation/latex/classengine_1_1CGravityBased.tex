@@ -44,6 +44,12 @@ bool \hyperlink{classengine_1_1CGravityBased_aafff7dd45619ea9a948b266e364de4d8}{
 \item 
 void \hyperlink{classengine_1_1CGravityBased_aaaa791268b4c455f6137a3319473bf3c}{set\-Falling} (bool \hyperlink{classengine_1_1CGravityBased_aafff7dd45619ea9a948b266e364de4d8}{is\-Falling})
 \item 
+virtual void \hyperlink{classengine_1_1CGravityBased_aedf5cefc210d802cd219366b30ced9f8}{collision\-\_\-active} (\hyperlink{classengine_1_1CCollidable}{C\-Collidable} $\ast$c)
+\item 
+virtual void \hyperlink{classengine_1_1CGravityBased_a47f5f1081f356b4941401e0648a2a3f9}{collision\-\_\-active} (\hyperlink{classengine_1_1CMovable}{C\-Movable} $\ast$m)
+\item 
+virtual void \hyperlink{classengine_1_1CGravityBased_ac04bb2389041ba872a22cd575ae52dd6}{collision\-\_\-active} (\hyperlink{classengine_1_1CGravityBased}{C\-Gravity\-Based} $\ast$g)
+\item 
 virtual void \hyperlink{classengine_1_1CGravityBased_a1fd898d6529eeb9bb8651d7d9bcdb89c}{print} () const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -88,6 +94,51 @@ Definition at line 17 of file C\-Gravity\-Based.\-cpp.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CGravityBased_aedf5cefc210d802cd219366b30ced9f8}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Gravity\-Based\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Collidable} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CGravityBased_aedf5cefc210d802cd219366b30ced9f8}
+
+
+Reimplemented from \hyperlink{classengine_1_1CMovable_a7ac299dcc08c6c783b2d77ec665041f4}{engine\-::\-C\-Movable}.
+
+
+
+Definition at line 62 of file C\-Gravity\-Based.\-cpp.
+
+\hypertarget{classengine_1_1CGravityBased_a47f5f1081f356b4941401e0648a2a3f9}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Gravity\-Based\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Movable} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CGravityBased_a47f5f1081f356b4941401e0648a2a3f9}
+
+
+Reimplemented from \hyperlink{classengine_1_1CMovable_ad04d949e3d7e2e182df9fbffae48ecd8}{engine\-::\-C\-Movable}.
+
+
+
+Definition at line 69 of file C\-Gravity\-Based.\-cpp.
+
+\hypertarget{classengine_1_1CGravityBased_ac04bb2389041ba872a22cd575ae52dd6}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!collision\-\_\-active@{collision\-\_\-active}}
+\index{collision\-\_\-active@{collision\-\_\-active}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
+\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Gravity\-Based\-::collision\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Gravity\-Based} $\ast$}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CGravityBased_ac04bb2389041ba872a22cd575ae52dd6}
+
+
+Reimplemented from \hyperlink{classengine_1_1CMovable_ae4173fad2cbd60a3929c42aee9916cb4}{engine\-::\-C\-Movable}.
+
+
+
+Definition at line 76 of file C\-Gravity\-Based.\-cpp.
+
 \hypertarget{classengine_1_1CGravityBased_ae8168fa3497abc6a1a6fd06124b751e5}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!get\-Microseconds@{get\-Microseconds}}
 \index{get\-Microseconds@{get\-Microseconds}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
 \subsubsection[{get\-Microseconds}]{\setlength{\rightskip}{0pt plus 5cm}int64\-\_\-t engine\-::\-C\-Gravity\-Based\-::get\-Microseconds (
@@ -145,7 +196,7 @@ Reimplemented from \hyperlink{classengine_1_1CMovable_a18299a0373464c4e1aadcdc98
 
 
 
-Definition at line 63 of file C\-Gravity\-Based.\-cpp.
+Definition at line 83 of file C\-Gravity\-Based.\-cpp.
 
 \hypertarget{classengine_1_1CGravityBased_a43969612f1a106a54fd225e88bb6dd73}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!restart\-Gravity\-Clock@{restart\-Gravity\-Clock}}
 \index{restart\-Gravity\-Clock@{restart\-Gravity\-Clock}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
@@ -177,14 +228,14 @@ Definition at line 52 of file C\-Gravity\-Based.\-cpp.
 \subsubsection[{m\-\_\-falling}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Gravity\-Based\-::m\-\_\-falling\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CGravityBased_a25ea6b058b1c266b9307434bd0446828}
 
 
-Definition at line 30 of file C\-Gravity\-Based.\-h.
+Definition at line 34 of file C\-Gravity\-Based.\-h.
 
 \hypertarget{classengine_1_1CGravityBased_a124ef300a1b855b6b508bdfede4fca39}{\index{engine\-::\-C\-Gravity\-Based@{engine\-::\-C\-Gravity\-Based}!m\-\_\-gravity\-Timer@{m\-\_\-gravity\-Timer}}
 \index{m\-\_\-gravity\-Timer@{m\-\_\-gravity\-Timer}!engine::CGravityBased@{engine\-::\-C\-Gravity\-Based}}
 \subsubsection[{m\-\_\-gravity\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Clock engine\-::\-C\-Gravity\-Based\-::m\-\_\-gravity\-Timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CGravityBased_a124ef300a1b855b6b508bdfede4fca39}
 
 
-Definition at line 29 of file C\-Gravity\-Based.\-h.
+Definition at line 33 of file C\-Gravity\-Based.\-h.
 
 
 

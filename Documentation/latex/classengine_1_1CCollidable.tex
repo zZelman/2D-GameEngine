@@ -22,8 +22,7 @@ Inheritance diagram for engine\-:\-:C\-Collidable\-:
 \end{figure}
 
 
-Collaboration diagram for engine\-:\-:C\-Collidable\-:
-\nopagebreak
+Collaboration diagram for engine\-:\-:C\-Collidable\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -63,9 +62,9 @@ bool \hyperlink{classengine_1_1CCollidable_a6257421db6a378f596fdacd037188f34}{is
 \item 
 bool \hyperlink{classengine_1_1CCollidable_afd5adee0a4b0a4f18ff2bdcda656c632}{is\-Collision} (const \hyperlink{classengine_1_1TRect}{T\-Rect}$<$ int $>$ $\ast$other\-\_\-rect) const 
 \item 
-virtual void \hyperlink{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}{collision\-\_\-active} ()
+virtual void \hyperlink{classengine_1_1CCollidable_a9ffb8b1a1fcd9818f9b6140bf00d7e26}{collision\-\_\-passive} (\hyperlink{classengine_1_1CMovable}{C\-Movable} $\ast$m)
 \item 
-virtual void \hyperlink{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{collision\-\_\-passive} ()
+virtual void \hyperlink{classengine_1_1CCollidable_aca2e7d122088f07696079141c93724f3}{collision\-\_\-passive} (\hyperlink{classengine_1_1CGravityBased}{C\-Gravity\-Based} $\ast$g)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -79,7 +78,7 @@ The base class for all physics objects.
 
 Objects who inherit from this can collide with other \hyperlink{classengine_1_1CCollidable}{C\-Collidable} objects 
 
-Definition at line 14 of file C\-Collidable.\-h.
+Definition at line 18 of file C\-Collidable.\-h.
 
 
 
@@ -120,27 +119,27 @@ Definition at line 21 of file C\-Collidable.\-cpp.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-active@{collision\-\_\-active}}
-\index{collision\-\_\-active@{collision\-\_\-active}!engine::CCollidable@{engine\-::\-C\-Collidable}}
-\subsubsection[{collision\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::collision\-\_\-active (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_abab887e8665ec79c153461eea5b7ea31}
-
-
-Definition at line 179 of file C\-Collidable.\-cpp.
-
-\hypertarget{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
+\hypertarget{classengine_1_1CCollidable_a9ffb8b1a1fcd9818f9b6140bf00d7e26}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
 \index{collision\-\_\-passive@{collision\-\_\-passive}!engine::CCollidable@{engine\-::\-C\-Collidable}}
 \subsubsection[{collision\-\_\-passive}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::collision\-\_\-passive (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf C\-Movable} $\ast$}]{m}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a610b5f5c85eeeee7e73d55a9c064353c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_a9ffb8b1a1fcd9818f9b6140bf00d7e26}
 
 
-Definition at line 184 of file C\-Collidable.\-cpp.
+Definition at line 178 of file C\-Collidable.\-cpp.
+
+\hypertarget{classengine_1_1CCollidable_aca2e7d122088f07696079141c93724f3}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!collision\-\_\-passive@{collision\-\_\-passive}}
+\index{collision\-\_\-passive@{collision\-\_\-passive}!engine::CCollidable@{engine\-::\-C\-Collidable}}
+\subsubsection[{collision\-\_\-passive}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Collidable\-::collision\-\_\-passive (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Gravity\-Based} $\ast$}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CCollidable_aca2e7d122088f07696079141c93724f3}
+
+
+Definition at line 185 of file C\-Collidable.\-cpp.
 
 \hypertarget{classengine_1_1CCollidable_a0945e8a00846ff20ecdd86102afe04aa}{\index{engine\-::\-C\-Collidable@{engine\-::\-C\-Collidable}!get\-All@{get\-All}}
 \index{get\-All@{get\-All}!engine::CCollidable@{engine\-::\-C\-Collidable}}
@@ -299,7 +298,7 @@ Axis Aligned Bounding Box (A\-A\-B\-B), the thing that is the defined region of 
 
 
 
-Definition at line 47 of file C\-Collidable.\-h.
+Definition at line 51 of file C\-Collidable.\-h.
 
 
 

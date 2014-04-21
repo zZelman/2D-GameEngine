@@ -101,14 +101,14 @@ Inheritance diagram for engine::CGravityBased:</div>
 <div class="dyncontent">
 <div class="center"><img src="classengine_1_1CGravityBased__inherit__graph.png" border="0" usemap="#engine_1_1CGravityBased_inherit__map" alt="Inheritance graph"/></div>
 <map name="engine_1_1CGravityBased_inherit__map" id="engine_1_1CGravityBased_inherit__map">
-<area shape="rect" id="node4" href="classGameElement__gravity.html" title="{GameElement_gravity\n||+ GameElement_gravity()\l+ render()\l}" alt="" coords="5,838,176,930"/><area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l# isSideBlocked\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 22 more...\l}" alt="" coords="27,277,153,531"/><area shape="rect" id="node3" href="classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="23,5,157,229"/></map>
+<area shape="rect" id="node4" href="classGameElement__gravity.html" title="{GameElement_gravity\n||+ GameElement_gravity()\l+ render()\l}" alt="" coords="5,881,176,973"/><area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l# isSideBlocked\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 25 more...\l}" alt="" coords="27,277,153,531"/><area shape="rect" id="node3" href="classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="23,5,157,229"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for engine::CGravityBased:</div>
 <div class="dyncontent">
 <div class="center"><img src="classengine_1_1CGravityBased__coll__graph.png" border="0" usemap="#engine_1_1CGravityBased_coll__map" alt="Collaboration graph"/></div>
 <map name="engine_1_1CGravityBased_coll__map" id="engine_1_1CGravityBased_coll__map">
-<area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 22 more...\l}" alt="" coords="137,582,263,821"/><area shape="rect" id="node3" href="classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="9,293,143,517"/><area shape="rect" id="node4" href="classengine_1_1TRect.html" title="{engine::TRect\&lt; int \&gt;\n||+ TRect()\l+ TRect()\l+ TRect()\l+ TRect()\l+ operator=()\l+ getLeft()\l+ getTop()\l+ getWidth()\l+ getHeight()\l+ getAll()\land 14 more...\l}" alt="" coords="5,5,147,229"/><area shape="rect" id="node5" href="structengine_1_1SSideBlocked.html" title="A plane&#45;old&#45;data&#45;structure to tell whether the directions are &quot;physically&quot; blocked for movement..." alt="" coords="167,345,317,466"/></map>
+<area shape="rect" id="node2" href="classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 25 more...\l}" alt="" coords="137,582,263,821"/><area shape="rect" id="node3" href="classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="9,293,143,517"/><area shape="rect" id="node4" href="classengine_1_1TRect.html" title="{engine::TRect\&lt; int \&gt;\n||+ TRect()\l+ TRect()\l+ TRect()\l+ TRect()\l+ operator=()\l+ getLeft()\l+ getTop()\l+ getWidth()\l+ getHeight()\l+ getAll()\land 14 more...\l}" alt="" coords="5,5,147,229"/><area shape="rect" id="node5" href="structengine_1_1SSideBlocked.html" title="A plane&#45;old&#45;data&#45;structure to tell whether the directions are &quot;physically&quot; blocked for movement..." alt="" coords="167,345,317,466"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -129,6 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafff7dd45619ea9a948b266e364de4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa791268b4c455f6137a3319473bf3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CGravityBased.html#aaaa791268b4c455f6137a3319473bf3c">setFalling</a> (bool <a class="el" href="classengine_1_1CGravityBased.html#aafff7dd45619ea9a948b266e364de4d8">isFalling</a>)</td></tr>
 <tr class="separator:aaaa791268b4c455f6137a3319473bf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf5cefc210d802cd219366b30ced9f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CGravityBased.html#aedf5cefc210d802cd219366b30ced9f8">collision_active</a> (<a class="el" href="classengine_1_1CCollidable.html">CCollidable</a> *c)</td></tr>
+<tr class="separator:aedf5cefc210d802cd219366b30ced9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f5f1081f356b4941401e0648a2a3f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CGravityBased.html#a47f5f1081f356b4941401e0648a2a3f9">collision_active</a> (<a class="el" href="classengine_1_1CMovable.html">CMovable</a> *m)</td></tr>
+<tr class="separator:a47f5f1081f356b4941401e0648a2a3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04bb2389041ba872a22cd575ae52dd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CGravityBased.html#ac04bb2389041ba872a22cd575ae52dd6">collision_active</a> (<a class="el" href="classengine_1_1CGravityBased.html">CGravityBased</a> *g)</td></tr>
+<tr class="separator:ac04bb2389041ba872a22cd575ae52dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd898d6529eeb9bb8651d7d9bcdb89c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CGravityBased.html#a1fd898d6529eeb9bb8651d7d9bcdb89c">print</a> () const </td></tr>
 <tr class="separator:a1fd898d6529eeb9bb8651d7d9bcdb89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classengine_1_1CMovable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classengine_1_1CMovable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classengine_1_1CMovable.html">engine::CMovable</a></td></tr>
@@ -226,10 +232,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6257421db6a378f596fdacd037188f34 inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5adee0a4b0a4f18ff2bdcda656c632 inherit pub_methods_classengine_1_1CCollidable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">isCollision</a> (const <a class="el" href="classengine_1_1TRect.html">TRect</a>&lt; int &gt; *other_rect) const </td></tr>
 <tr class="separator:afd5adee0a4b0a4f18ff2bdcda656c632 inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab887e8665ec79c153461eea5b7ea31 inherit pub_methods_classengine_1_1CCollidable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CCollidable.html#abab887e8665ec79c153461eea5b7ea31">collision_active</a> ()</td></tr>
-<tr class="separator:abab887e8665ec79c153461eea5b7ea31 inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610b5f5c85eeeee7e73d55a9c064353c inherit pub_methods_classengine_1_1CCollidable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CCollidable.html#a610b5f5c85eeeee7e73d55a9c064353c">collision_passive</a> ()</td></tr>
-<tr class="separator:a610b5f5c85eeeee7e73d55a9c064353c inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffb8b1a1fcd9818f9b6140bf00d7e26 inherit pub_methods_classengine_1_1CCollidable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CCollidable.html#a9ffb8b1a1fcd9818f9b6140bf00d7e26">collision_passive</a> (<a class="el" href="classengine_1_1CMovable.html">CMovable</a> *m)</td></tr>
+<tr class="separator:a9ffb8b1a1fcd9818f9b6140bf00d7e26 inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2e7d122088f07696079141c93724f3 inherit pub_methods_classengine_1_1CCollidable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1CCollidable.html#aca2e7d122088f07696079141c93724f3">collision_passive</a> (<a class="el" href="classengine_1_1CGravityBased.html">CGravityBased</a> *g)</td></tr>
+<tr class="separator:aca2e7d122088f07696079141c93724f3 inherit pub_methods_classengine_1_1CCollidable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -298,6 +304,90 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aedf5cefc210d802cd219366b30ced9f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::CGravityBased::collision_active </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1CCollidable.html">CCollidable</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classengine_1_1CMovable.html#a7ac299dcc08c6c783b2d77ec665041f4">engine::CMovable</a>.</p>
+
+<p>Definition at line <a class="el" href="CGravityBased_8cpp_source.html#l00062">62</a> of file <a class="el" href="CGravityBased_8cpp_source.html">CGravityBased.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47f5f1081f356b4941401e0648a2a3f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::CGravityBased::collision_active </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1CMovable.html">CMovable</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classengine_1_1CMovable.html#ad04d949e3d7e2e182df9fbffae48ecd8">engine::CMovable</a>.</p>
+
+<p>Definition at line <a class="el" href="CGravityBased_8cpp_source.html#l00069">69</a> of file <a class="el" href="CGravityBased_8cpp_source.html">CGravityBased.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac04bb2389041ba872a22cd575ae52dd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::CGravityBased::collision_active </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1CGravityBased.html">CGravityBased</a> *&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classengine_1_1CMovable.html#ae4173fad2cbd60a3929c42aee9916cb4">engine::CMovable</a>.</p>
+
+<p>Definition at line <a class="el" href="CGravityBased_8cpp_source.html#l00076">76</a> of file <a class="el" href="CGravityBased_8cpp_source.html">CGravityBased.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae8168fa3497abc6a1a6fd06124b751e5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +479,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classengine_1_1CMovable.html#a18299a0373464c4e1aadcdc9824eed9a">engine::CMovable</a>.</p>
 
-<p>Definition at line <a class="el" href="CGravityBased_8cpp_source.html#l00063">63</a> of file <a class="el" href="CGravityBased_8cpp_source.html">CGravityBased.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CGravityBased_8cpp_source.html#l00083">83</a> of file <a class="el" href="CGravityBased_8cpp_source.html">CGravityBased.cpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +537,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CGravityBased_8h_source.html#l00030">30</a> of file <a class="el" href="CGravityBased_8h_source.html">CGravityBased.h</a>.</p>
+<p>Definition at line <a class="el" href="CGravityBased_8h_source.html#l00034">34</a> of file <a class="el" href="CGravityBased_8h_source.html">CGravityBased.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +559,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CGravityBased_8h_source.html#l00029">29</a> of file <a class="el" href="CGravityBased_8h_source.html">CGravityBased.h</a>.</p>
+<p>Definition at line <a class="el" href="CGravityBased_8h_source.html#l00033">33</a> of file <a class="el" href="CGravityBased_8h_source.html">CGravityBased.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +570,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 20 2014 17:00:18 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 21 2014 01:41:50 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

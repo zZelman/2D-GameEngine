@@ -1,9 +1,3 @@
-Physics very close to being finished.
-Completed Tasks
-* Collision:  Movable      -> Collidable
-* Resolution: Movable      -> Collidable
-* Collision:  GravityBased -> Collidable
-* Resolution: GravityBased -> Collidable
-* Objects can now slide along Collidables without sticking
-* Cleaned up code
-* Separated code into functions
+Objects are now notified when they are:
+* Being hit (passive collision)
+* The one doing the hitting (active collision)

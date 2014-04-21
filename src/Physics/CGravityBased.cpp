@@ -59,6 +59,26 @@ namespace engine
 		m_falling = isFalling;
 	}
 
+	void CGravityBased::collision_active(CCollidable* c)
+	{
+		std::cout << "CGravityBased::collision_active(CCollidable* c)"
+		          << std::endl;
+	}
+
+
+	void CGravityBased::collision_active(CMovable* m)
+	{
+		std::cout << "CGravityBased::collision_active(CMovable* m)"
+		          << std::endl;
+	}
+
+
+	void CGravityBased::collision_active(CGravityBased* g)
+	{
+		std::cout << "CGravityBased::collision_active(CGravityBased* g)"
+		          << std::endl;
+	}
+
 
 	void CGravityBased::print() const
 	{

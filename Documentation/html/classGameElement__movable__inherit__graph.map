@@ -1,4 +1,4 @@
 <map id="GameElement_movable" name="GameElement_movable">
-<area shape="rect" id="node2" href="$classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l# isSideBlocked\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 22 more...\l}" alt="" coords="33,277,159,531"/>
+<area shape="rect" id="node2" href="$classengine_1_1CMovable.html" title="{engine::CMovable\n|# velosity_x\l# velosity_y\l# isSideBlocked\l|+ CMovable()\l+ ~CMovable()\l+ setLeft()\l+ setTop()\l+ setWidth()\l+ setHeight()\l+ setAll()\l+ setPosition()\l+ moveLeft()\l+ moveTop()\land 25 more...\l}" alt="" coords="33,277,159,531"/>
 <area shape="rect" id="node3" href="$classengine_1_1CCollidable.html" title="The base class for all physics objects. " alt="" coords="29,5,163,229"/>
 </map>

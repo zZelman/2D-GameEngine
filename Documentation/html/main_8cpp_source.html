@@ -134,16 +134,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <a class="code" href="main_8cpp.html#a09bf53be0697112e73cc7ceaca479ef6">g_window</a>-&gt;close();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::W:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(-5);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(-5);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::A:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(-5);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(-5);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::S:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(5);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(5);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::D:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(5);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(5);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">default</span>:</div>
@@ -155,16 +155,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">switch</span> (event.key.code)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::W:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(0);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(0);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::A:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(0);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::S:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(0);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#ac1ed31991776939ada3d50e551017ab4">setVelosity_y</a>(0);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">case</span> sf::Keyboard::D:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                g_element_movable-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(0);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                g_element_gravity-&gt;<a class="code" href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">setVelosity_x</a>(0);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">break</span>;</div>
@@ -205,8 +205,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    g_element_static_1-&gt;<a class="code" href="classGameElement__static.html#aa5fe0d840d4f306ac38c8e55cfc7616f">render</a>();</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    g_element_static_2-&gt;<a class="code" href="classGameElement__static.html#aa5fe0d840d4f306ac38c8e55cfc7616f">render</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    g_element_movable-&gt;<a class="code" href="classGameElement__movable.html#a503e47a89c65d149529a3af6dc1064a1">render</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//  g_element_gravity-&gt;render();</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//  g_element_movable-&gt;render();</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    g_element_gravity-&gt;<a class="code" href="classGameElement__gravity.html#a78dcd87b6096dbd621a7707cdef26550">render</a>();</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="main_8cpp.html#a09bf53be0697112e73cc7ceaca479ef6">g_window</a>-&gt;display();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
@@ -305,7 +305,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1PhysicsEngine_html_a609b1b5b818d7865c9b20abfe07e26e8"><div class="ttname"><a href="classengine_1_1PhysicsEngine.html#a609b1b5b818d7865c9b20abfe07e26e8">engine::PhysicsEngine::addCollidable</a></div><div class="ttdeci">void addCollidable(CCollidable *c)</div><div class="ttdef"><b>Definition:</b> <a href="PhysicsEngine_8cpp_source.html#l00019">PhysicsEngine.cpp:19</a></div></div>
 <div class="ttc" id="classengine_1_1PhysicsEngine_html_a9bad0bea60bde295662e6768ac08e2a9"><div class="ttname"><a href="classengine_1_1PhysicsEngine.html#a9bad0bea60bde295662e6768ac08e2a9">engine::PhysicsEngine::addGravityBased</a></div><div class="ttdeci">void addGravityBased(CGravityBased *g)</div><div class="ttdef"><b>Definition:</b> <a href="PhysicsEngine_8cpp_source.html#l00031">PhysicsEngine.cpp:31</a></div></div>
 <div class="ttc" id="main_8cpp_html_a7e2879f22f371962a365e7c8d9f0699f"><div class="ttname"><a href="main_8cpp.html#a7e2879f22f371962a365e7c8d9f0699f">g_texture</a></div><div class="ttdeci">CTexture * g_texture</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00012">main.cpp:12</a></div></div>
-<div class="ttc" id="classGameElement__movable_html_a503e47a89c65d149529a3af6dc1064a1"><div class="ttname"><a href="classGameElement__movable.html#a503e47a89c65d149529a3af6dc1064a1">GameElement_movable::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8cpp_source.html#l00010">GameElement_movable.cpp:10</a></div></div>
 <div class="ttc" id="main_8cpp_html_ab43805fb979ee1bdb9fa4ef8500736f5"><div class="ttname"><a href="main_8cpp.html#ab43805fb979ee1bdb9fa4ef8500736f5">g_element_movable</a></div><div class="ttdeci">GameElement_movable * g_element_movable</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00018">main.cpp:18</a></div></div>
 <div class="ttc" id="classGameElement__static_html_aa5fe0d840d4f306ac38c8e55cfc7616f"><div class="ttname"><a href="classGameElement__static.html#aa5fe0d840d4f306ac38c8e55cfc7616f">GameElement_static::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__static_8cpp_source.html#l00011">GameElement_static.cpp:11</a></div></div>
 <div class="ttc" id="main_8cpp_html_a6bbf2b1b4a5441f0205c3258bd661077"><div class="ttname"><a href="main_8cpp.html#a6bbf2b1b4a5441f0205c3258bd661077">update_elements</a></div><div class="ttdeci">void update_elements()</div><div class="ttdoc">Simplistic updating. </div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00112">main.cpp:112</a></div></div>
@@ -314,6 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCTexture_html"><div class="ttname"><a href="classCTexture.html">CTexture</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Texture. </div><div class="ttdef"><b>Definition:</b> <a href="CTexture_8h_source.html#l00009">CTexture.h:9</a></div></div>
 <div class="ttc" id="include__sfml_8h_html"><div class="ttname"><a href="include__sfml_8h.html">include_sfml.h</a></div></div>
 <div class="ttc" id="main_8cpp_html_a0a462ec35bf9c8a31ea7b4c653ab3f4c"><div class="ttname"><a href="main_8cpp.html#a0a462ec35bf9c8a31ea7b4c653ab3f4c">window_events</a></div><div class="ttdeci">void window_events(bool &amp;done)</div><div class="ttdoc">Simplistic window event handling. </div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00030">main.cpp:30</a></div></div>
+<div class="ttc" id="classGameElement__gravity_html_a78dcd87b6096dbd621a7707cdef26550"><div class="ttname"><a href="classGameElement__gravity.html#a78dcd87b6096dbd621a7707cdef26550">GameElement_gravity::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__gravity_8cpp_source.html#l00010">GameElement_gravity.cpp:10</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html_a9f1674b45a63529f2cf1bcbfd65c1a28"><div class="ttname"><a href="classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28">engine::CMovable::setVelosity_x</a></div><div class="ttdeci">void setVelosity_x(float x)</div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8cpp_source.html#l00124">CMovable.cpp:124</a></div></div>
 <div class="ttc" id="CTexture_8h_html"><div class="ttname"><a href="CTexture_8h.html">CTexture.h</a></div></div>
 <div class="ttc" id="main_8cpp_html_acbe43b4c6dd5f3bc2f7d8bf1aa72954d"><div class="ttname"><a href="main_8cpp.html#acbe43b4c6dd5f3bc2f7d8bf1aa72954d">g_element_static_2</a></div><div class="ttdeci">GameElement_static * g_element_static_2</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00023">main.cpp:23</a></div></div>
@@ -332,7 +332,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 20 2014 17:00:18 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 21 2014 01:41:50 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

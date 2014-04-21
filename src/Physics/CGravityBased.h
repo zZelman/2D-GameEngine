@@ -23,6 +23,10 @@ namespace engine
 		bool isFalling() const;
 		void setFalling(bool isFalling);
 
+		virtual void collision_active(CCollidable* c);
+		virtual void collision_active(CMovable* m);
+		virtual void collision_active(CGravityBased* g);
+
 		virtual void print() const;
 
 	protected:

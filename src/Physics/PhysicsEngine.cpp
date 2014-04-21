@@ -88,14 +88,6 @@ namespace engine
 				pM->determine_sideBlocked(pC);
 			}
 
-			pM->print();
-			// if a block is found, then the respective velocity will be set to 0
-			// before collision detection
-			pM->getVelosity(vel_x, vel_y);
-			fix_blockedVelosities<CMovable>(pM, vel_x, vel_y);
-			pM->print();
-			std::cout << std::endl;
-
 
 			//////////////////////////////////////////////////
 			//
@@ -121,14 +113,32 @@ namespace engine
 				{
 					hasCollided = true;
 
+					// if a block is found, then the respective velocity will be set to 0
+					// before collision detection
+					fix_blockedVelosities<CMovable>(pM, vel_x, vel_y);
+
+					// Velocities might have changed
+					pM->getVelosity(vel_x, vel_y);
 					resolve_collision_horizontal<CMovable, CCollidable>(pM, vel_x, pC);
+
+					pC->collision_passive(pM);
+					pM->collision_active(pC);
 				}
 
 				if (pC->isCollision(&moving_vertical))
 				{
 					hasCollided = true;
 
+					// if a block is found, then the respective velocity will be set to 0
+					// before collision detection
+					fix_blockedVelosities<CMovable>(pM, vel_x, vel_y);
+
+					// Velocities might have changed
+					pM->getVelosity(vel_x, vel_y);
 					resolve_collision_vertical<CMovable, CCollidable>(pM, vel_y, pC);
+
+					pC->collision_passive(pM);
+					pM->collision_active(pC);
 				}
 			}
 
@@ -174,11 +184,6 @@ namespace engine
 				pG->determine_sideBlocked(pC);
 			}
 
-			// if a block is found, then the respective velocity will be set to 0
-			// before collision detection
-			pG->getVelosity(vel_x, vel_y);
-			fix_blockedVelosities<CGravityBased>(pG, vel_x, vel_y);
-
 			// since this is a gravity based object, it needs to know whether or
 			// not it is falling, which is saying if blocked
 			// down == true, falling == false
@@ -222,14 +227,32 @@ namespace engine
 				{
 					hasCollided = true;
 
+					// if a block is found, then the respective velocity will be set to 0
+					// before collision detection
+					fix_blockedVelosities<CGravityBased>(pG, vel_x, vel_y);
+
+					// Velocities may have changed
+					pG->getVelosity(vel_x, vel_y);
 					resolve_collision_horizontal<CGravityBased, CCollidable>(pG, vel_x, pC);
+
+					pC->collision_passive(pG);
+					pG->collision_active(pC);
 				}
 
 				if (pC->isCollision(&moving_vertical))
 				{
 					hasCollided = true;
 
+					// if a block is found, then the respective velocity will be set to 0
+					// before collision detection
+					fix_blockedVelosities<CGravityBased>(pG, vel_x, vel_y);
+
+					// Velocities may have changed
+					pG->getVelosity(vel_x, vel_y);
 					resolve_collision_vertical<CGravityBased, CCollidable>(pG, vel_y, pC);
+
+					pC->collision_passive(pG);
+					pG->collision_active(pC);
 				}
 			}
 

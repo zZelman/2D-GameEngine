@@ -263,6 +263,28 @@ namespace engine
 		}
 	}
 
+
+	void CMovable::collision_active(CCollidable* c)
+	{
+		std::cout << "CMoveable::collision_active(CCollidable* c)"
+		          << std::endl;
+	}
+
+
+	void CMovable::collision_active(CMovable* m)
+	{
+		std::cout << "CMoveable::collision_active(CMovable* m)"
+		          << std::endl;
+	}
+
+
+	void CMovable::collision_active(CGravityBased* g)
+	{
+		std::cout << "CMoveable::collision_active(CGravityBased* g)"
+		          << std::endl;
+	}
+
+
 	void CMovable::print() const
 	{
 //		CCollidable::print();
