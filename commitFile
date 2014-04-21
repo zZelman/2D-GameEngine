@@ -1,3 +1,1 @@
-Objects are now notified when they are:
-* Being hit (passive collision)
-* The one doing the hitting (active collision)
+Changed README to show that this is my GitHub for an interview
