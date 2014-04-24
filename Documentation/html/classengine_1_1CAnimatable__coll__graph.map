@@ -1,0 +1,4 @@
+<map id="engine::CAnimatable" name="engine::CAnimatable">
+<area shape="rect" id="node2" href="$classengine_1_1CRenderable.html" title="{engine::CRenderable\n|# m_zorder\l|+ CRenderable()\l+ ~CRenderable()\l+ getSprite()\l+ getZOrder()\l+ update_render()\l+ print()\l}" alt="" coords="31,350,175,501"/>
+<area shape="rect" id="node3" href="$classengine_1_1CSprite.html" title="Wrapper class for SFML 2.1 Sprite. " alt="" coords="43,134,161,285"/>
+</map>

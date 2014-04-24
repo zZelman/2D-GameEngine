@@ -94,17 +94,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &quot;<a class="el" href="include__sfml_8h_source.html">include_sfml.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="CTexture_8h_source.html">Graphic/CTexture.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="CSprite_8h_source.html">Graphic/CSprite.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="RenderEngine_8h_source.html">Graphic/RenderEngine.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="PhysicsEngine_8h_source.html">Physics/PhysicsEngine.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="GameElement__movable_8h_source.html">GameElement_movable.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="GameElement__static_8h_source.html">GameElement_static.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="GameElement__gravity_8h_source.html">GameElement_gravity.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="PhysicsEngine_8h_source.html">Physics/PhysicsEngine.h</a>&quot;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#_2home_2zZelman_2Dropbox_22D-GameEngine_2src_2main_8cpp" alt=""/></div>
 <map name="_2home_2zZelman_2Dropbox_22D-GameEngine_2src_2main_8cpp" id="_2home_2zZelman_2Dropbox_22D-GameEngine_2src_2main_8cpp">
-<area shape="rect" id="node2" href="include__sfml_8h.html" title="include_sfml.h" alt="" coords="189,619,296,645"/><area shape="rect" id="node6" href="CTexture_8h.html" title="Graphic/CTexture.h" alt="" coords="69,544,205,571"/><area shape="rect" id="node7" href="CSprite_8h.html" title="Graphic/CSprite.h" alt="" coords="142,469,268,496"/><area shape="rect" id="node8" href="GameElement__movable_8h.html" title="GameElement_movable.h" alt="" coords="145,171,316,197"/><area shape="rect" id="node14" href="GameElement__static_8h.html" title="GameElement_static.h" alt="" coords="243,245,397,272"/><area shape="rect" id="node15" href="GameElement__gravity_8h.html" title="GameElement_gravity.h" alt="" coords="621,96,784,123"/><area shape="rect" id="node18" href="PhysicsEngine_8h.html" title="Physics/PhysicsEngine.h" alt="" coords="415,96,585,123"/><area shape="rect" id="node9" href="CMovable_8h.html" title="Physics/CMovable.h" alt="" coords="422,245,564,272"/><area shape="rect" id="node10" href="CCollidable_8h.html" title="CCollidable.h" alt="" coords="415,320,515,347"/><area shape="rect" id="node11" href="TRect_8h.html" title="TRect.h" alt="" coords="373,395,443,421"/><area shape="rect" id="node16" href="CGravityBased_8h.html" title="Physics/CGravityBased.h" alt="" coords="640,171,813,197"/></map>
+<area shape="rect" id="node2" href="include__sfml_8h.html" title="include_sfml.h" alt="" coords="383,619,489,645"/><area shape="rect" id="node6" href="CTexture_8h.html" title="Graphic/CTexture.h" alt="" coords="227,544,363,571"/><area shape="rect" id="node7" href="CSprite_8h.html" title="Graphic/CSprite.h" alt="" coords="231,469,357,496"/><area shape="rect" id="node8" href="RenderEngine_8h.html" title="Graphic/RenderEngine.h" alt="" coords="391,171,555,197"/><area shape="rect" id="node11" href="PhysicsEngine_8h.html" title="Physics/PhysicsEngine.h" alt="" coords="609,96,780,123"/><area shape="rect" id="node20" href="GameElement__movable_8h.html" title="GameElement_movable.h" alt="" coords="195,171,367,197"/><area shape="rect" id="node21" href="GameElement__static_8h.html" title="GameElement_static.h" alt="" coords="808,96,963,123"/><area shape="rect" id="node22" href="GameElement__gravity_8h.html" title="GameElement_gravity.h" alt="" coords="164,96,327,123"/><area shape="rect" id="node9" href="CRenderable_8h.html" title="CRenderable.h" alt="" coords="319,245,428,272"/><area shape="rect" id="node12" href="CCollidable_8h.html" title="CCollidable.h" alt="" coords="811,320,911,347"/><area shape="rect" id="node16" href="CMovable_8h.html" title="CMovable.h" alt="" coords="773,245,864,272"/><area shape="rect" id="node17" href="CGravityBased_8h.html" title="CGravityBased.h" alt="" coords="631,171,753,197"/><area shape="rect" id="node13" href="TRect_8h.html" title="Engine/TRect.h" alt="" coords="793,395,905,421"/></map>
 </div>
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -134,26 +135,28 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a09bf53be0697112e73cc7ceaca479ef6"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a09bf53be0697112e73cc7ceaca479ef6">g_window</a></td></tr>
 <tr class="separator:a09bf53be0697112e73cc7ceaca479ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2879f22f371962a365e7c8d9f0699f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCTexture.html">CTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7e2879f22f371962a365e7c8d9f0699f">g_texture</a></td></tr>
-<tr class="separator:a7e2879f22f371962a365e7c8d9f0699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddd0e2d8ec7c23fade35a436f94d540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSprite.html">CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4ddd0e2d8ec7c23fade35a436f94d540">g_sprite_gravity</a></td></tr>
-<tr class="separator:a4ddd0e2d8ec7c23fade35a436f94d540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38708401a3e6ff41db3577a3da21a478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__gravity.html">GameElement_gravity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a38708401a3e6ff41db3577a3da21a478">g_element_gravity</a></td></tr>
-<tr class="separator:a38708401a3e6ff41db3577a3da21a478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ec2c6cb385b95c73463cbeeb11759d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSprite.html">CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a68ec2c6cb385b95c73463cbeeb11759d">g_sprite_movable</a></td></tr>
-<tr class="separator:a68ec2c6cb385b95c73463cbeeb11759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab43805fb979ee1bdb9fa4ef8500736f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__movable.html">GameElement_movable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab43805fb979ee1bdb9fa4ef8500736f5">g_element_movable</a></td></tr>
-<tr class="separator:ab43805fb979ee1bdb9fa4ef8500736f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbed1748c9f2a6901a9debf45ae191cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSprite.html">CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abbed1748c9f2a6901a9debf45ae191cc">g_sprite_static_1</a></td></tr>
-<tr class="separator:abbed1748c9f2a6901a9debf45ae191cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b95b11fe21e3c5787fb328db42dd86e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__static.html">GameElement_static</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1b95b11fe21e3c5787fb328db42dd86e">g_element_static_1</a></td></tr>
-<tr class="separator:a1b95b11fe21e3c5787fb328db42dd86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a1c9e1462a6d8a6a72c181e2674dc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCSprite.html">CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa3a1c9e1462a6d8a6a72c181e2674dc3">g_sprite_static_2</a></td></tr>
-<tr class="separator:aa3a1c9e1462a6d8a6a72c181e2674dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe43b4c6dd5f3bc2f7d8bf1aa72954d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__static.html">GameElement_static</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#acbe43b4c6dd5f3bc2f7d8bf1aa72954d">g_element_static_2</a></td></tr>
-<tr class="separator:acbe43b4c6dd5f3bc2f7d8bf1aa72954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d175075050d88c0c75b5f4b49afc40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1CTexture.html">engine::CTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac8d175075050d88c0c75b5f4b49afc40">g_texture</a></td></tr>
+<tr class="separator:ac8d175075050d88c0c75b5f4b49afc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab02671fe029dc841e85badad7e57ee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aab02671fe029dc841e85badad7e57ee4">g_sprite_g</a></td></tr>
+<tr class="separator:aab02671fe029dc841e85badad7e57ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0f2d6a04fcf8b8db39b84dde9af6a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__gravity.html">GameElement_gravity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aad0f2d6a04fcf8b8db39b84dde9af6a2">g_element_g</a></td></tr>
+<tr class="separator:aad0f2d6a04fcf8b8db39b84dde9af6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0bef3e1f4eb717e6b3b6d950508c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abd0bef3e1f4eb717e6b3b6d950508c27">g_sprite_m</a></td></tr>
+<tr class="separator:abd0bef3e1f4eb717e6b3b6d950508c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d1a31abe847963ab3bd132aaac6684"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__movable.html">GameElement_movable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a74d1a31abe847963ab3bd132aaac6684">g_element_m_r</a></td></tr>
+<tr class="separator:a74d1a31abe847963ab3bd132aaac6684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01ec57ba73be93763a2abd53b93e1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac01ec57ba73be93763a2abd53b93e1ef">g_sprite_s_1</a></td></tr>
+<tr class="separator:ac01ec57ba73be93763a2abd53b93e1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411b26f7b7e91d42bee3b69cead62d6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__static.html">GameElement_static</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a411b26f7b7e91d42bee3b69cead62d6f">g_element_s_1</a></td></tr>
+<tr class="separator:a411b26f7b7e91d42bee3b69cead62d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d01b2b911496dd4112b245432a6659f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4d01b2b911496dd4112b245432a6659f">g_sprite_s_2</a></td></tr>
+<tr class="separator:a4d01b2b911496dd4112b245432a6659f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd49973a64629084db2019f451baebe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameElement__static.html">GameElement_static</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afd49973a64629084db2019f451baebe1">g_element_s_2</a></td></tr>
+<tr class="separator:afd49973a64629084db2019f451baebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee1bcd5912424a8845145c705c1e3e39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1PhysicsEngine.html">engine::PhysicsEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aee1bcd5912424a8845145c705c1e3e39">g_physicsEngine</a></td></tr>
 <tr class="separator:aee1bcd5912424a8845145c705c1e3e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d89089feca665b2a42243a73d015cc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1RenderEngine.html">engine::RenderEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2d89089feca665b2a42243a73d015cc8">g_renderEngine</a></td></tr>
+<tr class="separator:a2d89089feca665b2a42243a73d015cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a4e306517e52618c9e9ba61f2beae2f94"></a>
@@ -171,7 +174,7 @@ Variables</h2></td></tr>
 
 <p>Delete unit testing objects. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00178">178</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00188">188</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +193,7 @@ Variables</h2></td></tr>
 
 <p>Init unit testing objects. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00136">136</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00142">142</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +223,7 @@ Variables</h2></td></tr>
 
 <p>Start of program. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00203">203</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00215">215</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +242,7 @@ Variables</h2></td></tr>
 
 <p>Simplistic rendering. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00121">121</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00127">127</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +261,7 @@ Variables</h2></td></tr>
 
 <p>Simplistic updating. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00112">112</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00118">118</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -278,64 +281,64 @@ Variables</h2></td></tr>
 
 <p>Simplistic window event handling. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00030">30</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00036">36</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a38708401a3e6ff41db3577a3da21a478"></a>
+<a class="anchor" id="aad0f2d6a04fcf8b8db39b84dde9af6a2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGameElement__gravity.html">GameElement_gravity</a>* g_element_gravity</td>
+          <td class="memname"><a class="el" href="classGameElement__gravity.html">GameElement_gravity</a>* g_element_g</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00015">15</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00019">19</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab43805fb979ee1bdb9fa4ef8500736f5"></a>
+<a class="anchor" id="a74d1a31abe847963ab3bd132aaac6684"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGameElement__movable.html">GameElement_movable</a>* g_element_movable</td>
+          <td class="memname"><a class="el" href="classGameElement__movable.html">GameElement_movable</a>* g_element_m_r</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00018">18</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00022">22</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1b95b11fe21e3c5787fb328db42dd86e"></a>
+<a class="anchor" id="a411b26f7b7e91d42bee3b69cead62d6f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGameElement__static.html">GameElement_static</a>* g_element_static_1</td>
+          <td class="memname"><a class="el" href="classGameElement__static.html">GameElement_static</a>* g_element_s_1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00021">21</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00025">25</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acbe43b4c6dd5f3bc2f7d8bf1aa72954d"></a>
+<a class="anchor" id="afd49973a64629084db2019f451baebe1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGameElement__static.html">GameElement_static</a>* g_element_static_2</td>
+          <td class="memname"><a class="el" href="classGameElement__static.html">GameElement_static</a>* g_element_s_2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00023">23</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00027">27</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,77 +352,91 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00025">25</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00029">29</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4ddd0e2d8ec7c23fade35a436f94d540"></a>
+<a class="anchor" id="a2d89089feca665b2a42243a73d015cc8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCSprite.html">CSprite</a>* g_sprite_gravity</td>
+          <td class="memname"><a class="el" href="classengine_1_1RenderEngine.html">engine::RenderEngine</a>* g_renderEngine</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00014">14</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00031">31</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a68ec2c6cb385b95c73463cbeeb11759d"></a>
+<a class="anchor" id="aab02671fe029dc841e85badad7e57ee4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCSprite.html">CSprite</a>* g_sprite_movable</td>
+          <td class="memname"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a>* g_sprite_g</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00017">17</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00018">18</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abbed1748c9f2a6901a9debf45ae191cc"></a>
+<a class="anchor" id="abd0bef3e1f4eb717e6b3b6d950508c27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCSprite.html">CSprite</a>* g_sprite_static_1</td>
+          <td class="memname"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a>* g_sprite_m</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00020">20</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00021">21</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa3a1c9e1462a6d8a6a72c181e2674dc3"></a>
+<a class="anchor" id="ac01ec57ba73be93763a2abd53b93e1ef"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCSprite.html">CSprite</a>* g_sprite_static_2</td>
+          <td class="memname"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a>* g_sprite_s_1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00022">22</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00024">24</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7e2879f22f371962a365e7c8d9f0699f"></a>
+<a class="anchor" id="a4d01b2b911496dd4112b245432a6659f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCTexture.html">CTexture</a>* g_texture</td>
+          <td class="memname"><a class="el" href="classengine_1_1CSprite.html">engine::CSprite</a>* g_sprite_s_2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00012">12</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00026">26</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8d175075050d88c0c75b5f4b49afc40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classengine_1_1CTexture.html">engine::CTexture</a>* g_texture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00016">16</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -433,14 +450,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00011">11</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00015">15</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 21 2014 13:45:26 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 24 2014 14:21:56 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

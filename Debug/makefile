@@ -8,8 +8,10 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/Physics/subdir.mk
--include src/Graphic/subdir.mk
+-include src/Physics/Objects/subdir.mk
+-include src/Physics/Engine/subdir.mk
+-include src/Graphic/Objects/subdir.mk
+-include src/Graphic/Engine/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk

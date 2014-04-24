@@ -1,0 +1,111 @@
+\hypertarget{classengine_1_1RenderEngine}{\section{engine\-:\-:Render\-Engine Class Reference}
+\label{classengine_1_1RenderEngine}\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}}
+}
+
+
+{\ttfamily \#include $<$Render\-Engine.\-h$>$}
+
+
+
+Collaboration diagram for engine\-:\-:Render\-Engine\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classengine_1_1RenderEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1RenderEngine_ae6eaf0ab728602a3838dd6dd9e06e2ee}{Render\-Engine} (sf\-::\-Render\-Window $\ast$window)
+\item 
+virtual \hyperlink{classengine_1_1RenderEngine_af78293a4b6b5bd7e809a17a443f5407a}{$\sim$\-Render\-Engine} ()
+\item 
+void \hyperlink{classengine_1_1RenderEngine_aa6c7a5b4eb7ed8a4b275a82e5dd7d7ed}{add\-Renderable} (\hyperlink{classengine_1_1CRenderable}{C\-Renderable} $\ast$r)
+\item 
+void \hyperlink{classengine_1_1RenderEngine_addfadce287630bbabd19ef9c93bd624f}{render} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classengine_1_1RenderEngine_aac0f80d083d1197c7a15d940b04bf557}{compare} (const \hyperlink{classengine_1_1CRenderable}{C\-Renderable} $\ast$lhs, const \hyperlink{classengine_1_1CRenderable}{C\-Renderable} $\ast$rhs)
+\begin{DoxyCompactList}\small\item\em Used in sorting of the renderable objects based on their zorder value before rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Render\-Engine.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1RenderEngine_ae6eaf0ab728602a3838dd6dd9e06e2ee}{\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}!Render\-Engine@{Render\-Engine}}
+\index{Render\-Engine@{Render\-Engine}!engine::RenderEngine@{engine\-::\-Render\-Engine}}
+\subsubsection[{Render\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-Render\-Engine\-::\-Render\-Engine (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1RenderEngine_ae6eaf0ab728602a3838dd6dd9e06e2ee}
+
+
+Definition at line 9 of file Render\-Engine.\-cpp.
+
+\hypertarget{classengine_1_1RenderEngine_af78293a4b6b5bd7e809a17a443f5407a}{\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}!$\sim$\-Render\-Engine@{$\sim$\-Render\-Engine}}
+\index{$\sim$\-Render\-Engine@{$\sim$\-Render\-Engine}!engine::RenderEngine@{engine\-::\-Render\-Engine}}
+\subsubsection[{$\sim$\-Render\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-Render\-Engine\-::$\sim$\-Render\-Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1RenderEngine_af78293a4b6b5bd7e809a17a443f5407a}
+
+
+Definition at line 17 of file Render\-Engine.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1RenderEngine_aa6c7a5b4eb7ed8a4b275a82e5dd7d7ed}{\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}!add\-Renderable@{add\-Renderable}}
+\index{add\-Renderable@{add\-Renderable}!engine::RenderEngine@{engine\-::\-Render\-Engine}}
+\subsubsection[{add\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-Render\-Engine\-::add\-Renderable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Renderable} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1RenderEngine_aa6c7a5b4eb7ed8a4b275a82e5dd7d7ed}
+
+
+Definition at line 22 of file Render\-Engine.\-cpp.
+
+\hypertarget{classengine_1_1RenderEngine_aac0f80d083d1197c7a15d940b04bf557}{\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}!compare@{compare}}
+\index{compare@{compare}!engine::RenderEngine@{engine\-::\-Render\-Engine}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-Render\-Engine\-::compare (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Renderable} $\ast$}]{lhs, }
+\item[{const {\bf C\-Renderable} $\ast$}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classengine_1_1RenderEngine_aac0f80d083d1197c7a15d940b04bf557}
+
+
+Used in sorting of the renderable objects based on their zorder value before rendering. 
+
+
+
+Definition at line 58 of file Render\-Engine.\-cpp.
+
+\hypertarget{classengine_1_1RenderEngine_addfadce287630bbabd19ef9c93bd624f}{\index{engine\-::\-Render\-Engine@{engine\-::\-Render\-Engine}!render@{render}}
+\index{render@{render}!engine::RenderEngine@{engine\-::\-Render\-Engine}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-Render\-Engine\-::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1RenderEngine_addfadce287630bbabd19ef9c93bd624f}
+
+
+Definition at line 30 of file Render\-Engine.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\hyperlink{RenderEngine_8h}{Render\-Engine.\-h}\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\-Engine/\hyperlink{RenderEngine_8cpp}{Render\-Engine.\-cpp}\end{DoxyCompactItemize}

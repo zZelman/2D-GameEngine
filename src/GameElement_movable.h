@@ -4,16 +4,12 @@
 #include "Physics/CMovable.h"
 
 #include "Graphic/CSprite.h"
+#include "Graphic/CRenderable.h"
 
-class GameElement_movable: public engine::CMovable
+class GameElement_movable: public engine::CMovable, public engine::CRenderable
 {
 public:
-	GameElement_movable(CSprite* sprite, sf::RenderWindow* window);
-
-	void render();
-private:
-	sf::RenderWindow* m_pWindow;
-	CSprite* m_pSprite;
+	GameElement_movable(engine::CSprite* sprite, int zorder);
 };
 
 #endif /* GAMEELEMENT_MOVEABLE_H_ */

@@ -94,37 +94,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../include_sfml.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CTexture_8h.html">CTexture.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classCSprite.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCSprite.html">CSprite</a> : <span class="keyword">public</span> sf::Sprite</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classCSprite.html#afdfe7ac25b872dbafd60e6329185b0c5">CSprite</a>(<a class="code" href="classCTexture.html">CTexture</a>* pTexture,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">const</span> sf::Vector2&lt;int&gt;&amp; currSub);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCSprite.html#a274146d807d98947cff67621e783d31d">~CSprite</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classCSprite.html#afdfe7ac25b872dbafd60e6329185b0c5">CSprite</a>(<span class="keyword">const</span> <a class="code" href="classCSprite.html">CSprite</a>&amp; other);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCSprite.html#a2162a3b87f87eecf9e9b93fe4c573690">setSubImage</a>(<span class="keywordtype">int</span> col, <span class="keywordtype">int</span> row);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCSprite.html#a2162a3b87f87eecf9e9b93fe4c573690">setSubImage</a>(<span class="keyword">const</span> sf::Vector2&lt;int&gt;* newSub);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classCTexture.html">CTexture</a>* m_pTexture;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sf::Vector2&lt;int&gt; m_currSub;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> chooseSubImage();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CSPRITE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="classCSprite_html_a2162a3b87f87eecf9e9b93fe4c573690"><div class="ttname"><a href="classCSprite.html#a2162a3b87f87eecf9e9b93fe4c573690">CSprite::setSubImage</a></div><div class="ttdeci">void setSubImage(int col, int row)</div><div class="ttdoc">sets the current sub image being rendered from the texture </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00033">CSprite.cpp:33</a></div></div>
-<div class="ttc" id="classCSprite_html_a274146d807d98947cff67621e783d31d"><div class="ttname"><a href="classCSprite.html#a274146d807d98947cff67621e783d31d">CSprite::~CSprite</a></div><div class="ttdeci">~CSprite()</div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00019">CSprite.cpp:19</a></div></div>
-<div class="ttc" id="classCSprite_html"><div class="ttname"><a href="classCSprite.html">CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00010">CSprite.h:10</a></div></div>
-<div class="ttc" id="classCSprite_html_afdfe7ac25b872dbafd60e6329185b0c5"><div class="ttname"><a href="classCSprite.html#afdfe7ac25b872dbafd60e6329185b0c5">CSprite::CSprite</a></div><div class="ttdeci">CSprite(CTexture *pTexture, const sf::Vector2&lt; int &gt; &amp;currSub)</div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00006">CSprite.cpp:6</a></div></div>
-<div class="ttc" id="classCTexture_html"><div class="ttname"><a href="classCTexture.html">CTexture</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Texture. </div><div class="ttdef"><b>Definition:</b> <a href="CTexture_8h_source.html#l00009">CTexture.h:9</a></div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>engine</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classengine_1_1CSprite.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classengine_1_1CSprite.html">CSprite</a> : <span class="keyword">public</span> sf::Sprite</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classengine_1_1CSprite.html#afee71593c773fc2e5023c7cde25c62b7">CSprite</a>(<a class="code" href="classengine_1_1CTexture.html">CTexture</a>* pTexture,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keyword">const</span> sf::Vector2&lt;int&gt;&amp; currSub);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classengine_1_1CSprite.html#ab41599f2659050183b1c9d8146a36d95">~CSprite</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classengine_1_1CSprite.html#afee71593c773fc2e5023c7cde25c62b7">CSprite</a>(<span class="keyword">const</span> <a class="code" href="classengine_1_1CSprite.html">CSprite</a>&amp; other);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CSprite.html#a31972fa55d36889cf4aa079f42a01144">setSubImage</a>(<span class="keywordtype">int</span> col, <span class="keywordtype">int</span> row);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1CSprite.html#a31972fa55d36889cf4aa079f42a01144">setSubImage</a>(<span class="keyword">const</span> sf::Vector2&lt;int&gt;* newSub);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">const</span> sf::Vector2&lt;int&gt;&amp; <a class="code" href="classengine_1_1CSprite.html#af145f98a563284beed13fad53abe964a">getSubNum</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classengine_1_1CTexture.html">CTexture</a>* m_pTexture;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        sf::Vector2&lt;int&gt; m_currSub;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> chooseSubImage();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace engine</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CSPRITE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classengine_1_1CSprite_html_af145f98a563284beed13fad53abe964a"><div class="ttname"><a href="classengine_1_1CSprite.html#af145f98a563284beed13fad53abe964a">engine::CSprite::getSubNum</a></div><div class="ttdeci">const sf::Vector2&lt; int &gt; &amp; getSubNum() const </div><div class="ttdoc">LENGTH number of sub-section images on the full texture. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00066">CSprite.cpp:66</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html_ab41599f2659050183b1c9d8146a36d95"><div class="ttname"><a href="classengine_1_1CSprite.html#ab41599f2659050183b1c9d8146a36d95">engine::CSprite::~CSprite</a></div><div class="ttdeci">~CSprite()</div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00022">CSprite.cpp:22</a></div></div>
+<div class="ttc" id="classengine_1_1CTexture_html"><div class="ttname"><a href="classengine_1_1CTexture.html">engine::CTexture</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Texture. </div><div class="ttdef"><b>Definition:</b> <a href="CTexture_8h_source.html#l00012">CTexture.h:12</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html_a31972fa55d36889cf4aa079f42a01144"><div class="ttname"><a href="classengine_1_1CSprite.html#a31972fa55d36889cf4aa079f42a01144">engine::CSprite::setSubImage</a></div><div class="ttdeci">void setSubImage(int col, int row)</div><div class="ttdoc">sets the current sub image being rendered from the texture </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00036">CSprite.cpp:36</a></div></div>
 <div class="ttc" id="CTexture_8h_html"><div class="ttname"><a href="CTexture_8h.html">CTexture.h</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html_afee71593c773fc2e5023c7cde25c62b7"><div class="ttname"><a href="classengine_1_1CSprite.html#afee71593c773fc2e5023c7cde25c62b7">engine::CSprite::CSprite</a></div><div class="ttdeci">CSprite(CTexture *pTexture, const sf::Vector2&lt; int &gt; &amp;currSub)</div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8cpp_source.html#l00009">CSprite.cpp:9</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html"><div class="ttname"><a href="classengine_1_1CSprite.html">engine::CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00013">CSprite.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 21 2014 13:45:26 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 24 2014 14:21:55 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

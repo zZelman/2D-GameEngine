@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['velosity_5fx',['velosity_x',['../classengine_1_1CMovable.html#a7bc34defa8ea4190a6c3011ef254e48b',1,'engine::CMovable']]],
-  ['velosity_5fy',['velosity_y',['../classengine_1_1CMovable.html#a7a1a4581926122ae31753261d1d35cf3',1,'engine::CMovable']]]
+  ['up',['up',['../structengine_1_1SSideBlocked.html#a62f8b294229bf0f52bc01ffcc9086202',1,'engine::SSideBlocked']]]
 ];

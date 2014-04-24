@@ -1,6 +1,6 @@
 <map id="/home/zZelman/Dropbox/2D&#45;GameEngine/src/Physics/CCollidable.h" name="/home/zZelman/Dropbox/2D&#45;GameEngine/src/Physics/CCollidable.h">
-<area shape="rect" id="node2" href="$TRect_8h.html" title="TRect.h" alt="" coords="315,109,384,136"/>
-<area shape="rect" id="node3" href="$CSprite_8h.html" title="../Graphic/CSprite.h" alt="" coords="137,184,276,211"/>
+<area shape="rect" id="node2" href="$TRect_8h.html" title="Engine/TRect.h" alt="" coords="293,109,405,136"/>
+<area shape="rect" id="node3" href="$CSprite_8h.html" title="../../Graphic/CSprite.h" alt="" coords="125,184,275,211"/>
 <area shape="rect" id="node4" href="$include__sfml_8h.html" title="../include_sfml.h" alt="" coords="173,333,291,360"/>
 <area shape="rect" id="node8" href="$CTexture_8h.html" title="CTexture.h" alt="" coords="189,259,275,285"/>
 </map>

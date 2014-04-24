@@ -1,14 +1,18 @@
 c++ Compiler
 	Preprocessor
 		DEBUG
+		__GXX_EXPERIMENTAL_CXX0X__
 	Includes
 		"${workspace_loc:/${ProjName}/SFML-2.1/include}"
 		"${workspace_loc:/${ProjName}/rapidxml-1.13/}"
 	Warnings
 		All warnings
+	Miss.
+		-std=c++0x (at end)
 C Compiler
 	Symbols
 		DEBUG
+		__GXX_EXPERIMENTAL_CXX0X__
 	Includes
 		"${workspace_loc:/${ProjName}/SFML-2.1/include}"
 		"${workspace_loc:/${ProjName}/rapidxml-1.13/}"

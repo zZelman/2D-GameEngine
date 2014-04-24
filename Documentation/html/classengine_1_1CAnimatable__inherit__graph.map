@@ -1,0 +1,3 @@
+<map id="engine::CAnimatable" name="engine::CAnimatable">
+<area shape="rect" id="node2" href="$classengine_1_1CRenderable.html" title="{engine::CRenderable\n|# m_pSprite\l# m_zorder\l|+ CRenderable()\l+ ~CRenderable()\l+ getSprite()\l+ getZOrder()\l+ update_render()\l+ print()\l}" alt="" coords="31,5,175,171"/>
+</map>

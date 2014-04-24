@@ -10,7 +10,7 @@ var searchData=
   ['setissideblocked_5fup',['setIsSideBlocked_up',['../classengine_1_1CMovable.html#a73ec50c7ed0037c4abe4aaa41ffe68d7',1,'engine::CMovable']]],
   ['setleft',['setLeft',['../classengine_1_1CMovable.html#aa4b25f57e8b5613035463f28eaa4fc36',1,'engine::CMovable::setLeft()'],['../classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3',1,'engine::TRect::setLeft()']]],
   ['setposition',['setPosition',['../classengine_1_1CMovable.html#ad6342adfc04b24120e5b19cf77fe44f5',1,'engine::CMovable::setPosition()'],['../classengine_1_1TRect.html#ad7bdff230a7152e3d8ed3934046bed7c',1,'engine::TRect::setPosition()']]],
-  ['setsubimage',['setSubImage',['../classCSprite.html#a2162a3b87f87eecf9e9b93fe4c573690',1,'CSprite::setSubImage(int col, int row)'],['../classCSprite.html#a6e46dd766754438ebdefadf3449540da',1,'CSprite::setSubImage(const sf::Vector2&lt; int &gt; *newSub)']]],
+  ['setsubimage',['setSubImage',['../classengine_1_1CSprite.html#a31972fa55d36889cf4aa079f42a01144',1,'engine::CSprite::setSubImage(int col, int row)'],['../classengine_1_1CSprite.html#a2d0b4730d905e5ae6a40023cbed77201',1,'engine::CSprite::setSubImage(const sf::Vector2&lt; int &gt; *newSub)']]],
   ['settop',['setTop',['../classengine_1_1CMovable.html#a680ee306f10a10a79616e3483300edb0',1,'engine::CMovable::setTop()'],['../classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f',1,'engine::TRect::setTop()']]],
   ['setvelosity',['setVelosity',['../classengine_1_1CMovable.html#a5e7a42eb65b12035d2c6104f28f2f0fc',1,'engine::CMovable']]],
   ['setvelosity_5fx',['setVelosity_x',['../classengine_1_1CMovable.html#a9f1674b45a63529f2cf1bcbfd65c1a28',1,'engine::CMovable']]],

@@ -1,6 +1,6 @@
 #include "GameElement_static.h"
 
-GameElement_static::GameElement_static(CSprite* sprite,
+GameElement_static::GameElement_static(engine::CSprite* sprite,
                                        sf::RenderWindow* window)
 	: engine::CCollidable(sprite)
 {

@@ -1,0 +1,4 @@
+<map id="engine::CRenderable" name="engine::CRenderable">
+<area shape="rect" id="node2" href="$classengine_1_1CAnimatable.html" title="{engine::CAnimatable\n|# m_animationTimeStep\l# m_animationClock\l# isFirstUpdate\l# shouldChangeRenderImage\l# m_subNum\l|+ CAnimatable()\l+ ~CAnimatable()\l+ update_render()\l}" alt="" coords="5,219,200,384"/>
+<area shape="rect" id="node3" href="$classGameElement__movable.html" title="{GameElement_movable\n||+ GameElement_movable()\l}" alt="" coords="224,263,405,340"/>
+</map>

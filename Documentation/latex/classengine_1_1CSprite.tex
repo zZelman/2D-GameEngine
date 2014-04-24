@@ -1,0 +1,149 @@
+\hypertarget{classengine_1_1CSprite}{\section{engine\-:\-:C\-Sprite Class Reference}
+\label{classengine_1_1CSprite}\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}}
+}
+
+
+Wrapper class for S\-F\-M\-L 2.\-1 Sprite.  
+
+
+
+
+{\ttfamily \#include $<$C\-Sprite.\-h$>$}
+
+
+
+Inheritance diagram for engine\-:\-:C\-Sprite\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classengine_1_1CSprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for engine\-:\-:C\-Sprite\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classengine_1_1CSprite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1CSprite_afee71593c773fc2e5023c7cde25c62b7}{C\-Sprite} (\hyperlink{classengine_1_1CTexture}{C\-Texture} $\ast$p\-Texture, const sf\-::\-Vector2$<$ int $>$ \&curr\-Sub)
+\item 
+\hyperlink{classengine_1_1CSprite_ab41599f2659050183b1c9d8146a36d95}{$\sim$\-C\-Sprite} ()
+\item 
+\hyperlink{classengine_1_1CSprite_a70c425b9393b4b5549b4097a23bdd3ad}{C\-Sprite} (const \hyperlink{classengine_1_1CSprite}{C\-Sprite} \&other)
+\item 
+void \hyperlink{classengine_1_1CSprite_a31972fa55d36889cf4aa079f42a01144}{set\-Sub\-Image} (int col, int row)
+\begin{DoxyCompactList}\small\item\em sets the current sub image being rendered from the texture \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1CSprite_a2d0b4730d905e5ae6a40023cbed77201}{set\-Sub\-Image} (const sf\-::\-Vector2$<$ int $>$ $\ast$new\-Sub)
+\item 
+const sf\-::\-Vector2$<$ int $>$ \& \hyperlink{classengine_1_1CSprite_af145f98a563284beed13fad53abe964a}{get\-Sub\-Num} () const 
+\begin{DoxyCompactList}\small\item\em L\-E\-N\-G\-T\-H number of sub-\/section images on the full texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class for S\-F\-M\-L 2.\-1 Sprite. 
+
+Definition at line 13 of file C\-Sprite.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1CSprite_afee71593c773fc2e5023c7cde25c62b7}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!C\-Sprite@{C\-Sprite}}
+\index{C\-Sprite@{C\-Sprite}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Sprite\-::\-C\-Sprite (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Texture} $\ast$}]{p\-Texture, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{curr\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CSprite_afee71593c773fc2e5023c7cde25c62b7}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Texture} & texture that this sprite will be rendering with \\
+\hline
+{\em curr\-Sub} & L\-E\-N\-G\-T\-H current sub-\/image being rendered \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file C\-Sprite.\-cpp.
+
+\hypertarget{classengine_1_1CSprite_ab41599f2659050183b1c9d8146a36d95}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!$\sim$\-C\-Sprite@{$\sim$\-C\-Sprite}}
+\index{$\sim$\-C\-Sprite@{$\sim$\-C\-Sprite}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{$\sim$\-C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Sprite\-::$\sim$\-C\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CSprite_ab41599f2659050183b1c9d8146a36d95}
+
+
+Definition at line 22 of file C\-Sprite.\-cpp.
+
+\hypertarget{classengine_1_1CSprite_a70c425b9393b4b5549b4097a23bdd3ad}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!C\-Sprite@{C\-Sprite}}
+\index{C\-Sprite@{C\-Sprite}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Sprite\-::\-C\-Sprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Sprite} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CSprite_a70c425b9393b4b5549b4097a23bdd3ad}
+
+
+Definition at line 27 of file C\-Sprite.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CSprite_af145f98a563284beed13fad53abe964a}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!get\-Sub\-Num@{get\-Sub\-Num}}
+\index{get\-Sub\-Num@{get\-Sub\-Num}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{get\-Sub\-Num}]{\setlength{\rightskip}{0pt plus 5cm}const sf\-::\-Vector2$<$ int $>$ \& engine\-::\-C\-Sprite\-::get\-Sub\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CSprite_af145f98a563284beed13fad53abe964a}
+
+
+L\-E\-N\-G\-T\-H number of sub-\/section images on the full texture. 
+
+x = cols; y = rows Wraper for the texture. 
+
+Definition at line 66 of file C\-Sprite.\-cpp.
+
+\hypertarget{classengine_1_1CSprite_a31972fa55d36889cf4aa079f42a01144}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!set\-Sub\-Image@{set\-Sub\-Image}}
+\index{set\-Sub\-Image@{set\-Sub\-Image}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{set\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Sprite\-::set\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CSprite_a31972fa55d36889cf4aa079f42a01144}
+
+
+sets the current sub image being rendered from the texture 
+
+
+
+Definition at line 36 of file C\-Sprite.\-cpp.
+
+\hypertarget{classengine_1_1CSprite_a2d0b4730d905e5ae6a40023cbed77201}{\index{engine\-::\-C\-Sprite@{engine\-::\-C\-Sprite}!set\-Sub\-Image@{set\-Sub\-Image}}
+\index{set\-Sub\-Image@{set\-Sub\-Image}!engine::CSprite@{engine\-::\-C\-Sprite}}
+\subsubsection[{set\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Sprite\-::set\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ int $>$ $\ast$}]{new\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CSprite_a2d0b4730d905e5ae6a40023cbed77201}
+
+
+Definition at line 49 of file C\-Sprite.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\hyperlink{CSprite_8h}{C\-Sprite.\-h}\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\-Objects/\hyperlink{CSprite_8cpp}{C\-Sprite.\-cpp}\end{DoxyCompactItemize}

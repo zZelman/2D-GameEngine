@@ -21,7 +21,7 @@ namespace engine
 		void addMovable(CMovable* m);
 		void addGravityBased(CGravityBased* g);
 
-		void update();
+		void update_physics();
 
 	private:
 		std::vector<CCollidable*> m_collidables;

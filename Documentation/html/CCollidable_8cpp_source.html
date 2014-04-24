@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Covert Collisions: /home/zZelman/Dropbox/2D-GameEngine/src/Physics/CCollidable.cpp Source File</title>
+<title>Covert Collisions: /home/zZelman/Dropbox/2D-GameEngine/src/Physics/Objects/CCollidable.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0df09a091a4eb5e56719829019e3d2f9.html">Physics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0df09a091a4eb5e56719829019e3d2f9.html">Physics</a></li><li class="navelem"><a class="el" href="dir_9af6bf218345bcdd309f16e823ce27fc.html">Objects</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,14 +88,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CCollidable.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="CCollidable_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CCollidable_8h.html">CCollidable.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TRect_8h.html">TRect.h</a>&quot;</span></div>
+<a href="CCollidable_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../CCollidable.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../Engine/TRect.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespaceengine.html">    6</a></span>&#160;<span class="keyword">namespace </span>engine</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>engine</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classengine_1_1CCollidable.html#af462862c9147ddecb794456bac7d24af">    8</a></span>&#160;    <a class="code" href="classengine_1_1CCollidable.html#af462862c9147ddecb794456bac7d24af">CCollidable::CCollidable</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite)</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classengine_1_1CCollidable.html#af462862c9147ddecb794456bac7d24af">    8</a></span>&#160;    <a class="code" href="classengine_1_1CCollidable.html#af462862c9147ddecb794456bac7d24af">CCollidable::CCollidable</a>(<a class="code" href="classengine_1_1CSprite.html">CSprite</a>* sprite)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">m_aabb</a>.<a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">setAll</a>(sprite);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
@@ -289,8 +289,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1CGravityBased_html"><div class="ttname"><a href="classengine_1_1CGravityBased.html">engine::CGravityBased</a></div><div class="ttdef"><b>Definition:</b> <a href="CGravityBased_8h_source.html#l00012">CGravityBased.h:12</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_a9b563983bf2839c51db741cdd0b90058"><div class="ttname"><a href="classengine_1_1TRect.html#a9b563983bf2839c51db741cdd0b90058">engine::TRect::getRect</a></div><div class="ttdeci">void getRect(TRect&lt; int &gt; *rect) const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00154">TRect.h:154</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_afe9eb87a07784381d0172cebac589ed0"><div class="ttname"><a href="classengine_1_1TRect.html#afe9eb87a07784381d0172cebac589ed0">engine::TRect::getWidth</a></div><div class="ttdeci">T getWidth() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00133">TRect.h:133</a></div></div>
-<div class="ttc" id="classCSprite_html"><div class="ttname"><a href="classCSprite.html">CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00010">CSprite.h:10</a></div></div>
-<div class="ttc" id="TRect_8h_html"><div class="ttname"><a href="TRect_8h.html">TRect.h</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_a1eca3fcd9ed995b5e2d7ea4d1c6d6a60"><div class="ttname"><a href="classengine_1_1CCollidable.html#a1eca3fcd9ed995b5e2d7ea4d1c6d6a60">engine::CCollidable::isCollision_horizontal</a></div><div class="ttdeci">bool isCollision_horizontal(const TRect&lt; int &gt; *other_rect) const </div><div class="ttdoc">Does &amp;#39;this&amp;#39; and &amp;#39;other_rect&amp;#39; intersect? </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00084">CCollidable.cpp:84</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_afd5adee0a4b0a4f18ff2bdcda656c632"><div class="ttname"><a href="classengine_1_1CCollidable.html#afd5adee0a4b0a4f18ff2bdcda656c632">engine::CCollidable::isCollision</a></div><div class="ttdeci">bool isCollision(const TRect&lt; int &gt; *other_rect) const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00148">CCollidable.cpp:148</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_aa813022ee910757ce429aae829023d53"><div class="ttname"><a href="classengine_1_1TRect.html#aa813022ee910757ce429aae829023d53">engine::TRect::getLeft</a></div><div class="ttdeci">T getLeft() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00121">TRect.h:121</a></div></div>
@@ -298,7 +296,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1CCollidable_html_a9ffb8b1a1fcd9818f9b6140bf00d7e26"><div class="ttname"><a href="classengine_1_1CCollidable.html#a9ffb8b1a1fcd9818f9b6140bf00d7e26">engine::CCollidable::collision_passive</a></div><div class="ttdeci">virtual void collision_passive(CMovable *m)</div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00178">CCollidable.cpp:178</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_ae026a66abb2bfa169227255335d9f78b"><div class="ttname"><a href="classengine_1_1CCollidable.html#ae026a66abb2bfa169227255335d9f78b">engine::CCollidable::getRect</a></div><div class="ttdeci">void getRect(TRect&lt; int &gt; *rect) const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00059">CCollidable.cpp:59</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_afba2923113db4ebde67912978885ec72"><div class="ttname"><a href="classengine_1_1CCollidable.html#afba2923113db4ebde67912978885ec72">engine::CCollidable::getWidth</a></div><div class="ttdeci">int getWidth() const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00038">CCollidable.cpp:38</a></div></div>
-<div class="ttc" id="CCollidable_8h_html"><div class="ttname"><a href="CCollidable_8h.html">CCollidable.h</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_af462862c9147ddecb794456bac7d24af"><div class="ttname"><a href="classengine_1_1CCollidable.html#af462862c9147ddecb794456bac7d24af">engine::CCollidable::CCollidable</a></div><div class="ttdeci">CCollidable(CSprite *sprite)</div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00008">CCollidable.cpp:8</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_a60fa629f81692094f135d01c2a4f5b69"><div class="ttname"><a href="classengine_1_1CCollidable.html#a60fa629f81692094f135d01c2a4f5b69">engine::CCollidable::getPosition</a></div><div class="ttdeci">void getPosition(int &amp;left, int &amp;top) const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00065">CCollidable.cpp:65</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_ae622bc0564f8d15556f32844be907adf"><div class="ttname"><a href="classengine_1_1TRect.html#ae622bc0564f8d15556f32844be907adf">engine::TRect::getTop</a></div><div class="ttdeci">T getTop() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00127">TRect.h:127</a></div></div>
@@ -309,10 +306,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1TRect_html_af15d2e6daff9f908dbd3d486d2349883"><div class="ttname"><a href="classengine_1_1TRect.html#af15d2e6daff9f908dbd3d486d2349883">engine::TRect::print</a></div><div class="ttdeci">void print() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00242">TRect.h:242</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_adb2d96cc98dc4b6ed5a26cd9129e1d2d"><div class="ttname"><a href="classengine_1_1CCollidable.html#adb2d96cc98dc4b6ed5a26cd9129e1d2d">engine::CCollidable::getTop</a></div><div class="ttdeci">int getTop() const </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8cpp_source.html#l00032">CCollidable.cpp:32</a></div></div>
 <div class="ttc" id="classengine_1_1CCollidable_html_aca283a2f940e99dcd6b0f57e7812968d"><div class="ttname"><a href="classengine_1_1CCollidable.html#aca283a2f940e99dcd6b0f57e7812968d">engine::CCollidable::m_aabb</a></div><div class="ttdeci">TRect&lt; int &gt; m_aabb</div><div class="ttdoc">Axis Aligned Bounding Box (AABB), the thing that is the defined region of this object. </div><div class="ttdef"><b>Definition:</b> <a href="CCollidable_8h_source.html#l00051">CCollidable.h:51</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html"><div class="ttname"><a href="classengine_1_1CSprite.html">engine::CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00013">CSprite.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 21 2014 13:45:26 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 24 2014 14:21:55 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -94,30 +94,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CMovable_8h.html">Physics/CMovable.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CSprite_8h.html">Graphic/CSprite.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classGameElement__movable.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGameElement__movable.html">GameElement_movable</a>: <span class="keyword">public</span> <a class="code" href="classengine_1_1CMovable.html">engine::CMovable</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classGameElement__movable.html#ac9009600530046f90e75ebcea411d907">GameElement_movable</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite, sf::RenderWindow* window);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGameElement__movable.html#a503e47a89c65d149529a3af6dc1064a1">render</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    sf::RenderWindow* m_pWindow;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classCSprite.html">CSprite</a>* m_pSprite;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMEELEMENT_MOVEABLE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CRenderable_8h.html">Graphic/CRenderable.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classGameElement__movable.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGameElement__movable.html">GameElement_movable</a>: <span class="keyword">public</span> <a class="code" href="classengine_1_1CMovable.html">engine::CMovable</a>, <span class="keyword">public</span> <a class="code" href="classengine_1_1CRenderable.html">engine::CRenderable</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classGameElement__movable.html#a81cdc891c2224ef28b0249dd6549b9b2">GameElement_movable</a>(<a class="code" href="classengine_1_1CSprite.html">engine::CSprite</a>* sprite, <span class="keywordtype">int</span> zorder);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMEELEMENT_MOVEABLE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="CRenderable_8h_html"><div class="ttname"><a href="CRenderable_8h.html">CRenderable.h</a></div></div>
 <div class="ttc" id="classengine_1_1CMovable_html"><div class="ttname"><a href="classengine_1_1CMovable.html">engine::CMovable</a></div><div class="ttdef"><b>Definition:</b> <a href="CMovable_8h_source.html#l00019">CMovable.h:19</a></div></div>
-<div class="ttc" id="classCSprite_html"><div class="ttname"><a href="classCSprite.html">CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00010">CSprite.h:10</a></div></div>
 <div class="ttc" id="CSprite_8h_html"><div class="ttname"><a href="CSprite_8h.html">CSprite.h</a></div></div>
 <div class="ttc" id="CMovable_8h_html"><div class="ttname"><a href="CMovable_8h.html">CMovable.h</a></div></div>
-<div class="ttc" id="classGameElement__movable_html_a503e47a89c65d149529a3af6dc1064a1"><div class="ttname"><a href="classGameElement__movable.html#a503e47a89c65d149529a3af6dc1064a1">GameElement_movable::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8cpp_source.html#l00010">GameElement_movable.cpp:10</a></div></div>
-<div class="ttc" id="classGameElement__movable_html_ac9009600530046f90e75ebcea411d907"><div class="ttname"><a href="classGameElement__movable.html#ac9009600530046f90e75ebcea411d907">GameElement_movable::GameElement_movable</a></div><div class="ttdeci">GameElement_movable(CSprite *sprite, sf::RenderWindow *window)</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8cpp_source.html#l00003">GameElement_movable.cpp:3</a></div></div>
-<div class="ttc" id="classGameElement__movable_html"><div class="ttname"><a href="classGameElement__movable.html">GameElement_movable</a></div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8h_source.html#l00008">GameElement_movable.h:8</a></div></div>
+<div class="ttc" id="classengine_1_1CRenderable_html"><div class="ttname"><a href="classengine_1_1CRenderable.html">engine::CRenderable</a></div><div class="ttdef"><b>Definition:</b> <a href="CRenderable_8h_source.html#l00009">CRenderable.h:9</a></div></div>
+<div class="ttc" id="classGameElement__movable_html"><div class="ttname"><a href="classGameElement__movable.html">GameElement_movable</a></div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8h_source.html#l00009">GameElement_movable.h:9</a></div></div>
+<div class="ttc" id="classGameElement__movable_html_a81cdc891c2224ef28b0249dd6549b9b2"><div class="ttname"><a href="classGameElement__movable.html#a81cdc891c2224ef28b0249dd6549b9b2">GameElement_movable::GameElement_movable</a></div><div class="ttdeci">GameElement_movable(engine::CSprite *sprite, int zorder)</div><div class="ttdef"><b>Definition:</b> <a href="GameElement__movable_8cpp_source.html#l00003">GameElement_movable.cpp:3</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html"><div class="ttname"><a href="classengine_1_1CSprite.html">engine::CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00013">CSprite.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 21 2014 13:45:26 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 24 2014 14:21:55 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

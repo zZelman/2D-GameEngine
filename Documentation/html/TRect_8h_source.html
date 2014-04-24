@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Covert Collisions: /home/zZelman/Dropbox/2D-GameEngine/src/Physics/TRect.h Source File</title>
+<title>Covert Collisions: /home/zZelman/Dropbox/2D-GameEngine/src/Physics/Engine/TRect.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0df09a091a4eb5e56719829019e3d2f9.html">Physics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0df09a091a4eb5e56719829019e3d2f9.html">Physics</a></li><li class="navelem"><a class="el" href="dir_11355c7aea96a7d052fd30c1d371f2ec.html">Engine</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,8 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="TRect_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRECT_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRECT_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../Graphic/CSprite.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../include_sfml.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../Graphic/CSprite.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../include_sfml.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect</a>(T left, T top, T width, T height);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect</a>(<a class="code" href="classengine_1_1CSprite.html">CSprite</a>* sprite);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect</a>(<span class="keyword">const</span> <a class="code" href="classengine_1_1TRect.html">TRect&lt;T&gt;</a>&amp; other);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classengine_1_1TRect.html">TRect</a>&amp; <a class="code" href="classengine_1_1TRect.html#a4ccd990e5432e94ca3b8280cf9c73e0e">operator = </a>(<span class="keyword">const</span> <a class="code" href="classengine_1_1TRect.html">TRect&lt;T&gt;</a>&amp; other);</div>
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">setWidth</a>(T width);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae29fe9d2401f49e84f6c070ef60e9d7b">setHeight</a>(T height);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">setAll</a>(T left, T top, T width, T height);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">setAll</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">setAll</a>(<a class="code" href="classengine_1_1CSprite.html">CSprite</a>* sprite);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ad7bdff230a7152e3d8ed3934046bed7c">setPosition</a>(T left, T top);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">moveLeft</a>(T d_left);</div>
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classengine_1_1TRect.html#a3d400a91242673bf38496a724543f98a">   91</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect&lt;T&gt;::TRect</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite)</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classengine_1_1TRect.html#a3d400a91242673bf38496a724543f98a">   91</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classengine_1_1TRect.html#a6ac360fa89c33540e1aacf0217bcbff7">TRect&lt;T&gt;::TRect</a>(<a class="code" href="classengine_1_1CSprite.html">CSprite</a>* sprite)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// pull bounds out and cast it into this objects</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// type before setting</span></div>
@@ -275,7 +275,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classengine_1_1TRect.html#a41cce51fffc829c4d3e5dc40f605cb9e">  207</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">TRect&lt;T&gt;::setAll</a>(<a class="code" href="classCSprite.html">CSprite</a>* sprite)</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classengine_1_1TRect.html#a41cce51fffc829c4d3e5dc40f605cb9e">  207</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1TRect.html#ae10bacc96b54c45b2722e51b045ae3fe">TRect&lt;T&gt;::setAll</a>(<a class="code" href="classengine_1_1CSprite.html">CSprite</a>* sprite)</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">// pull bounds out and cast it into this objects</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="comment">// type before setting</span></div>
@@ -328,7 +328,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1TRect_html_aad5a2530169d7953634fea4515381c37"><div class="ttname"><a href="classengine_1_1TRect.html#aad5a2530169d7953634fea4515381c37">engine::TRect::setWidth</a></div><div class="ttdeci">void setWidth(T width)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00186">TRect.h:186</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_a9b563983bf2839c51db741cdd0b90058"><div class="ttname"><a href="classengine_1_1TRect.html#a9b563983bf2839c51db741cdd0b90058">engine::TRect::getRect</a></div><div class="ttdeci">void getRect(TRect&lt; int &gt; *rect) const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00154">TRect.h:154</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_afe9eb87a07784381d0172cebac589ed0"><div class="ttname"><a href="classengine_1_1TRect.html#afe9eb87a07784381d0172cebac589ed0">engine::TRect::getWidth</a></div><div class="ttdeci">T getWidth() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00133">TRect.h:133</a></div></div>
-<div class="ttc" id="classCSprite_html"><div class="ttname"><a href="classCSprite.html">CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00010">CSprite.h:10</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_aca4664e0e6d9736ffbc48663f9e8cd3f"><div class="ttname"><a href="classengine_1_1TRect.html#aca4664e0e6d9736ffbc48663f9e8cd3f">engine::TRect::setTop</a></div><div class="ttdeci">void setTop(T top)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00180">TRect.h:180</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_a4ccd990e5432e94ca3b8280cf9c73e0e"><div class="ttname"><a href="classengine_1_1TRect.html#a4ccd990e5432e94ca3b8280cf9c73e0e">engine::TRect::operator=</a></div><div class="ttdeci">TRect &amp; operator=(const TRect&lt; T &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00108">TRect.h:108</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_a0699fb896f494a85e24abe32066ae5d9"><div class="ttname"><a href="classengine_1_1TRect.html#a0699fb896f494a85e24abe32066ae5d9">engine::TRect::moveLeft</a></div><div class="ttdeci">void moveLeft(T d_left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00223">TRect.h:223</a></div></div>
@@ -344,10 +343,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classengine_1_1TRect_html_af15d2e6daff9f908dbd3d486d2349883"><div class="ttname"><a href="classengine_1_1TRect.html#af15d2e6daff9f908dbd3d486d2349883">engine::TRect::print</a></div><div class="ttdeci">void print() const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00242">TRect.h:242</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_a6ec7dc08118c6012d17327ca8934d2e0"><div class="ttname"><a href="classengine_1_1TRect.html#a6ec7dc08118c6012d17327ca8934d2e0">engine::TRect::getPosition</a></div><div class="ttdeci">void getPosition(T &amp;left, T &amp;top) const </div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00160">TRect.h:160</a></div></div>
 <div class="ttc" id="classengine_1_1TRect_html_aa0f1c4e8042c553fb3a9ad0805a58bb3"><div class="ttname"><a href="classengine_1_1TRect.html#aa0f1c4e8042c553fb3a9ad0805a58bb3">engine::TRect::setLeft</a></div><div class="ttdeci">void setLeft(T left)</div><div class="ttdef"><b>Definition:</b> <a href="TRect_8h_source.html#l00174">TRect.h:174</a></div></div>
+<div class="ttc" id="classengine_1_1CSprite_html"><div class="ttname"><a href="classengine_1_1CSprite.html">engine::CSprite</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Sprite. </div><div class="ttdef"><b>Definition:</b> <a href="CSprite_8h_source.html#l00013">CSprite.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 21 2014 13:45:26 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 24 2014 14:21:55 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

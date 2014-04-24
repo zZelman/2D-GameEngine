@@ -1,0 +1,164 @@
+\hypertarget{classengine_1_1CRenderable}{\section{engine\-:\-:C\-Renderable Class Reference}
+\label{classengine_1_1CRenderable}\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}}
+}
+
+
+{\ttfamily \#include $<$C\-Renderable.\-h$>$}
+
+
+
+Inheritance diagram for engine\-:\-:C\-Renderable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classengine_1_1CRenderable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for engine\-:\-:C\-Renderable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classengine_1_1CRenderable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1CRenderable_a7e3ce1f0124ed742ceeba68da818a1ba}{C\-Renderable} (\hyperlink{classengine_1_1CSprite}{C\-Sprite} $\ast$sprite, int zorder)
+\item 
+virtual \hyperlink{classengine_1_1CRenderable_a81c5184283062df81c5a58dc65d1073f}{$\sim$\-C\-Renderable} ()
+\item 
+const \hyperlink{classengine_1_1CSprite}{C\-Sprite} $\ast$ \hyperlink{classengine_1_1CRenderable_a0f1f308d7df323b758c5bf26636da70c}{get\-Sprite} () const 
+\item 
+int \hyperlink{classengine_1_1CRenderable_a879799118bf52e40778062a8011c7e26}{get\-Z\-Order} () const 
+\item 
+virtual void \hyperlink{classengine_1_1CRenderable_a6d41accd127135dd40610bd234b1eddd}{update\-\_\-render} ()
+\item 
+virtual void \hyperlink{classengine_1_1CRenderable_a75898940a99cee496718067698f2fdd6}{print} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1CSprite}{C\-Sprite} $\ast$ \hyperlink{classengine_1_1CRenderable_a7003a8a178a504d1a0a4417dbe0e8fc5}{m\-\_\-p\-Sprite}
+\begin{DoxyCompactList}\small\item\em This object and all derivatives do not have responsibility over this pointer. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1CRenderable_aaa8555414169f4642d7c74dd25dbb344}{m\-\_\-zorder}
+\begin{DoxyCompactList}\small\item\em Used to sort, and render objects in a specific way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file C\-Renderable.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1CRenderable_a7e3ce1f0124ed742ceeba68da818a1ba}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!C\-Renderable@{C\-Renderable}}
+\index{C\-Renderable@{C\-Renderable}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{C\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Renderable\-::\-C\-Renderable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{sprite, }
+\item[{int}]{zorder}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CRenderable_a7e3ce1f0124ed742ceeba68da818a1ba}
+
+
+Definition at line 9 of file C\-Renderable.\-cpp.
+
+\hypertarget{classengine_1_1CRenderable_a81c5184283062df81c5a58dc65d1073f}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!$\sim$\-C\-Renderable@{$\sim$\-C\-Renderable}}
+\index{$\sim$\-C\-Renderable@{$\sim$\-C\-Renderable}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{$\sim$\-C\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Renderable\-::$\sim$\-C\-Renderable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CRenderable_a81c5184283062df81c5a58dc65d1073f}
+
+
+Definition at line 16 of file C\-Renderable.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CRenderable_a0f1f308d7df323b758c5bf26636da70c}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!get\-Sprite@{get\-Sprite}}
+\index{get\-Sprite@{get\-Sprite}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{get\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Sprite} $\ast$ engine\-::\-C\-Renderable\-::get\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CRenderable_a0f1f308d7df323b758c5bf26636da70c}
+
+
+Definition at line 21 of file C\-Renderable.\-cpp.
+
+\hypertarget{classengine_1_1CRenderable_a879799118bf52e40778062a8011c7e26}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!get\-Z\-Order@{get\-Z\-Order}}
+\index{get\-Z\-Order@{get\-Z\-Order}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{get\-Z\-Order}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Renderable\-::get\-Z\-Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classengine_1_1CRenderable_a879799118bf52e40778062a8011c7e26}
+
+
+Definition at line 27 of file C\-Renderable.\-cpp.
+
+\hypertarget{classengine_1_1CRenderable_a75898940a99cee496718067698f2fdd6}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!print@{print}}
+\index{print@{print}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Renderable\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CRenderable_a75898940a99cee496718067698f2fdd6}
+
+
+Definition at line 37 of file C\-Renderable.\-cpp.
+
+\hypertarget{classengine_1_1CRenderable_a6d41accd127135dd40610bd234b1eddd}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!update\-\_\-render@{update\-\_\-render}}
+\index{update\-\_\-render@{update\-\_\-render}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{update\-\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Renderable\-::update\-\_\-render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CRenderable_a6d41accd127135dd40610bd234b1eddd}
+
+
+Reimplemented in \hyperlink{classengine_1_1CAnimatable_a82b6fa8105fa03117e83a6131ab57a3c}{engine\-::\-C\-Animatable}.
+
+
+
+Definition at line 32 of file C\-Renderable.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classengine_1_1CRenderable_a7003a8a178a504d1a0a4417dbe0e8fc5}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!m\-\_\-p\-Sprite@{m\-\_\-p\-Sprite}}
+\index{m\-\_\-p\-Sprite@{m\-\_\-p\-Sprite}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{m\-\_\-p\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ engine\-::\-C\-Renderable\-::m\-\_\-p\-Sprite\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CRenderable_a7003a8a178a504d1a0a4417dbe0e8fc5}
+
+
+This object and all derivatives do not have responsibility over this pointer. 
+
+
+
+Definition at line 27 of file C\-Renderable.\-h.
+
+\hypertarget{classengine_1_1CRenderable_aaa8555414169f4642d7c74dd25dbb344}{\index{engine\-::\-C\-Renderable@{engine\-::\-C\-Renderable}!m\-\_\-zorder@{m\-\_\-zorder}}
+\index{m\-\_\-zorder@{m\-\_\-zorder}!engine::CRenderable@{engine\-::\-C\-Renderable}}
+\subsubsection[{m\-\_\-zorder}]{\setlength{\rightskip}{0pt plus 5cm}int engine\-::\-C\-Renderable\-::m\-\_\-zorder\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CRenderable_aaa8555414169f4642d7c74dd25dbb344}
+
+
+Used to sort, and render objects in a specific way. 
+
+A value of 0 means on top of everything else. 
+
+Definition at line 34 of file C\-Renderable.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\hyperlink{CRenderable_8h}{C\-Renderable.\-h}\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\-Objects/\hyperlink{CRenderable_8cpp}{C\-Renderable.\-cpp}\end{DoxyCompactItemize}

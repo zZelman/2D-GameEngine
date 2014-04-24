@@ -75,12 +75,15 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp \
  ../src/Graphic/CTexture.h ../src/Graphic/../include_sfml.h \
  ../src/Graphic/CSprite.h ../src/Graphic/CTexture.h \
+ ../src/Graphic/RenderEngine.h ../src/Graphic/CRenderable.h \
+ ../src/Graphic/CSprite.h ../src/Physics/PhysicsEngine.h \
+ ../src/Physics/CCollidable.h ../src/Physics/Engine/TRect.h \
+ ../src/Physics/Engine/../../Graphic/CSprite.h \
+ ../src/Physics/Engine/../../include_sfml.h ../src/Physics/CMovable.h \
+ ../src/Physics/CGravityBased.h ../src/Physics/../include_sfml.h \
  ../src/GameElement_movable.h ../src/Physics/CMovable.h \
- ../src/Physics/CCollidable.h ../src/Physics/TRect.h \
- ../src/Physics/../Graphic/CSprite.h ../src/Physics/../include_sfml.h \
- ../src/GameElement_static.h ../src/Physics/CCollidable.h \
- ../src/GameElement_gravity.h ../src/Physics/CGravityBased.h \
- ../src/Physics/CMovable.h ../src/Physics/PhysicsEngine.h \
+ ../src/Graphic/CRenderable.h ../src/GameElement_static.h \
+ ../src/Physics/CCollidable.h ../src/GameElement_gravity.h \
  ../src/Physics/CGravityBased.h
 
 ../src/include_sfml.h:
@@ -241,28 +244,38 @@ src/main.d: ../src/main.cpp ../src/include_sfml.h \
 
 ../src/Graphic/CTexture.h:
 
+../src/Graphic/RenderEngine.h:
+
+../src/Graphic/CRenderable.h:
+
+../src/Graphic/CSprite.h:
+
+../src/Physics/PhysicsEngine.h:
+
+../src/Physics/CCollidable.h:
+
+../src/Physics/Engine/TRect.h:
+
+../src/Physics/Engine/../../Graphic/CSprite.h:
+
+../src/Physics/Engine/../../include_sfml.h:
+
+../src/Physics/CMovable.h:
+
+../src/Physics/CGravityBased.h:
+
+../src/Physics/../include_sfml.h:
+
 ../src/GameElement_movable.h:
 
 ../src/Physics/CMovable.h:
 
-../src/Physics/CCollidable.h:
-
-../src/Physics/TRect.h:
-
-../src/Physics/../Graphic/CSprite.h:
-
-../src/Physics/../include_sfml.h:
+../src/Graphic/CRenderable.h:
 
 ../src/GameElement_static.h:
 
 ../src/Physics/CCollidable.h:
 
 ../src/GameElement_gravity.h:
-
-../src/Physics/CGravityBased.h:
-
-../src/Physics/CMovable.h:
-
-../src/Physics/PhysicsEngine.h:
 
 ../src/Physics/CGravityBased.h:

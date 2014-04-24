@@ -1,8 +1,9 @@
 src/GameElement_gravity.d: ../src/GameElement_gravity.cpp \
  ../src/GameElement_gravity.h ../src/Physics/CGravityBased.h \
  ../src/Physics/CMovable.h ../src/Physics/CCollidable.h \
- ../src/Physics/TRect.h ../src/Physics/../Graphic/CSprite.h \
- ../src/Physics/../Graphic/../include_sfml.h \
+ ../src/Physics/Engine/TRect.h \
+ ../src/Physics/Engine/../../Graphic/CSprite.h \
+ ../src/Physics/Engine/../../Graphic/../include_sfml.h \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Window.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/System.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Config.hpp \
@@ -77,7 +78,9 @@ src/GameElement_gravity.d: ../src/GameElement_gravity.cpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBuffer.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundBufferRecorder.hpp \
  /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp \
- ../src/Physics/../Graphic/CTexture.h ../src/Physics/../include_sfml.h
+ ../src/Physics/Engine/../../Graphic/CTexture.h \
+ ../src/Physics/Engine/../../include_sfml.h \
+ ../src/Physics/../include_sfml.h ../src/Graphic/CSprite.h
 
 ../src/GameElement_gravity.h:
 
@@ -87,11 +90,11 @@ src/GameElement_gravity.d: ../src/GameElement_gravity.cpp \
 
 ../src/Physics/CCollidable.h:
 
-../src/Physics/TRect.h:
+../src/Physics/Engine/TRect.h:
 
-../src/Physics/../Graphic/CSprite.h:
+../src/Physics/Engine/../../Graphic/CSprite.h:
 
-../src/Physics/../Graphic/../include_sfml.h:
+../src/Physics/Engine/../../Graphic/../include_sfml.h:
 
 /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Window.hpp:
 
@@ -241,6 +244,10 @@ src/GameElement_gravity.d: ../src/GameElement_gravity.cpp \
 
 /home/zZelman/Dropbox/2D-GameEngine/SFML-2.1/include/SFML/Audio/SoundRecorder.hpp:
 
-../src/Physics/../Graphic/CTexture.h:
+../src/Physics/Engine/../../Graphic/CTexture.h:
+
+../src/Physics/Engine/../../include_sfml.h:
 
 ../src/Physics/../include_sfml.h:
+
+../src/Graphic/CSprite.h:

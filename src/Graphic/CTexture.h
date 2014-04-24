@@ -3,55 +3,60 @@
 
 #include "../include_sfml.h"
 
-/**
- * Wrapper class for SFML 2.1 Texture
- */
-class CTexture : public sf::Texture
+namespace engine
 {
-public:
-	CTexture();
 
 	/**
-	 * @param fileName Relative full path to the texture image
-	 * @param subSize LENGTH sub-image (x = width, y = height)
-	 * @param subNum LENGTH number of sub images on the texture image
+	 * Wrapper class for SFML 2.1 Texture
 	 */
-	CTexture(std::string fileName,
-	         const sf::Vector2<int>& subSize,
-	         const sf::Vector2<int>& subNum);
-	CTexture(const CTexture& other);
+	class CTexture : public sf::Texture
+	{
+	public:
+		CTexture();
 
-	CTexture& operator=(const CTexture& other);
+		/**
+		 * @param fileName Relative full path to the texture image
+		 * @param subSize LENGTH sub-image (x = width, y = height)
+		 * @param subNum LENGTH number of sub images on the texture image
+		 */
+		CTexture(std::string fileName,
+		         const sf::Vector2<int>& subSize,
+		         const sf::Vector2<int>& subNum);
+		CTexture(const CTexture& other);
 
-	/**
-	 * LENGTH number of sub-section images on the full texture.
-	 * x = cols; y = rows
-	 */
-	const sf::Vector2<int>& getSubNum() const;
+		CTexture& operator=(const CTexture& other);
 
-	/**
-	 * LENGTH of the sub-section image on the texture.
-	 * x = width; y = height
-	 */
-	const sf::Vector2<int>& getSubSize() const;
+		/**
+		 * LENGTH number of sub-section images on the full texture.
+		 * x = cols; y = rows
+		 */
+		const sf::Vector2<int>& getSubNum() const;
 
-private:
-	/**
-	 * LENGTH of the sub-section image on the texture.
-	 * x = width; y = height
-	 */
-	sf::Vector2<int> m_subSize;
+		/**
+		 * LENGTH of the sub-section image on the texture.
+		 * x = width; y = height
+		 */
+		const sf::Vector2<int>& getSubSize() const;
 
-	/**
-	 * LENGTH number of sub-section images on the full texture.
-	 * x = cols; y = rows
-	 */
-	sf::Vector2<int> m_subNum;
+	private:
+		/**
+		 * LENGTH of the sub-section image on the texture.
+		 * x = width; y = height
+		 */
+		sf::Vector2<int> m_subSize;
 
-	/**
-	 * Uses API functions to load the image into memory.
-	 */
-	void load(std::string fileName);	// Relative path to the texture image
-};
+		/**
+		 * LENGTH number of sub-section images on the full texture.
+		 * x = cols; y = rows
+		 */
+		sf::Vector2<int> m_subNum;
+
+		/**
+		 * Uses API functions to load the image into memory.
+		 */
+		void load(std::string fileName);	// Relative path to the texture image
+	};
+
+}  // namespace engine
 
 #endif /* CTEXTURE_H_ */

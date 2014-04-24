@@ -1,0 +1,165 @@
+\hypertarget{classengine_1_1CAnimatable}{\section{engine\-:\-:C\-Animatable Class Reference}
+\label{classengine_1_1CAnimatable}\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}}
+}
+
+
+{\ttfamily \#include $<$C\-Animatable.\-h$>$}
+
+
+
+Inheritance diagram for engine\-:\-:C\-Animatable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classengine_1_1CAnimatable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for engine\-:\-:C\-Animatable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classengine_1_1CAnimatable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classengine_1_1CAnimatable_a8f86ba331bc99901e2f551b0e6003870}{C\-Animatable} (\hyperlink{classengine_1_1CSprite}{C\-Sprite} $\ast$sprite, int zorder, int32\-\_\-t ms\-\_\-animation)
+\item 
+virtual \hyperlink{classengine_1_1CAnimatable_aa6adc28254bba68b2abcab5edb8b7f3e}{$\sim$\-C\-Animatable} ()
+\item 
+virtual void \hyperlink{classengine_1_1CAnimatable_a82b6fa8105fa03117e83a6131ab57a3c}{update\-\_\-render} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32\-\_\-t \hyperlink{classengine_1_1CAnimatable_a5ad99730dad31f7b458fa99987970f3c}{m\-\_\-animation\-Time\-Step}
+\begin{DoxyCompactList}\small\item\em Time step to change render images. \end{DoxyCompactList}\item 
+sf\-::\-Clock \hyperlink{classengine_1_1CAnimatable_ac7041497fc032eb2a6335fc9e68aba1c}{m\-\_\-animation\-Clock}
+\begin{DoxyCompactList}\small\item\em The clock keeping track of how long each render image is displayed. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1CAnimatable_a34c1d2a0bae733f78b17f0cc527379e8}{is\-First\-Update}
+\begin{DoxyCompactList}\small\item\em A preventative boolean wrapped around the first render to prevent skipping. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1CAnimatable_a1733e847840f52f15958546d1eb21810}{should\-Change\-Render\-Image}
+\begin{DoxyCompactList}\small\item\em A variable that sub classes check on to see if they should change the image being rendered. \end{DoxyCompactList}\item 
+const sf\-::\-Vector2$<$ int $>$ \& \hyperlink{classengine_1_1CAnimatable_a75150745354ce35d66711d6613eb3be6}{m\-\_\-sub\-Num}
+\begin{DoxyCompactList}\small\item\em The L\-E\-N\-G\-T\-H (cols, rows) on the texture the sprite refers to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file C\-Animatable.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classengine_1_1CAnimatable_a8f86ba331bc99901e2f551b0e6003870}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!C\-Animatable@{C\-Animatable}}
+\index{C\-Animatable@{C\-Animatable}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{C\-Animatable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Animatable\-::\-C\-Animatable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{sprite, }
+\item[{int}]{zorder, }
+\item[{int32\-\_\-t}]{ms\-\_\-animation}
+\end{DoxyParamCaption}
+)}}\label{classengine_1_1CAnimatable_a8f86ba331bc99901e2f551b0e6003870}
+
+
+Definition at line 7 of file C\-Animatable.\-cpp.
+
+\hypertarget{classengine_1_1CAnimatable_aa6adc28254bba68b2abcab5edb8b7f3e}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!$\sim$\-C\-Animatable@{$\sim$\-C\-Animatable}}
+\index{$\sim$\-C\-Animatable@{$\sim$\-C\-Animatable}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{$\sim$\-C\-Animatable}]{\setlength{\rightskip}{0pt plus 5cm}engine\-::\-C\-Animatable\-::$\sim$\-C\-Animatable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CAnimatable_aa6adc28254bba68b2abcab5edb8b7f3e}
+
+
+Definition at line 16 of file C\-Animatable.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classengine_1_1CAnimatable_a82b6fa8105fa03117e83a6131ab57a3c}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!update\-\_\-render@{update\-\_\-render}}
+\index{update\-\_\-render@{update\-\_\-render}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{update\-\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}void engine\-::\-C\-Animatable\-::update\-\_\-render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classengine_1_1CAnimatable_a82b6fa8105fa03117e83a6131ab57a3c}
+
+
+Reimplemented from \hyperlink{classengine_1_1CRenderable_a6d41accd127135dd40610bd234b1eddd}{engine\-::\-C\-Renderable}.
+
+
+
+Definition at line 21 of file C\-Animatable.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classengine_1_1CAnimatable_a34c1d2a0bae733f78b17f0cc527379e8}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!is\-First\-Update@{is\-First\-Update}}
+\index{is\-First\-Update@{is\-First\-Update}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{is\-First\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Animatable\-::is\-First\-Update\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CAnimatable_a34c1d2a0bae733f78b17f0cc527379e8}
+
+
+A preventative boolean wrapped around the first render to prevent skipping. 
+
+
+
+Definition at line 37 of file C\-Animatable.\-h.
+
+\hypertarget{classengine_1_1CAnimatable_ac7041497fc032eb2a6335fc9e68aba1c}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!m\-\_\-animation\-Clock@{m\-\_\-animation\-Clock}}
+\index{m\-\_\-animation\-Clock@{m\-\_\-animation\-Clock}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{m\-\_\-animation\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Clock engine\-::\-C\-Animatable\-::m\-\_\-animation\-Clock\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CAnimatable_ac7041497fc032eb2a6335fc9e68aba1c}
+
+
+The clock keeping track of how long each render image is displayed. 
+
+
+
+Definition at line 31 of file C\-Animatable.\-h.
+
+\hypertarget{classengine_1_1CAnimatable_a5ad99730dad31f7b458fa99987970f3c}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!m\-\_\-animation\-Time\-Step@{m\-\_\-animation\-Time\-Step}}
+\index{m\-\_\-animation\-Time\-Step@{m\-\_\-animation\-Time\-Step}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{m\-\_\-animation\-Time\-Step}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t engine\-::\-C\-Animatable\-::m\-\_\-animation\-Time\-Step\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CAnimatable_a5ad99730dad31f7b458fa99987970f3c}
+
+
+Time step to change render images. 
+
+
+
+Definition at line 26 of file C\-Animatable.\-h.
+
+\hypertarget{classengine_1_1CAnimatable_a75150745354ce35d66711d6613eb3be6}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!m\-\_\-sub\-Num@{m\-\_\-sub\-Num}}
+\index{m\-\_\-sub\-Num@{m\-\_\-sub\-Num}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{m\-\_\-sub\-Num}]{\setlength{\rightskip}{0pt plus 5cm}const sf\-::\-Vector2$<$int$>$\& engine\-::\-C\-Animatable\-::m\-\_\-sub\-Num\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CAnimatable_a75150745354ce35d66711d6613eb3be6}
+
+
+The L\-E\-N\-G\-T\-H (cols, rows) on the texture the sprite refers to. 
+
+It was pulled out of the sprite at this object initialization. 
+
+Definition at line 53 of file C\-Animatable.\-h.
+
+\hypertarget{classengine_1_1CAnimatable_a1733e847840f52f15958546d1eb21810}{\index{engine\-::\-C\-Animatable@{engine\-::\-C\-Animatable}!should\-Change\-Render\-Image@{should\-Change\-Render\-Image}}
+\index{should\-Change\-Render\-Image@{should\-Change\-Render\-Image}!engine::CAnimatable@{engine\-::\-C\-Animatable}}
+\subsubsection[{should\-Change\-Render\-Image}]{\setlength{\rightskip}{0pt plus 5cm}bool engine\-::\-C\-Animatable\-::should\-Change\-Render\-Image\hspace{0.3cm}{\ttfamily [protected]}}}\label{classengine_1_1CAnimatable_a1733e847840f52f15958546d1eb21810}
+
+
+A variable that sub classes check on to see if they should change the image being rendered. 
+
+Sub classes should override \hyperlink{classengine_1_1CAnimatable_a82b6fa8105fa03117e83a6131ab57a3c}{update\-\_\-render()} and call it before checking on this variable. 
+
+Definition at line 46 of file C\-Animatable.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\hyperlink{CAnimatable_8h}{C\-Animatable.\-h}\item 
+/home/z\-Zelman/\-Dropbox/2\-D-\/\-Game\-Engine/src/\-Graphic/\-Objects/\hyperlink{CAnimatable_8cpp}{C\-Animatable.\-cpp}\end{DoxyCompactItemize}
